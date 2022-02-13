@@ -1,0 +1,8 @@
+V3 3
+FL /home/chrwa634/TSEA22/Lab3/Lab3_3c/comb_lock_prom.vhd 2021/02/17.14:46:06 P.20131013
+EN work/comb_lock_prom 1613576678 \
+      FL /home/chrwa634/TSEA22/Lab3/Lab3_3c/comb_lock_prom.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/comb_lock_prom/behav 1613576679 \
+      FL /home/chrwa634/TSEA22/Lab3/Lab3_3c/comb_lock_prom.vhd \
+      EN work/comb_lock_prom 1613576678

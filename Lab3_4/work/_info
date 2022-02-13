@@ -1,0 +1,112 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/chrwa634/TSEA22/Lab3/Lab3_4
+T_opt
+!s110 1614072547
+VJD95GFfXK6jQA_ZGdI:0V1
+Z1 04 8 3 work timer_tb sim 1
+=1-6805cab2485b-6034cae3-4f1a3-4179
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;10.6d;65
+R0
+T_opt1
+!s110 1614169924
+V?@:Fc=7Kb=dKIGbO9ghj<0
+R1
+=6-6805caa7b6c1-60364744-153d8-35a1
+R2
+R3
+n@_opt1
+R4
+R0
+Etimer
+Z5 w1614169888
+Z6 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z9 8timer.vhd
+Z10 Ftimer.vhd
+l0
+L5
+V]b]CI5i9743g35CMV[So90
+!s100 MaW>H:K;cLMC1PFmZ4o[13
+Z11 OL;C;10.6d;65
+32
+Z12 !s110 1614180599
+!i10b 1
+Z13 !s108 1614180599.000000
+Z14 !s90 -2002|timer.vhd|
+Z15 !s107 timer.vhd|
+!i113 0
+Z16 o-2002
+Z17 tExplicit 1 CvgOpt 0
+Abehav
+R6
+R7
+R8
+DEx4 work 5 timer 0 22 ]b]CI5i9743g35CMV[So90
+l17
+L12
+VVXGIA^`OI[249`IE>WBi@0
+!s100 g=L<DcJnF6HB<;5:_fM0K2
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Etimer_tb
+Z18 w1614169920
+R6
+R7
+R8
+R0
+Z19 8timer_tb.vhd
+Z20 Ftimer_tb.vhd
+l0
+L5
+VA<m@`bC531O]n8EdnCi_X1
+!s100 6Z;F[B93fRIQeT8liERTL3
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -2002|timer_tb.vhd|
+Z22 !s107 timer_tb.vhd|
+!i113 0
+R16
+R17
+Asim
+R6
+R7
+R8
+Z23 DEx4 work 8 timer_tb 0 22 A<m@`bC531O]n8EdnCi_X1
+l23
+L8
+Z24 Vo`9WYoObl0OK@b_JW_Sn`2
+Z25 !s100 ^aUk:4G]=d>EmLilb1b7e1
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 0
+R16
+R17

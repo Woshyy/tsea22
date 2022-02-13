@@ -1,0 +1,1743 @@
+Release 14.7 - CPLD Optimizer/Partitioner P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'CountOnes.ise'.
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/startknapp_old\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/startknapp_old\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/startknapp_old\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/zero_old\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/zero_old\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/zero_old\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_3\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_3\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_3\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_2\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_2\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_2\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_1\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_1\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_1\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_0\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_0\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_0\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_3\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_3\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_3\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_0\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_0\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_0\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_3\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_3\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_3\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_2\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_2\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_2\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_1\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_1\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_1\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_0\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_0\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_0\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_3\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_3\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_3\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_2\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_2\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_2\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_1\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_1\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_1\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_0\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_0\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_0\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_4\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_4\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_4\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_3\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_3\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_3\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_2\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_2\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_2\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_1\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_1\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_1\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_0\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_0\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_0\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_address\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_address\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_address\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/ce\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/ce\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/ce\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_unit\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_unit\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_unit\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_tenth\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_tenth\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_tenth\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/LED\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/LED\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/LED\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000_Mxor_Result<1>_Mxor__xor0000\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000_Mxor_Result<1>_Mxor_Result\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000_Mxor_Result<2>_Mxor__xor0000\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000_Mxor_Result<2>_Mxor_Result\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000_Mxor_Result<3>_Mxor_Result\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001_Mxor_Result<1>_Mxor__xor0000\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001_Mxor_Result<1>_Mxor_Result\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001_Mxor_Result<2>_Mxor__xor0000\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001_Mxor_Result<2>_Mxor_Result\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001_Mxor_Result<3>_Mxor__xor0000\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001_Mxor_Result<3>_Mxor_Result\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001_Mxor_Result<0>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_address_addsub0000_Mxor_Result<3>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_address_addsub0000_Mxor_Result<2>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_address_addsub0000_Mxor_Result<1>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_hundred_addsub0000_Mxor_Result<3>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_hundred_addsub0000_Mxor_Result<2>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_hundred_addsub0000_Mxor_Result<1>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_tenth_addsub0000_Mxor_Result<3>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_tenth_addsub0000_Mxor_Result<2>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_tenth_addsub0000_Mxor_Result<1>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Msub_counter_unit_addsub0000_Mxor_Result<2>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_stop_addsub0000_Mxor_Result<4>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_stop_addsub0000_Mxor_Result<3>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_stop_addsub0000_Mxor_Result<2>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_stop_addsub0000_Mxor_Result<1>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/cs21 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/startknapp_onepuls1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/startknapp_onepuls2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/zero1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/zero2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_stop_addsub0000__and00021 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_stop_addsub0000__and00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_stop_addsub0000__and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Msub_counter_unit_addsub0000_Mxor_Result<2>_not00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Msub_counter_unit_addsub0000_Result_1_not00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Msub_counter_unit_addsub0000__or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_tenth_addsub0000__and00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_tenth_addsub0000__and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_hundred_addsub0000__and00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_hundred_addsub0000__and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_address_addsub0000__and00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_address_addsub0000__and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001_or0001_and00021 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001_or0001_and00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001_or0001_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000_or0001_and00021 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000_or0001_and00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000_or0001_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000__and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/ce_cmp_eq00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND5"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_cmp_eq00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND4"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_tenth_cmp_eq00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_tenth_cmp_eq00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_tenth_cmp_eq00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_tenth_cmp_eq00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_tenth_cmp_eq00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_cmp_eq00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_cmp_eq00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_cmp_eq00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_cmp_eq00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_cmp_eq00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA_cmp_eq00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND4"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001__or00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR3"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000__or00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR3"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mcompar_counter_unit_cmp_gt0000_AGB1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mcompar_counter_unit_cmp_gt0000_AGB2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>9 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>10 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>11 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>12 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND3"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>13 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>14 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>15 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<1>16 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR3"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_3_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_3_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_3_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_3_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_3_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_3_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_3_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_3_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_2_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_2_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_2_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_2_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_2_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_2_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_2_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_2_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2_0_ClkEn9 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2_0_ClkEn10 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2_0_ClkEn11 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_2_0_ClkEn12 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_1_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_1_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_1_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_1_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_1_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_1_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_1_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_1_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_2_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_2_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_2_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_2_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_2_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_2_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_2_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_2_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_3_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_3_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_3_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_3_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_3_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_3_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_3_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_3_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_0_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_0_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_0_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_1_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_1_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_1_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_1_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_1_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_1_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_1_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_hundred_1_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_3_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_3_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_3_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_3_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_3_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_3_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_3_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_3_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_2_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_2_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_2_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_2_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_2_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_2_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_2_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_2_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_1_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_1_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_1_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_1_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_1_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_1_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_1_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_1_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_4_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_4_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_4_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_4_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_4_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_4_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_4_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND3"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_0_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_0_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_tenth_0_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_2_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_2_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_2_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_2_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_2_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_2_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_2_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND3"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_0_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_0_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_0_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_0_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_0_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_0_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_0_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND3"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_0_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_0_0_ClkEn9 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_3_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_3_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_3_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_3_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_3_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_3_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_3_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND3"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_1_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_1_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_1_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_1_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_1_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_1_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_stop_1_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND3"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_tenth_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_tenth_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_tenth_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_tenth_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_tenth_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/ce_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/ce_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/ce_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1_0_ClkEn9 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1_0_ClkEn10 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1_0_ClkEn11 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_1_0_ClkEn12 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001__or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001__or00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001__or00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001__or00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_addsub0001__or00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000__or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000__or00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000__or00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Madd_counter_unit_add0000__or00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_0_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_0_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_0_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_0_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_0_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_0_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_0_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_0_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_0_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_0_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_0_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_0_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_0_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_address_0_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_address_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_address_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND3"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_address_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_address_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_address_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_unit_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_unit_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_unit_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_unit_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_unit_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_unit_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_unit_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_unit_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/rco_unit_0_ClkEn9 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_3_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_3_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_3_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_3_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_3_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_3_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_3_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_3_0_ClkEn8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_3_0_ClkEn9 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/counter_unit_3_0_ClkEn10 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>9 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>10 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>11 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>12 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>13 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>14 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>15 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>16 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>17 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>18 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/Mrom_amount_of_zero_doA<0>19 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/clk_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/clk_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/reset_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/reset_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/startknapp_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/startknapp_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/data_3_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/data_3_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/data_2_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/data_2_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/data_1_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/data_1_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/data_0_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/data_0_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/cs1_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/cs1_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/cs2_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/cs2_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/LED_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/LED_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/addr_3_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/addr_3_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/addr_2_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/addr_2_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/addr_1_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/addr_1_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/addr_0_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/addr_0_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD0_3_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD0_3_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD0_2_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD0_2_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD0_1_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD0_1_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD0_0_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD0_0_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD1_3_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD1_3_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD1_2_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD1_2_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD1_1_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD1_1_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD1_0_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD1_0_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD2_3_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD2_3_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD2_2_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD2_2_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD2_1_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD2_1_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD2_0_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes/BCD2_0_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+CS: block property: block_name=/CountOnes/EXPANDED_FlattenFull/CountOnes prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "CountOnes"
+
+Considering device XC9572-7-PC44.
+Flattening design..
+Multi-level logic optimization...
+Timing optimization.......................................................................
+Timing driven global resource optimization
+General global resource optimization........
+Re-checking device resources ...
+Mapping a total of 37 equations into 4 function blocks......................
+Design CountOnes has been optimized and fit into device XC9572-7-PC44.

@@ -1,0 +1,2 @@
+Release 14.7 - Programming File Generator P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.

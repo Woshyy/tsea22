@@ -1,0 +1,185 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xc9500 | 957244 | XC9572-7-PC44
+
+DEVICE | 9572 | 957244 | 
+
+NETWORK | comb_lock_logic | 0 | 0 | 201342983
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_IBUF | comb_lock_logic_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk | 342 | PI | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 334 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | reset_IBUF | comb_lock_logic_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | reset | 343 | PI | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 6 | 5 | II_FSR
+NODE | FSRIO_1 | 335 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+
+INPUT_INSTANCE | 0 | 0 | NULL | x1_IBUF | comb_lock_logic_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | x1 | 344 | PI | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | x1_IBUF | 338 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | x1_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | x0_IBUF | comb_lock_logic_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | x0 | 345 | PI | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | x0_IBUF | 339 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | x0_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped+ClkInv | q0 | comb_lock_logic_COPY_0_COPY_0 | 2222982144 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q1.FBK | 359 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q1.Q | q1 | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x1_IBUF | 338 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | x1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x0_IBUF | 339 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | x0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 334 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 335 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q0.FBK | 358 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q0.Q | q0 | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q0 | 336 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q0.Q | q0 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q0.FBK | 358 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q0.Q | q0 | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q0.SI | q0 | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q1.FBK | 359 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q1.Q | q1 | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x1_IBUF | 338 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | x1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x0_IBUF | 339 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | x0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q0.FBK | 358 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q0.Q | q0 | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q0.D1 | 347 | ? | 0 | 4096 | q0 | NULL | NULL | q0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q0.D2 | 348 | ? | 0 | 4096 | q0 | NULL | NULL | q0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | x1_IBUF | IV_TRUE | x0_IBUF | IV_TRUE | q1.FBK
+SPPTERM | 3 | IV_TRUE | x1_IBUF | IV_TRUE | q0.FBK | IV_TRUE | q1.FBK
+SPPTERM | 3 | IV_FALSE | x1_IBUF | IV_FALSE | x0_IBUF | IV_FALSE | q1.FBK
+SPPTERM | 3 | IV_TRUE | x0_IBUF | IV_TRUE | q0.FBK | IV_TRUE | q1.FBK
+
+SRFF_INSTANCE | q0.REG | q0 | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q0.D | 346 | ? | 0 | 0 | q0 | NULL | NULL | q0.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 334 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 335 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q0.Q | 349 | ? | 0 | 0 | q0 | NULL | NULL | q0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped+ClkInv | q1 | comb_lock_logic_COPY_0_COPY_0 | 2222982144 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q1.FBK | 359 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q1.Q | q1 | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x1_IBUF | 338 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | x1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x0_IBUF | 339 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | x0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 334 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 335 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q0.FBK | 358 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q0.Q | q0 | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q1 | 337 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q1.Q | q1 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q1.FBK | 359 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q1.Q | q1 | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q1.SI | q1 | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q1.FBK | 359 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q1.Q | q1 | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x1_IBUF | 338 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | x1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x0_IBUF | 339 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | x0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q0.FBK | 358 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q0.Q | q0 | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q1.D1 | 351 | ? | 0 | 4096 | q1 | NULL | NULL | q1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q1.D2 | 352 | ? | 0 | 4096 | q1 | NULL | NULL | q1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | x0_IBUF | IV_TRUE | q1.FBK
+SPPTERM | 3 | IV_TRUE | x1_IBUF | IV_TRUE | q0.FBK | IV_TRUE | q1.FBK
+SPPTERM | 3 | IV_FALSE | x1_IBUF | IV_TRUE | x0_IBUF | IV_TRUE | q0.FBK
+
+SRFF_INSTANCE | q1.REG | q1 | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q1.D | 350 | ? | 0 | 0 | q1 | NULL | NULL | q1.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 334 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 335 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q1.Q | 353 | ? | 0 | 0 | q1 | NULL | NULL | q1.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | OptxMapped | u_OBUF | comb_lock_logic_COPY_0_COPY_0 | 2155872256 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q1.FBK | 359 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q1.Q | q1 | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q0.FBK | 358 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q0.Q | q0 | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | u_OBUF | 340 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | u_OBUF.Q | u_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | u_OBUF.UIM | 360 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | u_OBUF.Q | u_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | u_OBUF.SI | u_OBUF | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q1.FBK | 359 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q1.Q | q1 | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q0.FBK | 358 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | q0.Q | q0 | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | u_OBUF.D1 | 355 | ? | 0 | 4096 | u_OBUF | NULL | NULL | u_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | u_OBUF.D2 | 356 | ? | 0 | 4096 | u_OBUF | NULL | NULL | u_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | q0.FBK | IV_TRUE | q1.FBK
+
+SRFF_INSTANCE | u_OBUF.REG | u_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | u_OBUF.D | 354 | ? | 0 | 0 | u_OBUF | NULL | NULL | u_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | u_OBUF.Q | 357 | ? | 0 | 0 | u_OBUF | NULL | NULL | u_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | u | comb_lock_logic_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | u_OBUF | 340 | ? | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | u_OBUF.Q | u_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | u | 341 | PO | 0 | 0 | comb_lock_logic_COPY_0_COPY_0 | NULL | NULL | u | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | comb_lock_logic_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | u_OBUF | 1 | NULL | 0 | u | 1 | 1 | 49152
+FBPIN | 9 | NULL | 0 | clk_IBUF | 1 | NULL | 0 | 5 | 57344
+FBPIN | 17 | q1 | 1 | NULL | 0 | NULL | 0 | 9 | 49152
+FBPIN | 18 | q0 | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR2_ | comb_lock_logic_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 8 | NULL | 0 | x1_IBUF | 1 | NULL | 0 | 38 | 49152
+FBPIN | 9 | NULL | 0 | reset_IBUF | 1 | NULL | 0 | 39 | 51200
+
+FB_INSTANCE | FOOBAR3_ | comb_lock_logic_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | comb_lock_logic_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | NULL | 0 | x0_IBUF | 1 | NULL | 0 | 24 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | comb_lock_logic_COPY_0_COPY_0 | 0 | 0 | 0
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 16 | q1.FBK | NULL | 17 | q0.FBK | NULL | 19 | x1 | 38 | 20 | x0 | 24
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 16 | 17 | -1 | 73 | 74 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | FCLKIO_0 | 0 | 0
+
+GLOBAL_FSR | FSRIO_1 | 0 | 0

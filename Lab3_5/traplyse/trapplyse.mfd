@@ -1,0 +1,170 @@
+MDF Database:  version 1.0
+MDF_INFO | trapplyse | XC9572-7-PC44
+MACROCELL | 1 | 4 | ce
+ATTRIBUTES | 461570 | 0
+OUTPUTMC | 6 | 1 | 4 | 1 | 16 | 1 | 15 | 1 | 17 | 1 | 3 | 1 | 5
+INPUTS | 9 | x1_last.LFBK  | reset  | x1  | x0_last.LFBK  | x0  | rco.LFBK  | EXP0_.EXP  | EXP1_.EXP  | ce.LFBK
+INPUTMC | 6 | 1 | 13 | 1 | 14 | 1 | 16 | 1 | 3 | 1 | 5 | 1 | 4
+INPUTP | 3 | 91 | 9 | 89
+IMPORTS | 2 | 1 | 3 | 1 | 5
+EQ | 14 | 
+   u = !reset & x0 & !ce.LFBK & !x0_last.LFBK
+	# !reset & !x0 & !ce.LFBK & x0_last.LFBK
+	# !reset & x1 & !ce.LFBK & !x1_last.LFBK
+	# !reset & !x1 & !ce.LFBK & x1_last.LFBK
+	# !reset & x0 & x1 & ce.LFBK & x1_last.LFBK & 
+	x0_last.LFBK & rco.LFBK
+;Imported pterms FB2_4
+	# !reset & x0 & !x1 & ce.LFBK & !x1_last.LFBK & 
+	x0_last.LFBK & rco.LFBK
+	# !reset & !x0 & x1 & ce.LFBK & x1_last.LFBK & 
+	!x0_last.LFBK & rco.LFBK
+;Imported pterms FB2_6
+	# !reset & !x0 & !x1 & ce.LFBK & !x1_last.LFBK & 
+	!x0_last.LFBK & rco.LFBK;
+
+MACROCELL | 3 | 1 | counter<0>
+ATTRIBUTES | 4686722 | 0
+OUTPUTMC | 1 | 3 | 1
+INPUTS | 6 | tidkvar<1>.PIN  | u.PIN  | tidkvar<2>.PIN  | tidkvar<3>.PIN  | counter<3>/counter<3>_SETF  | counter<0>.LFBK
+INPUTMC | 2 | 1 | 17 | 3 | 1
+INPUTP | 4 | 29 | 87 | 11 | 15
+EQ | 5 | 
+   !tidkvar<0>.T = !u.PIN
+	# !counter<0>.LFBK & !tidkvar<1>.PIN & 
+	!tidkvar<2>.PIN & !tidkvar<3>.PIN;
+   tidkvar<0>.CLK = clk;	// GCK
+   tidkvar<0>.AP = counter<3>/counter<3>_SETF;
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 1 | counter<1>
+ATTRIBUTES | 4686722 | 0
+OUTPUTMC | 1 | 2 | 1
+INPUTS | 6 | tidkvar<0>.PIN  | tidkvar<2>.PIN  | tidkvar<3>.PIN  | u.PIN  | counter<3>/counter<3>_SETF  | counter<1>.LFBK
+INPUTMC | 2 | 1 | 17 | 2 | 1
+INPUTP | 4 | 58 | 11 | 15 | 87
+EQ | 5 | 
+   tidkvar<1>.T = counter<1>.LFBK & u.PIN & !tidkvar<0>.PIN
+	# u.PIN & !tidkvar<0>.PIN & tidkvar<2>.PIN
+	# u.PIN & !tidkvar<0>.PIN & tidkvar<3>.PIN;
+   tidkvar<1>.CLK = clk;	// GCK
+   tidkvar<1>.AP = counter<3>/counter<3>_SETF;
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 1 | counter<2>
+ATTRIBUTES | 4686722 | 0
+OUTPUTMC | 2 | 0 | 1 | 0 | 7
+INPUTS | 6 | tidkvar<0>.PIN  | tidkvar<1>.PIN  | counter<2>.LFBK  | u.PIN  | counter<3>/counter<3>_SETF  | counter<3>.LFBK
+INPUTMC | 3 | 0 | 1 | 1 | 17 | 0 | 7
+INPUTP | 3 | 58 | 29 | 87
+EQ | 6 | 
+   tidkvar<2>.T = counter<3>.LFBK & u.PIN & !tidkvar<0>.PIN & 
+	!tidkvar<1>.PIN
+	# counter<2>.LFBK & u.PIN & !tidkvar<0>.PIN & 
+	!tidkvar<1>.PIN;
+   tidkvar<2>.CLK = clk;	// GCK
+   tidkvar<2>.AP = counter<3>/counter<3>_SETF;
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 7 | counter<3>
+ATTRIBUTES | 4686722 | 0
+OUTPUTMC | 2 | 0 | 1 | 0 | 7
+INPUTS | 6 | tidkvar<0>.PIN  | tidkvar<1>.PIN  | counter<3>.LFBK  | u.PIN  | counter<3>/counter<3>_SETF  | counter<2>.LFBK
+INPUTMC | 3 | 0 | 7 | 1 | 17 | 0 | 1
+INPUTP | 3 | 58 | 29 | 87
+EQ | 4 | 
+   tidkvar<3>.T = counter<3>.LFBK & !counter<2>.LFBK & u.PIN & 
+	!tidkvar<0>.PIN & !tidkvar<1>.PIN;
+   tidkvar<3>.CLK = clk;	// GCK
+   tidkvar<3>.AP = counter<3>/counter<3>_SETF;
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 16 | rco
+ATTRIBUTES | 4424576 | 0
+OUTPUTMC | 4 | 1 | 4 | 1 | 16 | 1 | 3 | 1 | 5
+INPUTS | 7 | rco.LFBK  | tidkvar<1>.PIN  | tidkvar<2>.PIN  | tidkvar<3>.PIN  | counter<3>/counter<3>_SETF.LFBK  | tidkvar<0>.PIN  | ce.LFBK
+INPUTMC | 3 | 1 | 16 | 1 | 17 | 1 | 4
+INPUTP | 4 | 29 | 11 | 15 | 58
+EQ | 4 | 
+   rco.T = ce.LFBK & rco.LFBK & !tidkvar<0>.PIN & 
+	!tidkvar<1>.PIN & !tidkvar<2>.PIN & !tidkvar<3>.PIN;
+   rco.CLK = clk;	// GCK
+   rco.AP = counter<3>/counter<3>_SETF.LFBK;
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 15 | clr
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 1 | 1 | 17
+INPUTS | 1 | ce.LFBK
+INPUTMC | 1 | 1 | 4
+EQ | 3 | 
+   clr.D = ce.LFBK;
+   clr.CLK = clk;	// GCK
+   clr.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 14 | x0_last
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 3 | 1 | 4 | 1 | 3 | 1 | 5
+INPUTS | 1 | x0
+INPUTP | 1 | 89
+EQ | 3 | 
+   x0_last.D = x0;
+   x0_last.CLK = clk;	// GCK
+   x0_last.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 13 | x1_last
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 3 | 1 | 4 | 1 | 3 | 1 | 5
+INPUTS | 1 | x1
+INPUTP | 1 | 9
+EQ | 3 | 
+   x1_last.D = x1;
+   x1_last.CLK = clk;	// GCK
+   x1_last.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 17 | counter<3>/counter<3>_SETF
+ATTRIBUTES | 199424 | 0
+OUTPUTMC | 5 | 3 | 1 | 2 | 1 | 0 | 1 | 0 | 7 | 1 | 16
+INPUTS | 3 | reset  | clr.LFBK  | ce.LFBK
+INPUTMC | 2 | 1 | 15 | 1 | 4
+INPUTP | 1 | 91
+EQ | 2 | 
+   counter<3>/counter<3>_SETF = reset
+	# ce.LFBK & !clr.LFBK;
+
+MACROCELL | 1 | 3 | EXP0_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 4
+INPUTS | 7 | rco.LFBK  | x0_last.LFBK  | reset  | x0  | x1_last.LFBK  | x1  | ce.LFBK
+INPUTMC | 4 | 1 | 16 | 1 | 14 | 1 | 13 | 1 | 4
+INPUTP | 3 | 91 | 89 | 9
+EXPORTS | 1 | 1 | 4
+EQ | 4 | 
+       EXP0_.EXP  =  !reset & x0 & !x1 & ce.LFBK & !x1_last.LFBK & 
+	x0_last.LFBK & rco.LFBK
+	# !reset & !x0 & x1 & ce.LFBK & x1_last.LFBK & 
+	!x0_last.LFBK & rco.LFBK
+
+MACROCELL | 1 | 5 | EXP1_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 4
+INPUTS | 7 | rco.LFBK  | x0_last.LFBK  | reset  | x0  | x1_last.LFBK  | x1  | ce.LFBK
+INPUTMC | 4 | 1 | 16 | 1 | 14 | 1 | 13 | 1 | 4
+INPUTP | 3 | 91 | 89 | 9
+EXPORTS | 1 | 1 | 4
+EQ | 2 | 
+       EXP1_.EXP  =  !reset & !x0 & !x1 & ce.LFBK & !x1_last.LFBK & 
+	!x0_last.LFBK & rco.LFBK
+
+PIN | reset | 65600 | 0 | N/A | 91 | 7 | 1 | 4 | 1 | 17 | 1 | 3 | 1 | 5 | 1 | 15 | 1 | 14 | 1 | 13
+PIN | x1 | 64 | 0 | N/A | 9 | 4 | 1 | 4 | 1 | 13 | 1 | 3 | 1 | 5
+PIN | x0 | 64 | 0 | N/A | 89 | 4 | 1 | 4 | 1 | 14 | 1 | 3 | 1 | 5
+PIN | clk | 4096 | 0 | N/A | 20 | 8 | 3 | 1 | 2 | 1 | 0 | 1 | 0 | 7 | 1 | 16 | 1 | 15 | 1 | 14 | 1 | 13
+PIN | u | 536870976 | 0 | N/A | 87 | 4 | 0 | 7 | 0 | 1 | 2 | 1 | 3 | 1
+PIN | tidkvar<0> | 536870976 | 0 | N/A | 58 | 4 | 1 | 16 | 0 | 7 | 0 | 1 | 2 | 1
+PIN | tidkvar<1> | 536870976 | 0 | N/A | 29 | 4 | 3 | 1 | 0 | 7 | 0 | 1 | 1 | 16
+PIN | tidkvar<2> | 536870976 | 0 | N/A | 11 | 3 | 3 | 1 | 1 | 16 | 2 | 1
+PIN | tidkvar<3> | 536870976 | 0 | N/A | 15 | 3 | 3 | 1 | 1 | 16 | 2 | 1

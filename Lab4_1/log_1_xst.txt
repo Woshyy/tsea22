@@ -1,0 +1,203 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "stopwatch.prj"
+
+---- Target Parameters
+Target Device                      : XC9500 CPLDs
+Output File Name                   : "stopwatch.ngc"
+
+---- Source Options
+Top Module Name                    : stopwatch
+
+---- General Options
+Optimization Goal                  : speed
+Optimization Effort                : 1
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/chrwa634/TSEA22/Lab3/Lab4_1/stopwatch.vhd" in Library work.
+Entity <stopwatch> compiled.
+Entity <stopwatch> (Architecture <rtl>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <stopwatch> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <stopwatch> in library <work> (Architecture <rtl>).
+INFO:Xst:1561 - "/home/chrwa634/TSEA22/Lab3/Lab4_1/stopwatch.vhd" line 225: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "/home/chrwa634/TSEA22/Lab3/Lab4_1/stopwatch.vhd" line 271: Mux is complete : default of case is discarded
+Entity <stopwatch> analyzed. Unit <stopwatch> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <stopwatch>.
+    Related source file is "/home/chrwa634/TSEA22/Lab3/Lab4_1/stopwatch.vhd".
+    Found 16x8-bit ROM for signal <digit>.
+    Found 1-bit register for signal <ce>.
+    Found 4-bit register for signal <counter_100_0>.
+    Found 4-bit adder for signal <counter_100_0$addsub0000> created at line 93.
+    Found 4-bit register for signal <counter_100_1>.
+    Found 4-bit adder for signal <counter_100_1$addsub0000> created at line 113.
+    Found 4-bit register for signal <counter_min_0>.
+    Found 4-bit adder for signal <counter_min_0$addsub0000> created at line 176.
+    Found 4-bit register for signal <counter_min_1>.
+    Found 4-bit adder for signal <counter_min_1$addsub0000> created at line 196.
+    Found 4-bit register for signal <counter_sec_0>.
+    Found 4-bit adder for signal <counter_sec_0$addsub0000> created at line 134.
+    Found 4-bit register for signal <counter_sec_1>.
+    Found 4-bit adder for signal <counter_sec_1$addsub0000> created at line 155.
+    Found 1-bit register for signal <hundradelspuls_gammal>.
+    Found 2-bit up counter for signal <mux_counter>.
+    Found 1-bit register for signal <muxfrekvens_old>.
+    Found 1-bit register for signal <muxfrekvens_older>.
+    Found 1-bit register for signal <old_nollstallning>.
+    Found 1-bit register for signal <rco_100_0>.
+    Found 1-bit register for signal <rco_100_1>.
+    Found 1-bit register for signal <rco_min_0>.
+    Found 1-bit register for signal <rco_sec_0>.
+    Found 1-bit register for signal <rco_sec_1>.
+    Found 4-bit 4-to-1 multiplexer for signal <show>.
+    Found 1-bit register for signal <start_stopp_old>.
+    Found 1-bit register for signal <visningslage_s>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+Unit <stopwatch> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 6
+ 4-bit adder                                           : 6
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 18
+ 1-bit register                                        : 12
+ 4-bit register                                        : 6
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 6
+ 4-bit adder                                           : 6
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <stopwatch> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : stopwatch.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+Target Technology                  : XC9500 CPLDs
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 479
+#      AND2                        : 163
+#      AND3                        : 35
+#      AND4                        : 4
+#      GND                         : 1
+#      INV                         : 179
+#      OR2                         : 51
+#      OR3                         : 11
+#      XOR2                        : 35
+# FlipFlops/Latches                : 38
+#      FD                          : 10
+#      FDC                         : 28
+# IO Buffers                       : 18
+#      IBUF                        : 7
+#      OBUF                        : 11
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.14 secs
+ 
+--> 
+
+
+Total memory usage is 606748 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,41 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_q0: FDCPE port map (q0,q0_D,clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;q0_D <= ((q0.LFBK AND q1.LFBK AND x1s.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (q0.LFBK AND q1.LFBK AND x0s.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (q1.LFBK AND x1s.LFBK AND x0s.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT q1.LFBK AND NOT x1s.LFBK AND NOT x0s.LFBK));
+</td></tr><tr><td>
+FDCPE_q1: FDCPE port map (q1,q1_D,clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;q1_D <= ((q1.LFBK AND x0s.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (q0.LFBK AND q1.LFBK AND x1s.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (q0.LFBK AND NOT x1s.LFBK AND x0s.LFBK));
+</td></tr><tr><td>
+</td></tr><tr><td>
+u <= (q0.LFBK AND q1.LFBK);
+</td></tr><tr><td>
+FDCPE_x0s: FDCPE port map (x0s,x0s_D,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x0s_D <= ((reset AND x0s.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND x0));
+</td></tr><tr><td>
+FDCPE_x1s: FDCPE port map (x1s,x1s_D,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x1s_D <= ((reset AND x1s.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND x1));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

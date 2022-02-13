@@ -1,0 +1,2066 @@
+MDF Database:  version 1.0
+MDF_INFO | stopwatch | XC9572-7-PC44
+MACROCELL | 2 | 10 | mux_counter<1>
+ATTRIBUTES | 4629250 | 0
+INPUTS | 3 | muxfrekvens_old  | display<0>.PIN  | muxfrekvens_older.LFBK
+INPUTMC | 2 | 1 | 0 | 2 | 0
+INPUTP | 1 | 10
+EQ | 4 | 
+   display<1>.T = muxfrekvens_old & !muxfrekvens_older.LFBK & 
+	display<0>.PIN;
+   display<1>.CLK = clk;	// GCK
+   display<1>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 16 | mux_counter<0>
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 14 | 1 | 15 | 1 | 0 | 1 | 14 | 1 | 1 | 1 | 7 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 12 | 1 | 13
+INPUTS | 6 | counter_min_1<0>.LFBK  | muxfrekvens_older  | rco_min_0  | nollstallning  | old_nollstallning  | muxfrekvens_old.LFBK
+INPUTMC | 5 | 1 | 15 | 2 | 0 | 3 | 9 | 2 | 6 | 1 | 0
+INPUTP | 1 | 87
+EXPORTS | 1 | 1 | 15
+EQ | 6 | 
+   display<0>.T = !muxfrekvens_older & muxfrekvens_old.LFBK;
+   display<0>.CLK = clk;	// GCK
+   display<0>.AR = reset;	// GSR
+    mux_counter<0>.EXP  =  nollstallning & !old_nollstallning
+	# rco_min_0 & counter_min_1<0>.LFBK
+	# !rco_min_0 & !counter_min_1<0>.LFBK
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 10 | ce
+ATTRIBUTES | 4629250 | 0
+INPUTS | 2 | start_stopp  | start_stopp_old.LFBK
+INPUTMC | 1 | 3 | 0
+INPUTP | 1 | 29
+EQ | 3 | 
+   raknar.T = start_stopp & !start_stopp_old.LFBK;
+   raknar.CLK = clk;	// GCK
+   raknar.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 17 | counter_100_0<0>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 21 | 1 | 3 | 0 | 5 | 0 | 3 | 1 | 12 | 1 | 17 | 0 | 14 | 0 | 13 | 0 | 7 | 1 | 13 | 1 | 0 | 1 | 5 | 2 | 17 | 2 | 2 | 2 | 16 | 2 | 9 | 2 | 15 | 2 | 14 | 2 | 0 | 2 | 4 | 2 | 3 | 2 | 5
+INPUTS | 7 | old_nollstallning.LFBK  | hundradelspuls_gammal  | hundradelspuls  | nollstallning  | raknar.PIN  | muxfrekvens_older.EXP  | counter_100_0<0>.LFBK
+INPUTMC | 4 | 2 | 6 | 1 | 11 | 2 | 0 | 2 | 17
+INPUTP | 3 | 50 | 87 | 67
+IMPORTS | 1 | 2 | 0
+EQ | 11 | 
+   !counter_100_0<0>.D = nollstallning & !old_nollstallning.LFBK
+	# !hundradelspuls & !counter_100_0<0>.LFBK
+	# hundradelspuls_gammal & !counter_100_0<0>.LFBK
+	# !counter_100_0<0>.LFBK & !raknar.PIN
+	# hundradelspuls & !hundradelspuls_gammal & 
+	counter_100_0<0>.LFBK & raknar.PIN
+;Imported pterms FB3_1
+	# rco_100_0 & !counter_100_0<0>.LFBK & 
+	!counter_100_0<1>.LFBK & !counter_100_0<2>.LFBK & !counter_100_0<3>.LFBK;
+   counter_100_0<0>.CLK = clk;	// GCK
+   counter_100_0<0>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 8 | counter_100_1<0>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 19 | 1 | 8 | 0 | 8 | 1 | 3 | 1 | 12 | 0 | 12 | 0 | 13 | 0 | 3 | 0 | 4 | 1 | 13 | 1 | 0 | 2 | 8 | 2 | 15 | 2 | 7 | 2 | 13 | 2 | 14 | 2 | 11 | 2 | 6 | 2 | 4 | 2 | 5
+INPUTS | 4 | nollstallning  | counter_100_1<0>.LFBK  | rco_100_0  | old_nollstallning.LFBK
+INPUTMC | 3 | 2 | 8 | 1 | 17 | 2 | 6
+INPUTP | 1 | 87
+EQ | 5 | 
+   !counter_100_1<0>.D = nollstallning & !old_nollstallning.LFBK
+	# rco_100_0 & counter_100_1<0>.LFBK
+	# !rco_100_0 & !counter_100_1<0>.LFBK;
+   counter_100_1<0>.CLK = clk;	// GCK
+   counter_100_1<0>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 6 | counter_min_0<0>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 18 | 2 | 5 | 2 | 2 | 1 | 15 | 1 | 8 | 0 | 13 | 0 | 14 | 2 | 3 | 0 | 7 | 1 | 12 | 1 | 1 | 1 | 3 | 0 | 3 | 0 | 4 | 3 | 6 | 3 | 16 | 3 | 5 | 3 | 13 | 3 | 9
+INPUTS | 4 | nollstallning  | old_nollstallning  | rco_sec_1.LFBK  | counter_min_0<0>.LFBK
+INPUTMC | 3 | 2 | 6 | 3 | 7 | 3 | 6
+INPUTP | 1 | 87
+EQ | 5 | 
+   !counter_min_0<0>.D = nollstallning & !old_nollstallning
+	# counter_min_0<0>.LFBK & rco_sec_1.LFBK
+	# !counter_min_0<0>.LFBK & !rco_sec_1.LFBK;
+   counter_min_0<0>.CLK = clk;	// GCK
+   counter_min_0<0>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 2 | counter_sec_0<0>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 18 | 1 | 15 | 3 | 15 | 1 | 9 | 3 | 12 | 3 | 8 | 0 | 14 | 1 | 3 | 0 | 7 | 1 | 14 | 0 | 15 | 1 | 4 | 0 | 4 | 0 | 5 | 0 | 6 | 0 | 12 | 2 | 3 | 2 | 2 | 2 | 1
+INPUTS | 11 | nollstallning  | counter_100_0<0>.LFBK  | counter_sec_0<0>.LFBK  | counter_min_0<0>  | display<0>.PIN  | show<2>/show<2>_D2  | show<1>/show<1>_D2  | $OpTx$FX_SC$69  | $OpTx$FX_SC$70  | counter_sec_0<2>.EXP  | old_nollstallning.LFBK
+INPUTMC | 9 | 2 | 17 | 2 | 2 | 3 | 6 | 3 | 17 | 0 | 17 | 0 | 11 | 0 | 16 | 2 | 1 | 2 | 6
+INPUTP | 2 | 87 | 10
+EXPORTS | 1 | 2 | 3
+IMPORTS | 1 | 2 | 1
+EQ | 18 | 
+   !counter_sec_0<0>.D = nollstallning & !old_nollstallning.LFBK
+;Imported pterms FB3_2
+	# counter_sec_0<0>.LFBK & rco_100_1.LFBK
+	# !counter_sec_0<0>.LFBK & !rco_100_1.LFBK;
+   counter_sec_0<0>.CLK = clk;	// GCK
+   counter_sec_0<0>.AR = reset;	// GSR
+    counter_sec_0<0>.EXP  =  counter_min_0<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_SC$70 & !show<1>/show<1>_D2 & counter_sec_0<0>.LFBK & 
+	!display<0>.PIN
+	# counter_min_0<0> & show<2>/show<2>_D2 & 
+	!show<1>/show<1>_D2 & counter_100_0<0>.LFBK & counter_sec_0<0>.LFBK & 
+	!display<0>.PIN
+	# show<2>/show<2>_D2 & !$OpTx$FX_SC$70 & 
+	!$OpTx$FX_SC$69 & !show<1>/show<1>_D2 & counter_sec_0<0>.LFBK & 
+	!display<0>.PIN
+	# show<2>/show<2>_D2 & !$OpTx$FX_SC$69 & 
+	!show<1>/show<1>_D2 & counter_100_0<0>.LFBK & counter_sec_0<0>.LFBK & 
+	!display<0>.PIN
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 3 | counter_sec_1<0>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 18 | 2 | 6 | 1 | 13 | 1 | 12 | 1 | 4 | 1 | 2 | 0 | 13 | 2 | 3 | 0 | 5 | 1 | 14 | 0 | 12 | 1 | 5 | 0 | 3 | 0 | 8 | 3 | 3 | 3 | 11 | 3 | 14 | 3 | 2 | 3 | 7
+INPUTS | 4 | nollstallning  | old_nollstallning  | rco_sec_0.LFBK  | counter_sec_1<0>.LFBK
+INPUTMC | 3 | 2 | 6 | 3 | 8 | 3 | 3
+INPUTP | 1 | 87
+EQ | 5 | 
+   !counter_sec_1<0>.D = nollstallning & !old_nollstallning
+	# counter_sec_1<0>.LFBK & rco_sec_0.LFBK
+	# !counter_sec_1<0>.LFBK & !rco_sec_0.LFBK;
+   counter_sec_1<0>.CLK = clk;	// GCK
+   counter_sec_1<0>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 11 | counter_sec_1<2>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 9 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 13 | 3 | 11 | 3 | 14 | 3 | 2 | 3 | 0 | 3 | 7
+INPUTS | 7 | counter_sec_1<0>.LFBK  | nollstallning  | old_nollstallning  | counter_sec_1<3>.LFBK  | rco_sec_0.LFBK  | counter_sec_1<1>.LFBK  | counter_sec_1<2>.LFBK
+INPUTMC | 6 | 3 | 3 | 2 | 6 | 3 | 2 | 3 | 8 | 3 | 14 | 3 | 11
+INPUTP | 1 | 87
+EQ | 10 | 
+   counter_sec_1<2>.T = nollstallning & !old_nollstallning & 
+	counter_sec_1<2>.LFBK
+	# !nollstallning & counter_sec_1<0>.LFBK & 
+	rco_sec_0.LFBK & counter_sec_1<1>.LFBK
+	# old_nollstallning & counter_sec_1<0>.LFBK & 
+	rco_sec_0.LFBK & counter_sec_1<1>.LFBK
+	# counter_sec_1<0>.LFBK & rco_sec_0.LFBK & 
+	counter_sec_1<2>.LFBK & !counter_sec_1<3>.LFBK;
+   counter_sec_1<2>.CLK = clk;	// GCK
+   counter_sec_1<2>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 16 | counter_100_0<1>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 15 | 0 | 3 | 1 | 5 | 0 | 13 | 0 | 9 | 1 | 17 | 0 | 1 | 0 | 5 | 1 | 0 | 1 | 7 | 0 | 14 | 0 | 17 | 2 | 16 | 2 | 9 | 2 | 14 | 2 | 0
+INPUTS | 10 | old_nollstallning.LFBK  | nollstallning  | counter_100_0<0>.LFBK  | counter_100_0<2>.LFBK  | hundradelspuls  | hundradelspuls_gammal  | counter_100_0<3>.LFBK  | raknar.PIN  | counter_100_1<1>.EXP  | counter_100_0<1>.LFBK
+INPUTMC | 7 | 2 | 6 | 2 | 17 | 2 | 9 | 1 | 11 | 2 | 14 | 2 | 15 | 2 | 16
+INPUTP | 3 | 87 | 50 | 67
+IMPORTS | 1 | 2 | 15
+EQ | 19 | 
+   counter_100_0<1>.T = nollstallning & !old_nollstallning.LFBK & 
+	counter_100_0<1>.LFBK
+	# hundradelspuls & !hundradelspuls_gammal & 
+	counter_100_0<0>.LFBK & counter_100_0<1>.LFBK & raknar.PIN
+	# !nollstallning & hundradelspuls & 
+	!hundradelspuls_gammal & counter_100_0<0>.LFBK & counter_100_0<2>.LFBK & 
+	raknar.PIN
+	# hundradelspuls & !hundradelspuls_gammal & 
+	counter_100_0<0>.LFBK & old_nollstallning.LFBK & counter_100_0<2>.LFBK & 
+	raknar.PIN
+	# hundradelspuls & !hundradelspuls_gammal & 
+	counter_100_0<0>.LFBK & old_nollstallning.LFBK & !counter_100_0<3>.LFBK & 
+	raknar.PIN
+;Imported pterms FB3_16
+	# !nollstallning & hundradelspuls & 
+	!hundradelspuls_gammal & counter_100_0<0>.LFBK & !counter_100_0<3>.LFBK & 
+	raknar.PIN;
+   counter_100_0<1>.CLK = clk;	// GCK
+   counter_100_0<1>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 9 | counter_100_0<2>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 9 | 0 | 7 | 0 | 9 | 3 | 17 | 0 | 14 | 1 | 17 | 2 | 16 | 2 | 9 | 2 | 14 | 2 | 0
+INPUTS | 8 | old_nollstallning.LFBK  | nollstallning  | counter_100_0<0>.LFBK  | counter_100_0<1>.LFBK  | raknar.PIN  | hundradelspuls  | hundradelspuls_gammal  | counter_100_0<2>.LFBK
+INPUTMC | 5 | 2 | 6 | 2 | 17 | 2 | 16 | 1 | 11 | 2 | 9
+INPUTP | 3 | 87 | 67 | 50
+EQ | 10 | 
+   counter_100_0<2>.T = nollstallning & !old_nollstallning.LFBK & 
+	counter_100_0<2>.LFBK
+	# !nollstallning & hundradelspuls & 
+	!hundradelspuls_gammal & counter_100_0<0>.LFBK & counter_100_0<1>.LFBK & 
+	raknar.PIN
+	# hundradelspuls & !hundradelspuls_gammal & 
+	counter_100_0<0>.LFBK & old_nollstallning.LFBK & counter_100_0<1>.LFBK & 
+	raknar.PIN;
+   counter_100_0<2>.CLK = clk;	// GCK
+   counter_100_0<2>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 15 | counter_100_1<1>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 16 | 0 | 10 | 1 | 8 | 0 | 12 | 0 | 3 | 0 | 1 | 0 | 4 | 1 | 0 | 1 | 7 | 0 | 13 | 0 | 17 | 2 | 16 | 2 | 15 | 2 | 7 | 2 | 13 | 2 | 14 | 2 | 11
+INPUTS | 13 | counter_100_1<1>.LFBK  | old_nollstallning.LFBK  | rco_100_0  | nollstallning  | counter_100_1<2>.LFBK  | counter_100_1<3>.LFBK  | counter_100_0<0>.LFBK  | counter_100_0<3>.LFBK  | raknar.PIN  | hundradelspuls  | hundradelspuls_gammal  | counter_100_0<3>.EXP  | counter_100_1<0>.LFBK
+INPUTMC | 10 | 2 | 15 | 2 | 6 | 1 | 17 | 2 | 7 | 2 | 13 | 2 | 17 | 2 | 14 | 1 | 11 | 2 | 14 | 2 | 8
+INPUTP | 3 | 87 | 67 | 50
+EXPORTS | 1 | 2 | 16
+IMPORTS | 1 | 2 | 14
+EQ | 13 | 
+   !counter_100_1<1>.D = nollstallning & !old_nollstallning.LFBK
+	# !rco_100_0 & !counter_100_1<1>.LFBK
+	# !counter_100_1<0>.LFBK & !counter_100_1<1>.LFBK
+	# !counter_100_1<1>.LFBK & !counter_100_1<2>.LFBK & 
+	counter_100_1<3>.LFBK
+;Imported pterms FB3_15
+	# rco_100_0 & counter_100_1<0>.LFBK & 
+	counter_100_1<1>.LFBK;
+   counter_100_1<1>.CLK = clk;	// GCK
+   counter_100_1<1>.AR = reset;	// GSR
+    counter_100_1<1>.EXP  =  !nollstallning & hundradelspuls & 
+	!hundradelspuls_gammal & counter_100_0<0>.LFBK & !counter_100_0<3>.LFBK & 
+	raknar.PIN
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 7 | counter_100_1<2>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 8 | 0 | 10 | 0 | 8 | 0 | 13 | 3 | 17 | 2 | 15 | 2 | 7 | 2 | 13 | 2 | 11
+INPUTS | 6 | old_nollstallning.LFBK  | nollstallning  | counter_100_1<0>.LFBK  | counter_100_1<1>.LFBK  | rco_100_0  | counter_100_1<2>.LFBK
+INPUTMC | 5 | 2 | 6 | 2 | 8 | 2 | 15 | 1 | 17 | 2 | 7
+INPUTP | 1 | 87
+EQ | 8 | 
+   counter_100_1<2>.T = nollstallning & !old_nollstallning.LFBK & 
+	counter_100_1<2>.LFBK
+	# !nollstallning & rco_100_0 & 
+	counter_100_1<0>.LFBK & counter_100_1<1>.LFBK
+	# rco_100_0 & old_nollstallning.LFBK & 
+	counter_100_1<0>.LFBK & counter_100_1<1>.LFBK;
+   counter_100_1<2>.CLK = clk;	// GCK
+   counter_100_1<2>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 13 | counter_100_1<3>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 6 | 0 | 8 | 0 | 12 | 0 | 15 | 2 | 15 | 2 | 13 | 2 | 11
+INPUTS | 7 | old_nollstallning.LFBK  | nollstallning  | counter_100_1<0>.LFBK  | counter_100_1<1>.LFBK  | counter_100_1<2>.LFBK  | rco_100_0  | counter_100_1<3>.LFBK
+INPUTMC | 6 | 2 | 6 | 2 | 8 | 2 | 15 | 2 | 7 | 1 | 17 | 2 | 13
+INPUTP | 1 | 87
+EQ | 10 | 
+   counter_100_1<3>.T = nollstallning & !old_nollstallning.LFBK & 
+	counter_100_1<3>.LFBK
+	# !nollstallning & rco_100_0 & 
+	counter_100_1<0>.LFBK & counter_100_1<1>.LFBK & counter_100_1<2>.LFBK
+	# rco_100_0 & old_nollstallning.LFBK & 
+	counter_100_1<0>.LFBK & counter_100_1<1>.LFBK & counter_100_1<2>.LFBK
+	# rco_100_0 & counter_100_1<0>.LFBK & 
+	!counter_100_1<1>.LFBK & !counter_100_1<2>.LFBK & counter_100_1<3>.LFBK;
+   counter_100_1<3>.CLK = clk;	// GCK
+   counter_100_1<3>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 16 | counter_min_0<1>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 14 | 1 | 8 | 0 | 13 | 0 | 9 | 0 | 3 | 0 | 1 | 0 | 4 | 1 | 1 | 1 | 7 | 0 | 14 | 0 | 17 | 3 | 16 | 3 | 5 | 3 | 13 | 3 | 9
+INPUTS | 7 | counter_min_0<1>.LFBK  | rco_sec_1.LFBK  | counter_min_0<2>.LFBK  | nollstallning  | old_nollstallning  | counter_min_0<3>.LFBK  | counter_min_0<0>.LFBK
+INPUTMC | 6 | 3 | 16 | 3 | 7 | 3 | 5 | 2 | 6 | 3 | 13 | 3 | 6
+INPUTP | 1 | 87
+EQ | 9 | 
+   !counter_min_0<1>.D = nollstallning & !old_nollstallning
+	# !counter_min_0<0>.LFBK & !counter_min_0<1>.LFBK
+	# !rco_sec_1.LFBK & !counter_min_0<1>.LFBK
+	# counter_min_0<0>.LFBK & rco_sec_1.LFBK & 
+	counter_min_0<1>.LFBK
+	# !counter_min_0<1>.LFBK & !counter_min_0<2>.LFBK & 
+	counter_min_0<3>.LFBK;
+   counter_min_0<1>.CLK = clk;	// GCK
+   counter_min_0<1>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 5 | counter_min_0<2>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 8 | 0 | 9 | 0 | 7 | 0 | 14 | 3 | 16 | 3 | 5 | 3 | 13 | 3 | 9 | 3 | 17
+INPUTS | 6 | counter_min_0<0>.LFBK  | nollstallning  | old_nollstallning  | counter_min_0<1>.LFBK  | rco_sec_1.LFBK  | counter_min_0<2>.LFBK
+INPUTMC | 5 | 3 | 6 | 2 | 6 | 3 | 16 | 3 | 7 | 3 | 5
+INPUTP | 1 | 87
+EQ | 8 | 
+   counter_min_0<2>.T = nollstallning & !old_nollstallning & 
+	counter_min_0<2>.LFBK
+	# !nollstallning & counter_min_0<0>.LFBK & 
+	rco_sec_1.LFBK & counter_min_0<1>.LFBK
+	# old_nollstallning & counter_min_0<0>.LFBK & 
+	rco_sec_1.LFBK & counter_min_0<1>.LFBK;
+   counter_min_0<2>.CLK = clk;	// GCK
+   counter_min_0<2>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 13 | counter_min_0<3>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 6 | 0 | 15 | 0 | 13 | 0 | 7 | 3 | 16 | 3 | 13 | 3 | 9
+INPUTS | 7 | counter_min_0<0>.LFBK  | nollstallning  | old_nollstallning  | counter_min_0<1>.LFBK  | counter_min_0<2>.LFBK  | rco_sec_1.LFBK  | counter_min_0<3>.LFBK
+INPUTMC | 6 | 3 | 6 | 2 | 6 | 3 | 16 | 3 | 5 | 3 | 7 | 3 | 13
+INPUTP | 1 | 87
+EQ | 10 | 
+   counter_min_0<3>.T = nollstallning & !old_nollstallning & 
+	counter_min_0<3>.LFBK
+	# !nollstallning & counter_min_0<0>.LFBK & 
+	rco_sec_1.LFBK & counter_min_0<1>.LFBK & counter_min_0<2>.LFBK
+	# old_nollstallning & counter_min_0<0>.LFBK & 
+	rco_sec_1.LFBK & counter_min_0<1>.LFBK & counter_min_0<2>.LFBK
+	# counter_min_0<0>.LFBK & rco_sec_1.LFBK & 
+	!counter_min_0<1>.LFBK & !counter_min_0<2>.LFBK & counter_min_0<3>.LFBK;
+   counter_min_0<3>.CLK = clk;	// GCK
+   counter_min_0<3>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 15 | counter_sec_0<1>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 16 | 1 | 9 | 2 | 1 | 1 | 3 | 1 | 2 | 0 | 0 | 0 | 5 | 0 | 12 | 1 | 6 | 0 | 14 | 0 | 15 | 0 | 2 | 0 | 4 | 0 | 9 | 3 | 15 | 3 | 12 | 3 | 8
+INPUTS | 7 | counter_sec_0<0>  | counter_sec_0<3>.LFBK  | rco_100_1  | nollstallning  | old_nollstallning  | counter_sec_0<2>  | counter_sec_0<1>.LFBK
+INPUTMC | 6 | 2 | 2 | 3 | 12 | 2 | 11 | 2 | 6 | 2 | 1 | 3 | 15
+INPUTP | 1 | 87
+EQ | 9 | 
+   !counter_sec_0<1>.D = !counter_sec_0<0> & !counter_sec_0<1>.LFBK
+	# nollstallning & !old_nollstallning
+	# !rco_100_1 & !counter_sec_0<1>.LFBK
+	# counter_sec_0<0> & rco_100_1 & 
+	counter_sec_0<1>.LFBK
+	# !counter_sec_0<2> & !counter_sec_0<1>.LFBK & 
+	counter_sec_0<3>.LFBK;
+   counter_sec_0<1>.CLK = clk;	// GCK
+   counter_sec_0<1>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 1 | counter_sec_0<2>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 10 | 3 | 15 | 3 | 0 | 3 | 12 | 3 | 8 | 0 | 6 | 0 | 14 | 3 | 17 | 0 | 9 | 2 | 2 | 2 | 1
+INPUTS | 6 | old_nollstallning.LFBK  | nollstallning  | counter_sec_0<0>.LFBK  | rco_100_1.LFBK  | counter_sec_0<1>  | counter_sec_0<2>.LFBK
+INPUTMC | 5 | 2 | 6 | 2 | 2 | 2 | 11 | 3 | 15 | 2 | 1
+INPUTP | 1 | 87
+EXPORTS | 1 | 2 | 2
+EQ | 10 | 
+   counter_sec_0<2>.T = nollstallning & !old_nollstallning.LFBK & 
+	counter_sec_0<2>.LFBK
+	# counter_sec_0<1> & !nollstallning & 
+	counter_sec_0<0>.LFBK & rco_100_1.LFBK
+	# counter_sec_0<1> & old_nollstallning.LFBK & 
+	counter_sec_0<0>.LFBK & rco_100_1.LFBK;
+   counter_sec_0<2>.CLK = clk;	// GCK
+   counter_sec_0<2>.AR = reset;	// GSR
+    counter_sec_0<2>.EXP  =  counter_sec_0<0>.LFBK & rco_100_1.LFBK
+	# !counter_sec_0<0>.LFBK & !rco_100_1.LFBK
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 12 | counter_sec_0<3>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 8 | 0 | 16 | 0 | 15 | 0 | 6 | 0 | 7 | 0 | 12 | 3 | 15 | 3 | 12 | 3 | 8
+INPUTS | 7 | counter_sec_0<1>.LFBK  | nollstallning  | old_nollstallning  | counter_sec_0<0>  | counter_sec_0<2>  | rco_100_1  | counter_sec_0<3>.LFBK
+INPUTMC | 6 | 3 | 15 | 2 | 6 | 2 | 2 | 2 | 1 | 2 | 11 | 3 | 12
+INPUTP | 1 | 87
+EQ | 10 | 
+   counter_sec_0<3>.T = nollstallning & !old_nollstallning & 
+	counter_sec_0<3>.LFBK
+	# counter_sec_0<0> & counter_sec_0<2> & 
+	!nollstallning & rco_100_1 & counter_sec_0<1>.LFBK
+	# counter_sec_0<0> & counter_sec_0<2> & rco_100_1 & 
+	old_nollstallning & counter_sec_0<1>.LFBK
+	# counter_sec_0<0> & !counter_sec_0<2> & rco_100_1 & 
+	!counter_sec_0<1>.LFBK & counter_sec_0<3>.LFBK;
+   counter_sec_0<3>.CLK = clk;	// GCK
+   counter_sec_0<3>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 14 | counter_sec_1<1>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 17 | 1 | 9 | 1 | 5 | 1 | 2 | 0 | 12 | 0 | 0 | 0 | 5 | 1 | 0 | 1 | 6 | 0 | 13 | 0 | 17 | 0 | 2 | 0 | 3 | 0 | 10 | 3 | 11 | 3 | 14 | 3 | 2 | 3 | 7
+INPUTS | 7 | counter_sec_1<1>.LFBK  | rco_sec_0.LFBK  | counter_sec_1<2>.LFBK  | nollstallning  | old_nollstallning  | counter_sec_1<3>.LFBK  | counter_sec_1<0>.LFBK
+INPUTMC | 6 | 3 | 14 | 3 | 8 | 3 | 11 | 2 | 6 | 3 | 2 | 3 | 3
+INPUTP | 1 | 87
+EQ | 9 | 
+   !counter_sec_1<1>.D = nollstallning & !old_nollstallning
+	# !counter_sec_1<0>.LFBK & !counter_sec_1<1>.LFBK
+	# !rco_sec_0.LFBK & !counter_sec_1<1>.LFBK
+	# counter_sec_1<0>.LFBK & rco_sec_0.LFBK & 
+	counter_sec_1<1>.LFBK
+	# counter_sec_1<2>.LFBK & !counter_sec_1<3>.LFBK & 
+	!counter_sec_1<1>.LFBK;
+   counter_sec_1<1>.CLK = clk;	// GCK
+   counter_sec_1<1>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 14 | counter_100_0<3>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 8 | 0 | 15 | 0 | 7 | 0 | 13 | 1 | 17 | 2 | 15 | 2 | 16 | 2 | 14 | 2 | 0
+INPUTS | 12 | old_nollstallning.LFBK  | nollstallning  | counter_100_0<0>.LFBK  | counter_100_0<1>.LFBK  | counter_100_0<2>.LFBK  | counter_100_1<0>.LFBK  | hundradelspuls  | hundradelspuls_gammal  | counter_100_1<1>.LFBK  | raknar.PIN  | rco_100_0  | counter_100_0<3>.LFBK
+INPUTMC | 9 | 2 | 6 | 2 | 17 | 2 | 16 | 2 | 9 | 2 | 8 | 1 | 11 | 2 | 15 | 1 | 17 | 2 | 14
+INPUTP | 3 | 87 | 50 | 67
+EXPORTS | 1 | 2 | 15
+EQ | 15 | 
+   counter_100_0<3>.T = nollstallning & !old_nollstallning.LFBK & 
+	counter_100_0<3>.LFBK
+	# !nollstallning & hundradelspuls & 
+	!hundradelspuls_gammal & counter_100_0<0>.LFBK & counter_100_0<1>.LFBK & 
+	counter_100_0<2>.LFBK & raknar.PIN
+	# hundradelspuls & !hundradelspuls_gammal & 
+	counter_100_0<0>.LFBK & old_nollstallning.LFBK & counter_100_0<1>.LFBK & 
+	counter_100_0<2>.LFBK & raknar.PIN
+	# hundradelspuls & !hundradelspuls_gammal & 
+	counter_100_0<0>.LFBK & !counter_100_0<1>.LFBK & !counter_100_0<2>.LFBK & 
+	counter_100_0<3>.LFBK & raknar.PIN;
+   counter_100_0<3>.CLK = clk;	// GCK
+   counter_100_0<3>.AR = reset;	// GSR
+    counter_100_0<3>.EXP  =  rco_100_0 & counter_100_1<0>.LFBK & 
+	counter_100_1<1>.LFBK
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 15 | counter_min_1<0>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 19 | 2 | 5 | 0 | 10 | 2 | 12 | 3 | 4 | 0 | 14 | 2 | 3 | 0 | 6 | 0 | 11 | 2 | 6 | 0 | 12 | 0 | 2 | 0 | 4 | 1 | 14 | 1 | 16 | 1 | 15 | 1 | 1 | 1 | 4 | 1 | 6 | 1 | 12
+INPUTS | 11 | counter_min_1<0>.LFBK  | visningslage_s.LFBK  | display<1>.PIN  | show<2>/show<2>_D2  | show<1>/show<1>_D2  | show<3>/show<3>_D2  | counter_min_0<0>  | counter_sec_0<0>  | $OpTx$FX_DC$65  | mux_counter<0>.EXP  | mux_counter<0>.LFBK
+INPUTMC | 10 | 1 | 15 | 1 | 10 | 3 | 17 | 0 | 17 | 0 | 15 | 3 | 6 | 2 | 2 | 0 | 0 | 1 | 16 | 1 | 16
+INPUTP | 1 | 46
+EXPORTS | 1 | 1 | 14
+IMPORTS | 1 | 1 | 16
+EQ | 21 | 
+   !counter_min_1<0>.D = ;Imported pterms FB2_17
+	  nollstallning & !old_nollstallning
+	# rco_min_0 & counter_min_1<0>.LFBK
+	# !rco_min_0 & !counter_min_1<0>.LFBK;
+   counter_min_1<0>.CLK = clk;	// GCK
+   counter_min_1<0>.AR = reset;	// GSR
+    counter_min_1<0>.EXP  =  !counter_min_0<0> & !show<2>/show<2>_D2 & 
+	!show<1>/show<1>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_min_0<0> & !show<3>/show<3>_D2 & 
+	show<1>/show<1>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+	# counter_sec_0<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & $OpTx$FX_DC$65 & !show<1>/show<1>_D2 & 
+	!mux_counter<0>.LFBK
+	# !show<2>/show<2>_D2 & !show<1>/show<1>_D2 & 
+	!counter_min_1<0>.LFBK & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+	# !show<3>/show<3>_D2 & show<1>/show<1>_D2 & 
+	!counter_min_1<0>.LFBK & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 10 | counter_min_1<1>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 15 | 1 | 8 | 2 | 12 | 3 | 4 | 1 | 6 | 1 | 7 | 1 | 1 | 0 | 9 | 0 | 10 | 0 | 1 | 0 | 14 | 0 | 11 | 0 | 17 | 0 | 2 | 0 | 4 | 0 | 12
+INPUTS | 11 | counter_min_1<0>  | display<1>.PIN  | display<0>.PIN  | counter_sec_1<2>  | counter_sec_1<1>  | visningslage_s  | counter_min_1<2>  | counter_100_1<1>  | counter_100_1<2>  | $OpTx$FX_SC$69.EXP  | counter_min_1<1>.LFBK
+INPUTMC | 9 | 1 | 15 | 3 | 11 | 3 | 14 | 1 | 10 | 2 | 12 | 2 | 15 | 2 | 7 | 0 | 11 | 0 | 10
+INPUTP | 2 | 46 | 10
+EXPORTS | 1 | 0 | 9
+IMPORTS | 1 | 0 | 11
+EQ | 18 | 
+   !counter_min_1<1>.D = !counter_min_1<0> & !counter_min_1<1>.LFBK
+;Imported pterms FB1_12
+	# nollstallning & !old_nollstallning
+	# !rco_min_0 & !counter_min_1<1>.LFBK
+	# counter_min_1<0> & rco_min_0 & 
+	counter_min_1<1>.LFBK
+	# counter_min_1<2> & !counter_min_1<3> & 
+	!counter_min_1<1>.LFBK;
+   counter_min_1<1>.CLK = clk;	// GCK
+   counter_min_1<1>.AR = reset;	// GSR
+    counter_min_1<1>.EXP  =  !counter_sec_1<2> & !counter_sec_1<1> & 
+	visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_sec_1<2> & !counter_sec_1<1> & 
+	!visningslage_s & display<1>.PIN & display<0>.PIN
+	# !counter_100_1<1> & !counter_100_1<2> & 
+	!visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_min_1<2> & visningslage_s & 
+	!counter_min_1<1>.LFBK & display<1>.PIN & display<0>.PIN
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 12 | counter_min_1<2>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 7 | 3 | 17 | 0 | 11 | 3 | 4 | 0 | 6 | 0 | 14 | 0 | 10 | 2 | 12
+INPUTS | 7 | old_nollstallning.LFBK  | nollstallning  | counter_min_1<0>  | counter_min_1<3>  | rco_min_0  | counter_min_1<1>  | counter_min_1<2>.LFBK
+INPUTMC | 6 | 2 | 6 | 1 | 15 | 3 | 4 | 3 | 9 | 0 | 10 | 2 | 12
+INPUTP | 1 | 87
+EQ | 10 | 
+   counter_min_1<2>.T = nollstallning & !old_nollstallning.LFBK & 
+	counter_min_1<2>.LFBK
+	# counter_min_1<0> & counter_min_1<1> & 
+	!nollstallning & rco_min_0
+	# counter_min_1<0> & counter_min_1<1> & rco_min_0 & 
+	old_nollstallning.LFBK
+	# counter_min_1<0> & !counter_min_1<3> & rco_min_0 & 
+	counter_min_1<2>.LFBK;
+   counter_min_1<2>.CLK = clk;	// GCK
+   counter_min_1<2>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 2 | counter_sec_1<3>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 8 | 0 | 16 | 0 | 8 | 0 | 12 | 0 | 9 | 3 | 11 | 3 | 14 | 3 | 2 | 3 | 7
+INPUTS | 7 | counter_sec_1<0>.LFBK  | nollstallning  | old_nollstallning  | counter_sec_1<2>.LFBK  | counter_sec_1<1>.LFBK  | rco_sec_0.LFBK  | counter_sec_1<3>.LFBK
+INPUTMC | 6 | 3 | 3 | 2 | 6 | 3 | 11 | 3 | 14 | 3 | 8 | 3 | 2
+INPUTP | 1 | 87
+EQ | 8 | 
+   counter_sec_1<3>.T = nollstallning & !old_nollstallning & 
+	counter_sec_1<3>.LFBK
+	# !nollstallning & counter_sec_1<0>.LFBK & 
+	rco_sec_0.LFBK & counter_sec_1<2>.LFBK & counter_sec_1<1>.LFBK
+	# old_nollstallning & counter_sec_1<0>.LFBK & 
+	rco_sec_0.LFBK & counter_sec_1<2>.LFBK & counter_sec_1<1>.LFBK;
+   counter_sec_1<3>.CLK = clk;	// GCK
+   counter_sec_1<3>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 4 | counter_min_1<3>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 6 | 0 | 15 | 2 | 12 | 0 | 11 | 0 | 6 | 0 | 12 | 3 | 4
+INPUTS | 7 | rco_min_0.LFBK  | nollstallning  | old_nollstallning  | counter_min_1<0>  | counter_min_1<1>  | counter_min_1<2>  | counter_min_1<3>.LFBK
+INPUTMC | 6 | 3 | 9 | 2 | 6 | 1 | 15 | 0 | 10 | 2 | 12 | 3 | 4
+INPUTP | 1 | 87
+EQ | 8 | 
+   counter_min_1<3>.T = nollstallning & !old_nollstallning & 
+	counter_min_1<3>.LFBK
+	# counter_min_1<0> & counter_min_1<1> & 
+	counter_min_1<2> & !nollstallning & rco_min_0.LFBK
+	# counter_min_1<0> & counter_min_1<1> & 
+	counter_min_1<2> & old_nollstallning & rco_min_0.LFBK;
+   counter_min_1<3>.CLK = clk;	// GCK
+   counter_min_1<3>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 0 | start_stopp_old
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 2 | 3 | 17 | 3 | 10
+INPUTS | 6 | start_stopp  | display<0>.PIN  | display<1>.PIN  | visningslage_s  | counter_sec_0<2>  | counter_sec_1<2>.LFBK
+INPUTMC | 3 | 1 | 10 | 2 | 1 | 3 | 11
+INPUTP | 3 | 29 | 10 | 46
+EXPORTS | 1 | 3 | 17
+EQ | 9 | 
+   start_stopp_old.D = start_stopp;
+   start_stopp_old.CLK = clk;	// GCK
+   start_stopp_old.AR = reset;	// GSR
+    start_stopp_old.EXP  =  counter_sec_0<2> & !visningslage_s & 
+	display<1>.PIN & !display<0>.PIN
+	# visningslage_s & counter_sec_1<2>.LFBK & 
+	!display<1>.PIN & display<0>.PIN
+	# !visningslage_s & counter_sec_1<2>.LFBK & 
+	display<1>.PIN & display<0>.PIN
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 10 | visningslage_s
+ATTRIBUTES | 8618752 | 0
+OUTPUTMC | 33 | 0 | 1 | 0 | 7 | 0 | 12 | 0 | 13 | 3 | 0 | 0 | 14 | 3 | 17 | 0 | 15 | 0 | 0 | 0 | 16 | 0 | 11 | 0 | 17 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 10 | 1 | 15 | 1 | 0 | 1 | 1 | 1 | 7 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 12 | 1 | 13
+INPUTS | 1 | visningslage
+INPUTP | 1 | 62
+EQ | 2 | 
+   visningslage_s.D = visningslage;
+   visningslage_s.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 17 | rco_100_0
+ATTRIBUTES | 4424448 | 0
+OUTPUTMC | 9 | 2 | 14 | 2 | 8 | 2 | 15 | 2 | 7 | 2 | 13 | 2 | 0 | 2 | 11 | 1 | 0 | 1 | 17
+INPUTS | 12 | reset  | counter_100_0<0>  | counter_100_0<1>  | counter_100_0<2>  | counter_100_0<3>  | hundradelspuls_gammal.LFBK  | old_nollstallning  | nollstallning  | hundradelspuls  | raknar.PIN  | muxfrekvens  | rco_100_0.LFBK
+INPUTMC | 7 | 2 | 17 | 2 | 16 | 2 | 9 | 2 | 14 | 1 | 11 | 2 | 6 | 1 | 17
+INPUTP | 5 | 91 | 87 | 50 | 67 | 12
+EXPORTS | 1 | 1 | 0
+EQ | 16 | 
+   rco_100_0.T = !reset & !counter_100_0<0> & !counter_100_0<1> & 
+	!counter_100_0<2> & !counter_100_0<3> & !nollstallning & 
+	rco_100_0.LFBK
+	# !reset & !counter_100_0<0> & !counter_100_0<1> & 
+	!counter_100_0<2> & !counter_100_0<3> & old_nollstallning & 
+	rco_100_0.LFBK
+	# !reset & counter_100_0<0> & !counter_100_0<1> & 
+	!counter_100_0<2> & counter_100_0<3> & !nollstallning & 
+	hundradelspuls & !rco_100_0.LFBK & !hundradelspuls_gammal.LFBK & 
+	raknar.PIN
+	# !reset & counter_100_0<0> & !counter_100_0<1> & 
+	!counter_100_0<2> & counter_100_0<3> & hundradelspuls & 
+	old_nollstallning & !rco_100_0.LFBK & !hundradelspuls_gammal.LFBK & 
+	raknar.PIN;
+   rco_100_0.CLK = clk;	// GCK
+    rco_100_0.EXP  =  muxfrekvens
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 11 | rco_100_1
+ATTRIBUTES | 4424448 | 0
+OUTPUTMC | 5 | 3 | 8 | 3 | 15 | 3 | 12 | 2 | 1 | 2 | 11
+INPUTS | 9 | reset  | counter_100_1<1>.LFBK  | counter_100_1<2>.LFBK  | counter_100_1<3>.LFBK  | rco_100_1.LFBK  | rco_100_0  | old_nollstallning.LFBK  | nollstallning  | counter_100_1<0>.LFBK
+INPUTMC | 7 | 2 | 15 | 2 | 7 | 2 | 13 | 2 | 11 | 1 | 17 | 2 | 6 | 2 | 8
+INPUTP | 2 | 91 | 87
+EQ | 13 | 
+   rco_100_1.T = !reset & !nollstallning & rco_100_0 & 
+	counter_100_1<0>.LFBK & !counter_100_1<1>.LFBK & !counter_100_1<2>.LFBK & 
+	counter_100_1<3>.LFBK & !rco_100_1.LFBK
+	# !reset & !nollstallning & !rco_100_0 & 
+	!counter_100_1<0>.LFBK & !counter_100_1<1>.LFBK & !counter_100_1<2>.LFBK & 
+	!counter_100_1<3>.LFBK & rco_100_1.LFBK
+	# !reset & rco_100_0 & old_nollstallning.LFBK & 
+	counter_100_1<0>.LFBK & !counter_100_1<1>.LFBK & !counter_100_1<2>.LFBK & 
+	counter_100_1<3>.LFBK & !rco_100_1.LFBK
+	# !reset & !rco_100_0 & old_nollstallning.LFBK & 
+	!counter_100_1<0>.LFBK & !counter_100_1<1>.LFBK & !counter_100_1<2>.LFBK & 
+	!counter_100_1<3>.LFBK & rco_100_1.LFBK;
+   rco_100_1.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 8 | rco_sec_0
+ATTRIBUTES | 4424448 | 0
+OUTPUTMC | 6 | 3 | 3 | 3 | 11 | 3 | 14 | 3 | 2 | 3 | 8 | 3 | 7
+INPUTS | 9 | reset  | counter_sec_0<0>  | counter_sec_0<3>.LFBK  | counter_sec_0<2>  | rco_sec_0.LFBK  | rco_100_1  | old_nollstallning  | nollstallning  | counter_sec_0<1>.LFBK
+INPUTMC | 7 | 2 | 2 | 3 | 12 | 2 | 1 | 3 | 8 | 2 | 11 | 2 | 6 | 3 | 15
+INPUTP | 2 | 91 | 87
+EQ | 13 | 
+   rco_sec_0.T = !reset & counter_sec_0<0> & !counter_sec_0<2> & 
+	!nollstallning & rco_100_1 & !rco_sec_0.LFBK & 
+	!counter_sec_0<1>.LFBK & counter_sec_0<3>.LFBK
+	# !reset & counter_sec_0<0> & !counter_sec_0<2> & 
+	rco_100_1 & old_nollstallning & !rco_sec_0.LFBK & 
+	!counter_sec_0<1>.LFBK & counter_sec_0<3>.LFBK
+	# !reset & !counter_sec_0<0> & !counter_sec_0<2> & 
+	!nollstallning & !rco_100_1 & rco_sec_0.LFBK & 
+	!counter_sec_0<1>.LFBK & !counter_sec_0<3>.LFBK
+	# !reset & !counter_sec_0<0> & !counter_sec_0<2> & 
+	!rco_100_1 & old_nollstallning & rco_sec_0.LFBK & 
+	!counter_sec_0<1>.LFBK & !counter_sec_0<3>.LFBK;
+   rco_sec_0.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 7 | rco_sec_1
+ATTRIBUTES | 4424448 | 0
+OUTPUTMC | 6 | 3 | 6 | 3 | 16 | 3 | 5 | 3 | 13 | 3 | 7 | 3 | 9
+INPUTS | 9 | reset  | counter_sec_1<2>.LFBK  | counter_sec_1<1>.LFBK  | counter_sec_1<3>.LFBK  | rco_sec_0.LFBK  | rco_sec_1.LFBK  | old_nollstallning  | nollstallning  | counter_sec_1<0>.LFBK
+INPUTMC | 7 | 3 | 11 | 3 | 14 | 3 | 2 | 3 | 8 | 3 | 7 | 2 | 6 | 3 | 3
+INPUTP | 2 | 91 | 87
+EQ | 13 | 
+   rco_sec_1.T = !reset & !nollstallning & rco_sec_1.LFBK & 
+	!counter_sec_1<0>.LFBK & !rco_sec_0.LFBK & !counter_sec_1<2>.LFBK & 
+	!counter_sec_1<3>.LFBK & !counter_sec_1<1>.LFBK
+	# !reset & !nollstallning & !rco_sec_1.LFBK & 
+	counter_sec_1<0>.LFBK & rco_sec_0.LFBK & counter_sec_1<2>.LFBK & 
+	!counter_sec_1<3>.LFBK & !counter_sec_1<1>.LFBK
+	# !reset & old_nollstallning & rco_sec_1.LFBK & 
+	!counter_sec_1<0>.LFBK & !rco_sec_0.LFBK & !counter_sec_1<2>.LFBK & 
+	!counter_sec_1<3>.LFBK & !counter_sec_1<1>.LFBK
+	# !reset & old_nollstallning & !rco_sec_1.LFBK & 
+	counter_sec_1<0>.LFBK & rco_sec_0.LFBK & counter_sec_1<2>.LFBK & 
+	!counter_sec_1<3>.LFBK & !counter_sec_1<1>.LFBK;
+   rco_sec_1.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 9 | rco_min_0
+ATTRIBUTES | 4424448 | 0
+OUTPUTMC | 5 | 0 | 11 | 1 | 16 | 2 | 12 | 3 | 4 | 3 | 9
+INPUTS | 9 | reset  | counter_min_0<1>.LFBK  | counter_min_0<2>.LFBK  | counter_min_0<3>.LFBK  | rco_sec_1.LFBK  | rco_min_0.LFBK  | old_nollstallning  | nollstallning  | counter_min_0<0>.LFBK
+INPUTMC | 7 | 3 | 16 | 3 | 5 | 3 | 13 | 3 | 7 | 3 | 9 | 2 | 6 | 3 | 6
+INPUTP | 2 | 91 | 87
+EQ | 13 | 
+   rco_min_0.T = !reset & !nollstallning & counter_min_0<0>.LFBK & 
+	rco_sec_1.LFBK & !counter_min_0<1>.LFBK & !counter_min_0<2>.LFBK & 
+	counter_min_0<3>.LFBK & !rco_min_0.LFBK
+	# !reset & !nollstallning & !counter_min_0<0>.LFBK & 
+	!rco_sec_1.LFBK & !counter_min_0<1>.LFBK & !counter_min_0<2>.LFBK & 
+	!counter_min_0<3>.LFBK & rco_min_0.LFBK
+	# !reset & old_nollstallning & 
+	counter_min_0<0>.LFBK & rco_sec_1.LFBK & !counter_min_0<1>.LFBK & 
+	!counter_min_0<2>.LFBK & counter_min_0<3>.LFBK & !rco_min_0.LFBK
+	# !reset & old_nollstallning & 
+	!counter_min_0<0>.LFBK & !rco_sec_1.LFBK & !counter_min_0<1>.LFBK & 
+	!counter_min_0<2>.LFBK & !counter_min_0<3>.LFBK & rco_min_0.LFBK;
+   rco_min_0.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 0 | muxfrekvens_old
+ATTRIBUTES | 8618752 | 0
+OUTPUTMC | 4 | 2 | 10 | 2 | 0 | 1 | 1 | 1 | 16
+INPUTS | 10 | visningslage_s.LFBK  | counter_100_1<0>  | counter_100_1<1>  | display<1>.PIN  | show<2>/show<2>_D2  | counter_sec_1<1>  | counter_100_0<0>  | counter_100_0<1>  | rco_100_0.EXP  | mux_counter<0>.LFBK
+INPUTMC | 9 | 1 | 10 | 2 | 8 | 2 | 15 | 3 | 17 | 3 | 14 | 2 | 17 | 2 | 16 | 1 | 17 | 1 | 16
+INPUTP | 1 | 46
+EXPORTS | 1 | 1 | 1
+IMPORTS | 1 | 1 | 17
+EQ | 13 | 
+   muxfrekvens_old.D = ;Imported pterms FB2_18
+	  muxfrekvens;
+   muxfrekvens_old.CLK = clk;	// GCK
+    muxfrekvens_old.EXP  =  counter_100_0<0> & counter_100_0<1> & 
+	!mux_counter<0>.LFBK & !visningslage_s.LFBK & !display<1>.PIN
+	# counter_100_1<0> & counter_100_1<1> & 
+	mux_counter<0>.LFBK & !visningslage_s.LFBK & !display<1>.PIN
+	# counter_100_0<1> & !show<2>/show<2>_D2 & 
+	!mux_counter<0>.LFBK & !visningslage_s.LFBK & !display<1>.PIN
+	# counter_100_1<1> & !show<2>/show<2>_D2 & 
+	mux_counter<0>.LFBK & !visningslage_s.LFBK & !display<1>.PIN
+	# counter_sec_1<1> & !show<2>/show<2>_D2 & 
+	mux_counter<0>.LFBK & visningslage_s.LFBK & !display<1>.PIN
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 11 | hundradelspuls_gammal
+ATTRIBUTES | 8618752 | 0
+OUTPUTMC | 6 | 2 | 17 | 2 | 16 | 2 | 9 | 2 | 14 | 2 | 15 | 1 | 17
+INPUTS | 1 | hundradelspuls
+INPUTP | 1 | 50
+EQ | 2 | 
+   hundradelspuls_gammal.D = hundradelspuls;
+   hundradelspuls_gammal.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 0 | muxfrekvens_older
+ATTRIBUTES | 8618752 | 0
+OUTPUTMC | 3 | 1 | 16 | 2 | 17 | 2 | 10
+INPUTS | 6 | muxfrekvens_old  | counter_100_0<1>.LFBK  | counter_100_0<2>.LFBK  | counter_100_0<3>.LFBK  | rco_100_0  | counter_100_0<0>.LFBK
+INPUTMC | 6 | 1 | 0 | 2 | 16 | 2 | 9 | 2 | 14 | 1 | 17 | 2 | 17
+EXPORTS | 1 | 2 | 17
+EQ | 4 | 
+   muxfrekvens_older.D = muxfrekvens_old;
+   muxfrekvens_older.CLK = clk;	// GCK
+    muxfrekvens_older.EXP  =  rco_100_0 & !counter_100_0<0>.LFBK & 
+	!counter_100_0<1>.LFBK & !counter_100_0<2>.LFBK & !counter_100_0<3>.LFBK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 2 | 6 | old_nollstallning
+ATTRIBUTES | 8618752 | 0
+OUTPUTMC | 30 | 1 | 16 | 3 | 7 | 3 | 6 | 3 | 8 | 3 | 3 | 3 | 11 | 3 | 14 | 1 | 17 | 3 | 4 | 3 | 2 | 0 | 11 | 3 | 16 | 3 | 5 | 3 | 13 | 3 | 15 | 3 | 9 | 3 | 12 | 2 | 5 | 2 | 17 | 2 | 8 | 2 | 2 | 2 | 16 | 2 | 9 | 2 | 15 | 2 | 7 | 2 | 13 | 2 | 1 | 2 | 14 | 2 | 12 | 2 | 11
+INPUTS | 9 | nollstallning  | display<0>.PIN  | counter_sec_1<0>  | counter_min_1<0>  | show<2>/show<2>_D2  | show<1>/show<1>_D2  | $OpTx$FX_SC$69  | $OpTx$FX_SC$70  | counter_100_1<0>.LFBK
+INPUTMC | 7 | 3 | 3 | 1 | 15 | 3 | 17 | 0 | 17 | 0 | 11 | 0 | 16 | 2 | 8
+INPUTP | 2 | 87 | 10
+EXPORTS | 1 | 2 | 5
+EQ | 14 | 
+   old_nollstallning.D = nollstallning;
+   old_nollstallning.CLK = clk;	// GCK
+    old_nollstallning.EXP  =  counter_sec_1<0> & counter_min_1<0> & 
+	show<2>/show<2>_D2 & !$OpTx$FX_SC$70 & !show<1>/show<1>_D2 & 
+	display<0>.PIN
+	# counter_sec_1<0> & counter_min_1<0> & 
+	show<2>/show<2>_D2 & !show<1>/show<1>_D2 & counter_100_1<0>.LFBK & 
+	display<0>.PIN
+	# counter_sec_1<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_SC$70 & !$OpTx$FX_SC$69 & !show<1>/show<1>_D2 & 
+	display<0>.PIN
+	# counter_sec_1<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_SC$69 & !show<1>/show<1>_D2 & counter_100_1<0>.LFBK & 
+	display<0>.PIN
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 1 | digit_0_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 10 | show<2>/show<2>_D2  | counter_min_1<1>.LFBK  | display<0>.PIN  | display<1>.PIN  | visningslage_s  | counter_min_0<1>  | counter_100_1<1>  | counter_100_0<1>  | EXP0_.EXP  | show<3>/show<3>_D2.LFBK
+INPUTMC | 8 | 3 | 17 | 0 | 10 | 1 | 10 | 3 | 16 | 2 | 15 | 2 | 16 | 0 | 2 | 0 | 15
+INPUTP | 2 | 10 | 46
+IMPORTS | 1 | 0 | 2
+EQ | 69 | 
+   !digit<0> = show<2>/show<2>_D2 & show<3>/show<3>_D2.LFBK
+	# counter_100_0<1> & !visningslage_s & 
+	show<3>/show<3>_D2.LFBK & !display<1>.PIN & !display<0>.PIN
+	# counter_100_1<1> & !visningslage_s & 
+	show<3>/show<3>_D2.LFBK & !display<1>.PIN & display<0>.PIN
+	# counter_min_0<1> & visningslage_s & 
+	show<3>/show<3>_D2.LFBK & display<1>.PIN & !display<0>.PIN
+	# visningslage_s & counter_min_1<1>.LFBK & 
+	show<3>/show<3>_D2.LFBK & display<1>.PIN & display<0>.PIN
+;Imported pterms FB1_3
+	# counter_sec_0<1> & visningslage_s & 
+	show<3>/show<3>_D2.LFBK & !display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<1> & !visningslage_s & 
+	show<3>/show<3>_D2.LFBK & display<1>.PIN & !display<0>.PIN
+	# counter_sec_1<1> & visningslage_s & 
+	show<3>/show<3>_D2.LFBK & !display<1>.PIN & display<0>.PIN
+	# counter_sec_1<1> & !visningslage_s & 
+	show<3>/show<3>_D2.LFBK & display<1>.PIN & display<0>.PIN
+	# !counter_min_1<0> & visningslage_s & 
+	show<2>/show<2>_D2 & !counter_min_1<1>.LFBK & display<1>.PIN & 
+	display<0>.PIN
+;Imported pterms FB1_4
+	# !counter_100_0<0> & !counter_100_0<1> & 
+	!visningslage_s & show<2>/show<2>_D2 & !display<1>.PIN & 
+	!display<0>.PIN
+	# !counter_100_1<0> & !counter_100_1<1> & 
+	!visningslage_s & show<2>/show<2>_D2 & !display<1>.PIN & 
+	display<0>.PIN
+	# !counter_min_0<0> & !counter_min_0<1> & 
+	visningslage_s & show<2>/show<2>_D2 & display<1>.PIN & 
+	!display<0>.PIN
+	# !counter_sec_1<0> & !counter_sec_1<1> & 
+	visningslage_s & show<2>/show<2>_D2 & !display<1>.PIN & 
+	display<0>.PIN
+	# !counter_sec_1<0> & !counter_sec_1<1> & 
+	!visningslage_s & show<2>/show<2>_D2 & display<1>.PIN & 
+	display<0>.PIN
+;Imported pterms FB1_5
+	# !counter_sec_0<0> & !counter_sec_0<1> & 
+	visningslage_s & show<2>/show<2>_D2 & !display<1>.PIN & 
+	!display<0>.PIN
+	# !counter_sec_0<0> & !counter_sec_0<1> & 
+	!visningslage_s & show<2>/show<2>_D2 & display<1>.PIN & 
+	!display<0>.PIN
+	# counter_100_1<0> & !counter_100_1<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_min_0<0> & !counter_min_0<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_min_1<0> & visningslage_s & 
+	!show<2>/show<2>_D2 & !counter_min_1<1>.LFBK & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & display<0>.PIN
+;Imported pterms FB1_6
+	# counter_100_0<0> & !counter_100_0<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<0> & !counter_sec_0<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<0> & !counter_sec_0<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & display<0>.PIN;
+
+MACROCELL | 2 | 4 | digit_1_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 11 | show<3>/show<3>_D2  | show<1>/show<1>_D2  | show<2>/show<2>_D2  | $OpTx$FX_DC$65  | $OpTx$FX_SC$70  | $OpTx$FX_SC$69  | counter_100_1<0>.LFBK  | display<0>.PIN  | EXP18_.EXP  | EXP19_.EXP  | counter_100_0<0>.LFBK
+INPUTMC | 10 | 0 | 15 | 0 | 17 | 3 | 17 | 0 | 0 | 0 | 16 | 0 | 11 | 2 | 8 | 2 | 3 | 2 | 5 | 2 | 17
+INPUTP | 1 | 10
+IMPORTS | 2 | 2 | 3 | 2 | 5
+EQ | 62 | 
+   !digit<1> = show<2>/show<2>_D2 & show<3>/show<3>_D2
+	# show<3>/show<3>_D2 & show<1>/show<1>_D2
+	# show<2>/show<2>_D2 & !$OpTx$FX_DC$65 & 
+	!$OpTx$FX_SC$70 & !$OpTx$FX_SC$69 & !show<1>/show<1>_D2
+	# show<2>/show<2>_D2 & $OpTx$FX_SC$70 & 
+	show<1>/show<1>_D2 & !counter_100_0<0>.LFBK & !display<0>.PIN
+	# show<2>/show<2>_D2 & $OpTx$FX_SC$70 & 
+	show<1>/show<1>_D2 & !counter_100_1<0>.LFBK & display<0>.PIN
+;Imported pterms FB3_4
+	# !counter_min_0<0> & show<2>/show<2>_D2 & 
+	$OpTx$FX_SC$69 & show<1>/show<1>_D2 & !display<0>.PIN
+	# !counter_sec_1<0> & show<2>/show<2>_D2 & 
+	$OpTx$FX_DC$65 & show<1>/show<1>_D2 & display<0>.PIN
+	# !counter_min_1<0> & show<2>/show<2>_D2 & 
+	$OpTx$FX_SC$69 & show<1>/show<1>_D2 & display<0>.PIN
+	# show<2>/show<2>_D2 & $OpTx$FX_DC$65 & 
+	show<1>/show<1>_D2 & !counter_sec_0<0>.LFBK & !display<0>.PIN
+	# show<2>/show<2>_D2 & !$OpTx$FX_DC$65 & 
+	!$OpTx$FX_SC$69 & !show<1>/show<1>_D2 & counter_100_0<0>.LFBK & 
+	!display<0>.PIN
+;Imported pterms FB3_3
+	# counter_min_0<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_SC$70 & !show<1>/show<1>_D2 & counter_sec_0<0>.LFBK & 
+	!display<0>.PIN
+	# counter_min_0<0> & show<2>/show<2>_D2 & 
+	!show<1>/show<1>_D2 & counter_100_0<0>.LFBK & counter_sec_0<0>.LFBK & 
+	!display<0>.PIN
+	# show<2>/show<2>_D2 & !$OpTx$FX_SC$70 & 
+	!$OpTx$FX_SC$69 & !show<1>/show<1>_D2 & counter_sec_0<0>.LFBK & 
+	!display<0>.PIN
+	# show<2>/show<2>_D2 & !$OpTx$FX_SC$69 & 
+	!show<1>/show<1>_D2 & counter_100_0<0>.LFBK & counter_sec_0<0>.LFBK & 
+	!display<0>.PIN
+;Imported pterms FB3_6
+	# counter_min_0<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_DC$65 & !$OpTx$FX_SC$70 & !show<1>/show<1>_D2 & 
+	!display<0>.PIN
+	# counter_min_0<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_DC$65 & !show<1>/show<1>_D2 & counter_100_0<0>.LFBK & 
+	!display<0>.PIN
+	# counter_min_1<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_DC$65 & !$OpTx$FX_SC$70 & !show<1>/show<1>_D2 & 
+	display<0>.PIN
+	# counter_min_1<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_DC$65 & !show<1>/show<1>_D2 & counter_100_1<0>.LFBK & 
+	display<0>.PIN
+	# show<2>/show<2>_D2 & !$OpTx$FX_DC$65 & 
+	!$OpTx$FX_SC$69 & !show<1>/show<1>_D2 & counter_100_1<0>.LFBK & 
+	display<0>.PIN
+;Imported pterms FB3_7
+	# counter_sec_1<0> & counter_min_1<0> & 
+	show<2>/show<2>_D2 & !$OpTx$FX_SC$70 & !show<1>/show<1>_D2 & 
+	display<0>.PIN
+	# counter_sec_1<0> & counter_min_1<0> & 
+	show<2>/show<2>_D2 & !show<1>/show<1>_D2 & counter_100_1<0>.LFBK & 
+	display<0>.PIN
+	# counter_sec_1<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_SC$70 & !$OpTx$FX_SC$69 & !show<1>/show<1>_D2 & 
+	display<0>.PIN
+	# counter_sec_1<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_SC$69 & !show<1>/show<1>_D2 & counter_100_1<0>.LFBK & 
+	display<0>.PIN;
+
+MACROCELL | 0 | 7 | digit_2_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 13 | display<0>.PIN  | counter_min_0<0>  | counter_min_0<3>  | visningslage_s  | counter_min_0<2>  | counter_100_0<0>  | counter_100_0<3>  | counter_100_0<2>  | counter_sec_0<0>  | counter_sec_0<3>  | EXP4_.EXP  | EXP5_.EXP  | display<1>.PIN
+INPUTMC | 11 | 3 | 6 | 3 | 13 | 1 | 10 | 3 | 5 | 2 | 17 | 2 | 14 | 2 | 9 | 2 | 2 | 3 | 12 | 0 | 6 | 0 | 8
+INPUTP | 2 | 10 | 46
+IMPORTS | 2 | 0 | 6 | 0 | 8
+EQ | 52 | 
+   digit<2> = counter_100_0<0> & !counter_100_0<3> & 
+	!visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# counter_min_0<0> & !counter_min_0<3> & 
+	visningslage_s & display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<0> & !counter_sec_0<3> & 
+	visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# counter_100_0<2> & !counter_100_0<3> & 
+	!visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# counter_min_0<2> & !counter_min_0<3> & 
+	visningslage_s & display<1>.PIN & !display<0>.PIN
+;Imported pterms FB1_7
+	# counter_sec_0<0> & !counter_sec_0<3> & 
+	!visningslage_s & display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<2> & !counter_sec_0<3> & 
+	visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<2> & !counter_sec_0<3> & 
+	!visningslage_s & display<1>.PIN & !display<0>.PIN
+	# counter_min_1<0> & !counter_min_1<3> & 
+	visningslage_s & display<1>.PIN & display<0>.PIN
+	# counter_min_1<2> & !counter_min_1<3> & 
+	visningslage_s & display<1>.PIN & display<0>.PIN
+;Imported pterms FB1_9
+	# counter_100_1<0> & !counter_100_1<3> & 
+	!visningslage_s & !display<1>.PIN & display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<3> & 
+	visningslage_s & !display<1>.PIN & display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<3> & 
+	!visningslage_s & display<1>.PIN & display<0>.PIN
+	# counter_sec_1<2> & !counter_sec_1<3> & 
+	visningslage_s & !display<1>.PIN & display<0>.PIN
+	# counter_100_1<2> & !counter_100_1<3> & 
+	!visningslage_s & !display<1>.PIN & display<0>.PIN
+;Imported pterms FB1_10
+	# counter_sec_1<2> & !counter_sec_1<3> & 
+	!visningslage_s & display<1>.PIN & display<0>.PIN
+	# !counter_100_0<1> & !counter_100_0<2> & 
+	!visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# !counter_min_0<1> & !counter_min_0<2> & 
+	visningslage_s & display<1>.PIN & !display<0>.PIN
+	# !counter_sec_0<1> & !counter_sec_0<2> & 
+	visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# !counter_sec_0<1> & !counter_sec_0<2> & 
+	!visningslage_s & display<1>.PIN & !display<0>.PIN
+;Imported pterms FB1_11
+	# !counter_sec_1<2> & !counter_sec_1<1> & 
+	visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_sec_1<2> & !counter_sec_1<1> & 
+	!visningslage_s & display<1>.PIN & display<0>.PIN
+	# !counter_100_1<1> & !counter_100_1<2> & 
+	!visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_min_1<2> & visningslage_s & 
+	!counter_min_1<1>.LFBK & display<1>.PIN & display<0>.PIN;
+
+MACROCELL | 1 | 14 | digit_3_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 9 | show<2>/show<2>_D2  | show<3>/show<3>_D2  | show<1>/show<1>_D2  | counter_sec_0<0>  | $OpTx$FX_DC$65  | counter_sec_1<0>  | EXP17_.EXP  | counter_min_1<0>.EXP  | mux_counter<0>.LFBK
+INPUTMC | 9 | 3 | 17 | 0 | 15 | 0 | 17 | 2 | 2 | 0 | 0 | 3 | 3 | 1 | 13 | 1 | 15 | 1 | 16
+IMPORTS | 2 | 1 | 13 | 1 | 15
+EQ | 57 | 
+   digit<3> = !show<2>/show<2>_D2 & show<3>/show<3>_D2 & 
+	!show<1>/show<1>_D2
+	# !show<2>/show<2>_D2 & !show<3>/show<3>_D2 & 
+	show<1>/show<1>_D2
+	# !counter_sec_0<0> & !show<2>/show<2>_D2 & 
+	$OpTx$FX_DC$65 & !show<1>/show<1>_D2 & !mux_counter<0>.LFBK
+	# !counter_sec_0<0> & !show<3>/show<3>_D2 & 
+	$OpTx$FX_DC$65 & show<1>/show<1>_D2 & !mux_counter<0>.LFBK
+	# !counter_sec_1<0> & !show<3>/show<3>_D2 & 
+	$OpTx$FX_DC$65 & show<1>/show<1>_D2 & mux_counter<0>.LFBK
+;Imported pterms FB2_14
+	# !counter_sec_1<0> & !show<2>/show<2>_D2 & 
+	$OpTx$FX_DC$65 & !show<1>/show<1>_D2 & mux_counter<0>.LFBK
+	# !counter_100_0<0> & !show<2>/show<2>_D2 & 
+	!show<1>/show<1>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_100_0<0> & !show<3>/show<3>_D2 & 
+	show<1>/show<1>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_100_1<0> & !show<2>/show<2>_D2 & 
+	!show<1>/show<1>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_100_1<0> & !show<3>/show<3>_D2 & 
+	show<1>/show<1>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+;Imported pterms FB2_13
+	# counter_sec_1<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & $OpTx$FX_DC$65 & !show<1>/show<1>_D2 & 
+	mux_counter<0>.LFBK
+	# counter_100_0<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !show<1>/show<1>_D2 & !mux_counter<0>.LFBK & 
+	!visningslage_s.LFBK & !display<1>.PIN
+	# counter_100_1<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !show<1>/show<1>_D2 & mux_counter<0>.LFBK & 
+	!visningslage_s.LFBK & !display<1>.PIN
+	# counter_min_0<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !show<1>/show<1>_D2 & !mux_counter<0>.LFBK & 
+	visningslage_s.LFBK & display<1>.PIN
+	# show<2>/show<2>_D2 & !show<3>/show<3>_D2 & 
+	!show<1>/show<1>_D2 & counter_min_1<0>.LFBK & mux_counter<0>.LFBK & 
+	visningslage_s.LFBK & display<1>.PIN
+;Imported pterms FB2_16
+	# !counter_min_0<0> & !show<2>/show<2>_D2 & 
+	!show<1>/show<1>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_min_0<0> & !show<3>/show<3>_D2 & 
+	show<1>/show<1>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+	# counter_sec_0<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & $OpTx$FX_DC$65 & !show<1>/show<1>_D2 & 
+	!mux_counter<0>.LFBK
+	# !show<2>/show<2>_D2 & !show<1>/show<1>_D2 & 
+	!counter_min_1<0>.LFBK & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+	# !show<3>/show<3>_D2 & show<1>/show<1>_D2 & 
+	!counter_min_1<0>.LFBK & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN;
+
+MACROCELL | 1 | 1 | digit_5_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 11 | show<2>/show<2>_D2  | show<3>/show<3>_D2  | visningslage_s.LFBK  | counter_min_1<1>  | counter_min_1<0>.LFBK  | display<1>.PIN  | counter_min_0<1>  | counter_min_0<0>  | muxfrekvens_old.EXP  | EXP9_.EXP  | mux_counter<0>.LFBK
+INPUTMC | 10 | 3 | 17 | 0 | 15 | 1 | 10 | 0 | 10 | 1 | 15 | 3 | 16 | 3 | 6 | 1 | 0 | 1 | 2 | 1 | 16
+INPUTP | 1 | 46
+IMPORTS | 2 | 1 | 0 | 1 | 2
+EQ | 61 | 
+   !digit<5> = show<2>/show<2>_D2 & show<3>/show<3>_D2
+	# counter_min_0<0> & counter_min_0<1> & 
+	!mux_counter<0>.LFBK & visningslage_s.LFBK & display<1>.PIN
+	# counter_min_0<1> & !show<2>/show<2>_D2 & 
+	!mux_counter<0>.LFBK & visningslage_s.LFBK & display<1>.PIN
+	# counter_min_1<1> & !show<2>/show<2>_D2 & 
+	mux_counter<0>.LFBK & visningslage_s.LFBK & display<1>.PIN
+	# counter_min_1<1> & counter_min_1<0>.LFBK & 
+	mux_counter<0>.LFBK & visningslage_s.LFBK & display<1>.PIN
+;Imported pterms FB2_1
+	# counter_100_0<0> & counter_100_0<1> & 
+	!mux_counter<0>.LFBK & !visningslage_s.LFBK & !display<1>.PIN
+	# counter_100_1<0> & counter_100_1<1> & 
+	mux_counter<0>.LFBK & !visningslage_s.LFBK & !display<1>.PIN
+	# counter_100_0<1> & !show<2>/show<2>_D2 & 
+	!mux_counter<0>.LFBK & !visningslage_s.LFBK & !display<1>.PIN
+	# counter_100_1<1> & !show<2>/show<2>_D2 & 
+	mux_counter<0>.LFBK & !visningslage_s.LFBK & !display<1>.PIN
+	# counter_sec_1<1> & !show<2>/show<2>_D2 & 
+	mux_counter<0>.LFBK & visningslage_s.LFBK & !display<1>.PIN
+;Imported pterms FB2_3
+	# counter_sec_1<0> & counter_sec_1<1> & 
+	mux_counter<0>.LFBK & visningslage_s.LFBK & !display<1>.PIN
+	# counter_sec_1<0> & counter_sec_1<1> & 
+	mux_counter<0>.LFBK & !visningslage_s.LFBK & display<1>.PIN
+	# counter_sec_0<1> & !show<2>/show<2>_D2 & 
+	!mux_counter<0>.LFBK & visningslage_s.LFBK & !display<1>.PIN
+	# counter_sec_0<1> & !show<2>/show<2>_D2 & 
+	!mux_counter<0>.LFBK & !visningslage_s.LFBK & display<1>.PIN
+	# counter_sec_1<1> & !show<2>/show<2>_D2 & 
+	mux_counter<0>.LFBK & !visningslage_s.LFBK & display<1>.PIN
+;Imported pterms FB2_4
+	# counter_sec_0<0> & counter_sec_0<1> & 
+	!mux_counter<0>.LFBK & visningslage_s.LFBK & !display<1>.PIN
+	# counter_sec_0<0> & counter_sec_0<1> & 
+	!mux_counter<0>.LFBK & !visningslage_s.LFBK & display<1>.PIN
+	# counter_100_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_100_1<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_min_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+;Imported pterms FB2_5
+	# counter_sec_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# counter_sec_1<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_1<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# !show<2>/show<2>_D2 & !show<3>/show<3>_D2 & 
+	counter_min_1<0>.LFBK & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN;
+
+MACROCELL | 1 | 7 | digit_6_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 11 | show<2>/show<2>_D2  | show<3>/show<3>_D2  | visningslage_s.LFBK  | counter_min_1<1>  | display<1>.PIN  | counter_min_0<1>  | counter_100_1<1>  | counter_100_0<1>  | EXP13_.EXP  | EXP14_.EXP  | mux_counter<0>.LFBK
+INPUTMC | 10 | 3 | 17 | 0 | 15 | 1 | 10 | 0 | 10 | 3 | 16 | 2 | 15 | 2 | 16 | 1 | 6 | 1 | 8 | 1 | 16
+INPUTP | 1 | 46
+IMPORTS | 2 | 1 | 6 | 1 | 8
+EQ | 69 | 
+   !digit<6> = show<2>/show<2>_D2 & show<3>/show<3>_D2
+	# counter_100_0<1> & show<3>/show<3>_D2 & 
+	!mux_counter<0>.LFBK & !visningslage_s.LFBK & !display<1>.PIN
+	# counter_100_1<1> & show<3>/show<3>_D2 & 
+	mux_counter<0>.LFBK & !visningslage_s.LFBK & !display<1>.PIN
+	# counter_min_0<1> & show<3>/show<3>_D2 & 
+	!mux_counter<0>.LFBK & visningslage_s.LFBK & display<1>.PIN
+	# counter_min_1<1> & show<3>/show<3>_D2 & 
+	mux_counter<0>.LFBK & visningslage_s.LFBK & display<1>.PIN
+;Imported pterms FB2_7
+	# counter_sec_0<1> & show<3>/show<3>_D2 & 
+	!mux_counter<0>.LFBK & visningslage_s.LFBK & !display<1>.PIN
+	# counter_sec_0<1> & show<3>/show<3>_D2 & 
+	!mux_counter<0>.LFBK & !visningslage_s.LFBK & display<1>.PIN
+	# counter_sec_1<1> & show<3>/show<3>_D2 & 
+	mux_counter<0>.LFBK & visningslage_s.LFBK & !display<1>.PIN
+	# counter_sec_1<1> & show<3>/show<3>_D2 & 
+	mux_counter<0>.LFBK & !visningslage_s.LFBK & display<1>.PIN
+	# counter_min_1<1> & show<2>/show<2>_D2 & 
+	counter_min_1<0>.LFBK & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+;Imported pterms FB2_6
+	# counter_100_0<0> & counter_100_0<1> & 
+	show<2>/show<2>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_1<0> & counter_sec_1<1> & 
+	show<2>/show<2>_D2 & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_1<0> & counter_sec_1<1> & 
+	show<2>/show<2>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_100_0<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_sec_1<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+;Imported pterms FB2_9
+	# counter_100_1<0> & counter_100_1<1> & 
+	show<2>/show<2>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_min_0<0> & counter_min_0<1> & 
+	show<2>/show<2>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_100_1<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_min_0<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_min_1<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+;Imported pterms FB2_10
+	# counter_sec_0<0> & counter_sec_0<1> & 
+	show<2>/show<2>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_0<0> & counter_sec_0<1> & 
+	show<2>/show<2>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_sec_0<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_sec_0<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_sec_1<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN;
+
+MACROCELL | 0 | 14 | digit_4_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 17 | display<0>.PIN  | counter_min_0<0>  | counter_min_0<1>  | counter_min_0<2>  | visningslage_s  | counter_100_0<0>  | counter_100_0<1>  | counter_100_0<2>  | counter_sec_0<0>  | counter_sec_0<1>  | counter_sec_0<2>  | counter_min_1<0>  | display<1>.PIN  | counter_min_1<2>  | EXP8_.EXP  | show<3>/show<3>_D2.EXP  | counter_min_1<1>.LFBK
+INPUTMC | 15 | 3 | 6 | 3 | 16 | 3 | 5 | 1 | 10 | 2 | 17 | 2 | 16 | 2 | 9 | 2 | 2 | 3 | 15 | 2 | 1 | 1 | 15 | 2 | 12 | 0 | 13 | 0 | 15 | 0 | 10
+INPUTP | 2 | 10 | 46
+IMPORTS | 2 | 0 | 13 | 0 | 15
+EQ | 37 | 
+   digit<4> = !counter_100_0<0> & !counter_100_0<1> & 
+	!counter_100_0<2> & !visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# !counter_min_0<0> & !counter_min_0<1> & 
+	!counter_min_0<2> & visningslage_s & display<1>.PIN & !display<0>.PIN
+	# !counter_sec_0<0> & !counter_sec_0<1> & 
+	!counter_sec_0<2> & visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# !counter_sec_0<0> & !counter_sec_0<1> & 
+	!counter_sec_0<2> & !visningslage_s & display<1>.PIN & !display<0>.PIN
+	# !counter_min_1<0> & !counter_min_1<2> & 
+	visningslage_s & !counter_min_1<1>.LFBK & display<1>.PIN & 
+	display<0>.PIN
+;Imported pterms FB1_14
+	# !counter_100_0<0> & counter_100_0<1> & 
+	!counter_100_0<3> & !visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# !counter_100_1<0> & !counter_100_1<1> & 
+	!counter_100_1<2> & !visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_min_0<0> & counter_min_0<1> & 
+	!counter_min_0<3> & visningslage_s & display<1>.PIN & !display<0>.PIN
+	# !counter_sec_1<0> & !counter_sec_1<2> & 
+	!counter_sec_1<1> & visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_sec_1<0> & !counter_sec_1<2> & 
+	!counter_sec_1<1> & !visningslage_s & display<1>.PIN & display<0>.PIN
+;Imported pterms FB1_13
+	# !counter_100_1<0> & counter_100_1<1> & 
+	!counter_100_1<3> & !visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_sec_0<0> & counter_sec_0<1> & 
+	!counter_sec_0<3> & !visningslage_s & display<1>.PIN & !display<0>.PIN
+	# !counter_sec_1<0> & counter_sec_1<1> & 
+	!counter_sec_1<3> & visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_sec_1<0> & counter_sec_1<1> & 
+	!counter_sec_1<3> & !visningslage_s & display<1>.PIN & display<0>.PIN
+	# !counter_min_1<0> & !counter_min_1<3> & 
+	visningslage_s & counter_min_1<1>.LFBK & display<1>.PIN & 
+	display<0>.PIN
+;Imported pterms FB1_16
+	# !counter_sec_0<0> & counter_sec_0<1> & 
+	!counter_sec_0<3> & visningslage_s & !display<1>.PIN & !display<0>.PIN;
+
+MACROCELL | 3 | 1 | N0
+ATTRIBUTES | 396034 | 0
+INPUTS | 0
+EQ | 1 | 
+   digit<7> = Gnd;
+
+MACROCELL | 3 | 17 | show<2>/show<2>_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 24 | 0 | 1 | 2 | 4 | 1 | 14 | 1 | 1 | 1 | 7 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 12 | 1 | 13 | 1 | 15 | 2 | 2 | 2 | 3 | 2 | 5 | 2 | 6
+INPUTS | 9 | display<0>.PIN  | display<1>.PIN  | visningslage_s  | counter_min_1<2>  | counter_100_0<2>  | counter_100_1<2>  | counter_sec_0<2>  | start_stopp_old.EXP  | counter_min_0<2>.LFBK
+INPUTMC | 7 | 1 | 10 | 2 | 12 | 2 | 9 | 2 | 7 | 2 | 1 | 3 | 0 | 3 | 5
+INPUTP | 2 | 10 | 46
+IMPORTS | 1 | 3 | 0
+EQ | 17 | 
+   show<2>/show<2>_D2 = counter_100_0<2> & !visningslage_s & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_100_1<2> & !visningslage_s & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_sec_0<2> & visningslage_s & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_min_1<2> & visningslage_s & 
+	display<1>.PIN & display<0>.PIN
+	# visningslage_s & counter_min_0<2>.LFBK & 
+	display<1>.PIN & !display<0>.PIN
+;Imported pterms FB4_1
+	# counter_sec_0<2> & !visningslage_s & 
+	display<1>.PIN & !display<0>.PIN
+	# visningslage_s & counter_sec_1<2>.LFBK & 
+	!display<1>.PIN & display<0>.PIN
+	# !visningslage_s & counter_sec_1<2>.LFBK & 
+	display<1>.PIN & display<0>.PIN;
+
+MACROCELL | 0 | 15 | show<3>/show<3>_D2
+ATTRIBUTES | 199424 | 0
+OUTPUTMC | 18 | 1 | 15 | 2 | 4 | 1 | 14 | 1 | 1 | 1 | 7 | 1 | 13 | 1 | 12 | 1 | 9 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 6 | 1 | 8 | 0 | 14 | 0 | 1 | 0 | 2 | 0 | 4 | 0 | 5
+INPUTS | 11 | display<0>.PIN  | counter_min_1<3>  | visningslage_s  | counter_min_0<3>  | counter_100_1<3>  | counter_100_0<3>  | counter_sec_0<0>  | counter_sec_0<1>  | counter_sec_0<3>  | $OpTx$FX_SC$70.EXP  | display<1>.PIN
+INPUTMC | 9 | 3 | 4 | 1 | 10 | 3 | 13 | 2 | 13 | 2 | 14 | 2 | 2 | 3 | 15 | 3 | 12 | 0 | 16
+INPUTP | 2 | 10 | 46
+EXPORTS | 1 | 0 | 14
+IMPORTS | 1 | 0 | 16
+EQ | 19 | 
+   show<3>/show<3>_D2 = counter_100_1<3> & !visningslage_s & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_min_0<3> & visningslage_s & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_100_0<3> & !visningslage_s & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_min_1<3> & visningslage_s & 
+	display<1>.PIN & display<0>.PIN
+;Imported pterms FB1_17
+	# counter_sec_0<3> & visningslage_s & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<3> & !visningslage_s & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_sec_1<3> & visningslage_s & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_sec_1<3> & !visningslage_s & 
+	display<1>.PIN & display<0>.PIN;
+    show<3>/show<3>_D2.EXP  =  !counter_sec_0<0> & counter_sec_0<1> & 
+	!counter_sec_0<3> & visningslage_s & !display<1>.PIN & !display<0>.PIN
+
+MACROCELL | 0 | 0 | $OpTx$FX_DC$65
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 8 | 2 | 4 | 1 | 14 | 1 | 12 | 1 | 13 | 1 | 15 | 2 | 3 | 2 | 5 | 0 | 17
+INPUTS | 5 | display<0>.PIN  | visningslage_s  | counter_sec_1<1>  | counter_sec_0<1>  | display<1>.PIN
+INPUTMC | 3 | 1 | 10 | 3 | 14 | 3 | 15
+INPUTP | 2 | 10 | 46
+EXPORTS | 1 | 0 | 17
+EQ | 8 | 
+   $OpTx$FX_DC$65 = display<1>.PIN
+	$ visningslage_s;
+    $OpTx$FX_DC$65.EXP  =  counter_sec_0<1> & visningslage_s & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<1> & !visningslage_s & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_sec_1<1> & !visningslage_s & 
+	display<1>.PIN & display<0>.PIN
+
+MACROCELL | 0 | 16 | $OpTx$FX_SC$70
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 5 | 2 | 4 | 2 | 2 | 2 | 5 | 2 | 6 | 0 | 15
+INPUTS | 5 | display<0>.PIN  | visningslage_s  | counter_sec_1<3>  | counter_sec_0<3>  | display<1>.PIN
+INPUTMC | 3 | 1 | 10 | 3 | 2 | 3 | 12
+INPUTP | 2 | 10 | 46
+EXPORTS | 1 | 0 | 15
+EQ | 9 | 
+   $OpTx$FX_SC$70 = !visningslage_s & !display<1>.PIN;
+    $OpTx$FX_SC$70.EXP  =  counter_sec_0<3> & visningslage_s & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<3> & !visningslage_s & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_sec_1<3> & visningslage_s & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_sec_1<3> & !visningslage_s & 
+	display<1>.PIN & display<0>.PIN
+
+MACROCELL | 0 | 11 | $OpTx$FX_SC$69
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 6 | 2 | 4 | 2 | 2 | 2 | 3 | 2 | 5 | 2 | 6 | 0 | 10
+INPUTS | 9 | visningslage_s  | display<1>.PIN  | rco_min_0  | nollstallning  | old_nollstallning  | counter_min_1<0>  | counter_min_1<2>  | counter_min_1<3>  | counter_min_1<1>.LFBK
+INPUTMC | 7 | 1 | 10 | 3 | 9 | 2 | 6 | 1 | 15 | 2 | 12 | 3 | 4 | 0 | 10
+INPUTP | 2 | 46 | 87
+EXPORTS | 1 | 0 | 10
+EQ | 7 | 
+   $OpTx$FX_SC$69 = visningslage_s & display<1>.PIN;
+    $OpTx$FX_SC$69.EXP  =  nollstallning & !old_nollstallning
+	# !rco_min_0 & !counter_min_1<1>.LFBK
+	# counter_min_1<0> & rco_min_0 & 
+	counter_min_1<1>.LFBK
+	# counter_min_1<2> & !counter_min_1<3> & 
+	!counter_min_1<1>.LFBK
+
+MACROCELL | 0 | 17 | show<1>/show<1>_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 9 | 2 | 4 | 1 | 14 | 1 | 12 | 1 | 13 | 1 | 15 | 2 | 2 | 2 | 3 | 2 | 5 | 2 | 6
+INPUTS | 9 | display<0>.PIN  | display<1>.PIN  | visningslage_s  | counter_min_0<1>  | counter_100_1<1>  | counter_100_0<1>  | counter_sec_1<1>  | $OpTx$FX_DC$65.EXP  | counter_min_1<1>.LFBK
+INPUTMC | 7 | 1 | 10 | 3 | 16 | 2 | 15 | 2 | 16 | 3 | 14 | 0 | 0 | 0 | 10
+INPUTP | 2 | 10 | 46
+IMPORTS | 1 | 0 | 0
+EQ | 17 | 
+   show<1>/show<1>_D2 = counter_100_0<1> & !visningslage_s & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_100_1<1> & !visningslage_s & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_min_0<1> & visningslage_s & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_sec_1<1> & visningslage_s & 
+	!display<1>.PIN & display<0>.PIN
+	# visningslage_s & counter_min_1<1>.LFBK & 
+	display<1>.PIN & display<0>.PIN
+;Imported pterms FB1_1
+	# counter_sec_0<1> & visningslage_s & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<1> & !visningslage_s & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_sec_1<1> & !visningslage_s & 
+	display<1>.PIN & display<0>.PIN;
+
+MACROCELL | 0 | 2 | EXP0_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 10 | display<0>.PIN  | counter_sec_1<1>  | visningslage_s  | counter_min_1<1>.LFBK  | counter_sec_0<1>  | counter_min_1<0>  | display<1>.PIN  | show<2>/show<2>_D2  | EXP1_.EXP  | show<3>/show<3>_D2.LFBK
+INPUTMC | 8 | 3 | 14 | 1 | 10 | 0 | 10 | 3 | 15 | 1 | 15 | 3 | 17 | 0 | 3 | 0 | 15
+INPUTP | 2 | 10 | 46
+EXPORTS | 1 | 0 | 1
+IMPORTS | 1 | 0 | 3
+EQ | 59 | 
+       EXP0_.EXP  =  counter_sec_0<1> & visningslage_s & 
+	show<3>/show<3>_D2.LFBK & !display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<1> & !visningslage_s & 
+	show<3>/show<3>_D2.LFBK & display<1>.PIN & !display<0>.PIN
+	# counter_sec_1<1> & visningslage_s & 
+	show<3>/show<3>_D2.LFBK & !display<1>.PIN & display<0>.PIN
+	# counter_sec_1<1> & !visningslage_s & 
+	show<3>/show<3>_D2.LFBK & display<1>.PIN & display<0>.PIN
+	# !counter_min_1<0> & visningslage_s & 
+	show<2>/show<2>_D2 & !counter_min_1<1>.LFBK & display<1>.PIN & 
+	display<0>.PIN
+;Imported pterms FB1_4
+	# !counter_100_0<0> & !counter_100_0<1> & 
+	!visningslage_s & show<2>/show<2>_D2 & !display<1>.PIN & 
+	!display<0>.PIN
+	# !counter_100_1<0> & !counter_100_1<1> & 
+	!visningslage_s & show<2>/show<2>_D2 & !display<1>.PIN & 
+	display<0>.PIN
+	# !counter_min_0<0> & !counter_min_0<1> & 
+	visningslage_s & show<2>/show<2>_D2 & display<1>.PIN & 
+	!display<0>.PIN
+	# !counter_sec_1<0> & !counter_sec_1<1> & 
+	visningslage_s & show<2>/show<2>_D2 & !display<1>.PIN & 
+	display<0>.PIN
+	# !counter_sec_1<0> & !counter_sec_1<1> & 
+	!visningslage_s & show<2>/show<2>_D2 & display<1>.PIN & 
+	display<0>.PIN
+;Imported pterms FB1_5
+	# !counter_sec_0<0> & !counter_sec_0<1> & 
+	visningslage_s & show<2>/show<2>_D2 & !display<1>.PIN & 
+	!display<0>.PIN
+	# !counter_sec_0<0> & !counter_sec_0<1> & 
+	!visningslage_s & show<2>/show<2>_D2 & display<1>.PIN & 
+	!display<0>.PIN
+	# counter_100_1<0> & !counter_100_1<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_min_0<0> & !counter_min_0<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_min_1<0> & visningslage_s & 
+	!show<2>/show<2>_D2 & !counter_min_1<1>.LFBK & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & display<0>.PIN
+;Imported pterms FB1_6
+	# counter_100_0<0> & !counter_100_0<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<0> & !counter_sec_0<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<0> & !counter_sec_0<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & display<0>.PIN
+
+MACROCELL | 0 | 3 | EXP1_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 2
+INPUTS | 13 | display<0>.PIN  | counter_sec_1<0>  | counter_sec_1<1>  | visningslage_s  | show<2>/show<2>_D2  | counter_min_0<0>  | counter_min_0<1>  | counter_100_1<0>  | counter_100_1<1>  | counter_100_0<0>  | counter_100_0<1>  | EXP2_.EXP  | display<1>.PIN
+INPUTMC | 11 | 3 | 3 | 3 | 14 | 1 | 10 | 3 | 17 | 3 | 6 | 3 | 16 | 2 | 8 | 2 | 15 | 2 | 17 | 2 | 16 | 0 | 4
+INPUTP | 2 | 10 | 46
+EXPORTS | 1 | 0 | 2
+IMPORTS | 1 | 0 | 4
+EQ | 47 | 
+       EXP1_.EXP  =  !counter_100_0<0> & !counter_100_0<1> & 
+	!visningslage_s & show<2>/show<2>_D2 & !display<1>.PIN & 
+	!display<0>.PIN
+	# !counter_100_1<0> & !counter_100_1<1> & 
+	!visningslage_s & show<2>/show<2>_D2 & !display<1>.PIN & 
+	display<0>.PIN
+	# !counter_min_0<0> & !counter_min_0<1> & 
+	visningslage_s & show<2>/show<2>_D2 & display<1>.PIN & 
+	!display<0>.PIN
+	# !counter_sec_1<0> & !counter_sec_1<1> & 
+	visningslage_s & show<2>/show<2>_D2 & !display<1>.PIN & 
+	display<0>.PIN
+	# !counter_sec_1<0> & !counter_sec_1<1> & 
+	!visningslage_s & show<2>/show<2>_D2 & display<1>.PIN & 
+	display<0>.PIN
+;Imported pterms FB1_5
+	# !counter_sec_0<0> & !counter_sec_0<1> & 
+	visningslage_s & show<2>/show<2>_D2 & !display<1>.PIN & 
+	!display<0>.PIN
+	# !counter_sec_0<0> & !counter_sec_0<1> & 
+	!visningslage_s & show<2>/show<2>_D2 & display<1>.PIN & 
+	!display<0>.PIN
+	# counter_100_1<0> & !counter_100_1<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_min_0<0> & !counter_min_0<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_min_1<0> & visningslage_s & 
+	!show<2>/show<2>_D2 & !counter_min_1<1>.LFBK & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & display<0>.PIN
+;Imported pterms FB1_6
+	# counter_100_0<0> & !counter_100_0<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<0> & !counter_sec_0<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<0> & !counter_sec_0<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & display<0>.PIN
+
+MACROCELL | 0 | 4 | EXP2_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 14 | display<0>.PIN  | counter_sec_0<0>  | counter_sec_0<1>  | visningslage_s  | show<2>/show<2>_D2  | counter_min_1<0>  | show<3>/show<3>_D2.LFBK  | display<1>.PIN  | counter_min_0<0>  | counter_min_0<1>  | counter_100_1<0>  | counter_100_1<1>  | EXP3_.EXP  | counter_min_1<1>.LFBK
+INPUTMC | 12 | 2 | 2 | 3 | 15 | 1 | 10 | 3 | 17 | 1 | 15 | 0 | 15 | 3 | 6 | 3 | 16 | 2 | 8 | 2 | 15 | 0 | 5 | 0 | 10
+INPUTP | 2 | 10 | 46
+EXPORTS | 1 | 0 | 3
+IMPORTS | 1 | 0 | 5
+EQ | 31 | 
+       EXP2_.EXP  =  !counter_sec_0<0> & !counter_sec_0<1> & 
+	visningslage_s & show<2>/show<2>_D2 & !display<1>.PIN & 
+	!display<0>.PIN
+	# !counter_sec_0<0> & !counter_sec_0<1> & 
+	!visningslage_s & show<2>/show<2>_D2 & display<1>.PIN & 
+	!display<0>.PIN
+	# counter_100_1<0> & !counter_100_1<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_min_0<0> & !counter_min_0<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_min_1<0> & visningslage_s & 
+	!show<2>/show<2>_D2 & !counter_min_1<1>.LFBK & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & display<0>.PIN
+;Imported pterms FB1_6
+	# counter_100_0<0> & !counter_100_0<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<0> & !counter_sec_0<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<0> & !counter_sec_0<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & display<0>.PIN
+
+MACROCELL | 0 | 5 | EXP3_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 4
+INPUTS | 11 | display<0>.PIN  | counter_sec_1<0>  | counter_sec_1<1>  | visningslage_s  | show<2>/show<2>_D2  | display<1>.PIN  | counter_sec_0<0>  | counter_sec_0<1>  | counter_100_0<0>  | counter_100_0<1>  | show<3>/show<3>_D2.LFBK
+INPUTMC | 9 | 3 | 3 | 3 | 14 | 1 | 10 | 3 | 17 | 2 | 2 | 3 | 15 | 2 | 17 | 2 | 16 | 0 | 15
+INPUTP | 2 | 10 | 46
+EXPORTS | 1 | 0 | 4
+EQ | 15 | 
+       EXP3_.EXP  =  counter_100_0<0> & !counter_100_0<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<0> & !counter_sec_0<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<0> & !counter_sec_0<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & !display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<1> & 
+	visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	!display<1>.PIN & display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<1> & 
+	!visningslage_s & !show<2>/show<2>_D2 & !show<3>/show<3>_D2.LFBK & 
+	display<1>.PIN & display<0>.PIN
+
+MACROCELL | 0 | 6 | EXP4_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 7
+INPUTS | 9 | display<0>.PIN  | counter_min_1<0>  | counter_min_1<3>  | visningslage_s  | counter_min_1<2>  | counter_sec_0<0>  | counter_sec_0<3>  | counter_sec_0<2>  | display<1>.PIN
+INPUTMC | 7 | 1 | 15 | 3 | 4 | 1 | 10 | 2 | 12 | 2 | 2 | 3 | 12 | 2 | 1
+INPUTP | 2 | 10 | 46
+EXPORTS | 1 | 0 | 7
+EQ | 10 | 
+       EXP4_.EXP  =  counter_sec_0<0> & !counter_sec_0<3> & 
+	!visningslage_s & display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<2> & !counter_sec_0<3> & 
+	visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# counter_sec_0<2> & !counter_sec_0<3> & 
+	!visningslage_s & display<1>.PIN & !display<0>.PIN
+	# counter_min_1<0> & !counter_min_1<3> & 
+	visningslage_s & display<1>.PIN & display<0>.PIN
+	# counter_min_1<2> & !counter_min_1<3> & 
+	visningslage_s & display<1>.PIN & display<0>.PIN
+
+MACROCELL | 0 | 8 | EXP5_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 7
+INPUTS | 10 | display<0>.PIN  | counter_sec_1<0>  | counter_sec_1<3>  | visningslage_s  | counter_100_1<0>  | counter_100_1<3>  | counter_sec_1<2>  | counter_100_1<2>  | EXP6_.EXP  | display<1>.PIN
+INPUTMC | 8 | 3 | 3 | 3 | 2 | 1 | 10 | 2 | 8 | 2 | 13 | 3 | 11 | 2 | 7 | 0 | 9
+INPUTP | 2 | 10 | 46
+EXPORTS | 1 | 0 | 7
+IMPORTS | 1 | 0 | 9
+EQ | 30 | 
+       EXP5_.EXP  =  counter_100_1<0> & !counter_100_1<3> & 
+	!visningslage_s & !display<1>.PIN & display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<3> & 
+	visningslage_s & !display<1>.PIN & display<0>.PIN
+	# counter_sec_1<0> & !counter_sec_1<3> & 
+	!visningslage_s & display<1>.PIN & display<0>.PIN
+	# counter_sec_1<2> & !counter_sec_1<3> & 
+	visningslage_s & !display<1>.PIN & display<0>.PIN
+	# counter_100_1<2> & !counter_100_1<3> & 
+	!visningslage_s & !display<1>.PIN & display<0>.PIN
+;Imported pterms FB1_10
+	# counter_sec_1<2> & !counter_sec_1<3> & 
+	!visningslage_s & display<1>.PIN & display<0>.PIN
+	# !counter_100_0<1> & !counter_100_0<2> & 
+	!visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# !counter_min_0<1> & !counter_min_0<2> & 
+	visningslage_s & display<1>.PIN & !display<0>.PIN
+	# !counter_sec_0<1> & !counter_sec_0<2> & 
+	visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# !counter_sec_0<1> & !counter_sec_0<2> & 
+	!visningslage_s & display<1>.PIN & !display<0>.PIN
+;Imported pterms FB1_11
+	# !counter_sec_1<2> & !counter_sec_1<1> & 
+	visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_sec_1<2> & !counter_sec_1<1> & 
+	!visningslage_s & display<1>.PIN & display<0>.PIN
+	# !counter_100_1<1> & !counter_100_1<2> & 
+	!visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_min_1<2> & visningslage_s & 
+	!counter_min_1<1>.LFBK & display<1>.PIN & display<0>.PIN
+
+MACROCELL | 0 | 9 | EXP6_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 8
+INPUTS | 12 | display<0>.PIN  | counter_sec_1<2>  | counter_sec_1<3>  | visningslage_s  | counter_min_0<1>  | counter_min_0<2>  | counter_sec_0<1>  | counter_sec_0<2>  | counter_100_0<1>  | counter_100_0<2>  | counter_min_1<1>.EXP  | display<1>.PIN
+INPUTMC | 10 | 3 | 11 | 3 | 2 | 1 | 10 | 3 | 16 | 3 | 5 | 3 | 15 | 2 | 1 | 2 | 16 | 2 | 9 | 0 | 10
+INPUTP | 2 | 10 | 46
+EXPORTS | 1 | 0 | 8
+IMPORTS | 1 | 0 | 10
+EQ | 19 | 
+       EXP6_.EXP  =  counter_sec_1<2> & !counter_sec_1<3> & 
+	!visningslage_s & display<1>.PIN & display<0>.PIN
+	# !counter_100_0<1> & !counter_100_0<2> & 
+	!visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# !counter_min_0<1> & !counter_min_0<2> & 
+	visningslage_s & display<1>.PIN & !display<0>.PIN
+	# !counter_sec_0<1> & !counter_sec_0<2> & 
+	visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# !counter_sec_0<1> & !counter_sec_0<2> & 
+	!visningslage_s & display<1>.PIN & !display<0>.PIN
+;Imported pterms FB1_11
+	# !counter_sec_1<2> & !counter_sec_1<1> & 
+	visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_sec_1<2> & !counter_sec_1<1> & 
+	!visningslage_s & display<1>.PIN & display<0>.PIN
+	# !counter_100_1<1> & !counter_100_1<2> & 
+	!visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_min_1<2> & visningslage_s & 
+	!counter_min_1<1>.LFBK & display<1>.PIN & display<0>.PIN
+
+MACROCELL | 0 | 12 | EXP7_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 13
+INPUTS | 15 | display<0>.PIN  | counter_sec_1<0>  | counter_sec_1<1>  | counter_sec_1<3>  | visningslage_s  | counter_min_1<0>  | display<1>.PIN  | counter_min_1<3>  | counter_sec_0<0>  | counter_sec_0<1>  | counter_sec_0<3>  | counter_100_1<0>  | counter_100_1<1>  | counter_100_1<3>  | counter_min_1<1>.LFBK
+INPUTMC | 13 | 3 | 3 | 3 | 14 | 3 | 2 | 1 | 10 | 1 | 15 | 3 | 4 | 2 | 2 | 3 | 15 | 3 | 12 | 2 | 8 | 2 | 15 | 2 | 13 | 0 | 10
+INPUTP | 2 | 10 | 46
+EXPORTS | 1 | 0 | 13
+EQ | 11 | 
+       EXP7_.EXP  =  !counter_100_1<0> & counter_100_1<1> & 
+	!counter_100_1<3> & !visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_sec_0<0> & counter_sec_0<1> & 
+	!counter_sec_0<3> & !visningslage_s & display<1>.PIN & !display<0>.PIN
+	# !counter_sec_1<0> & counter_sec_1<1> & 
+	!counter_sec_1<3> & visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_sec_1<0> & counter_sec_1<1> & 
+	!counter_sec_1<3> & !visningslage_s & display<1>.PIN & display<0>.PIN
+	# !counter_min_1<0> & !counter_min_1<3> & 
+	visningslage_s & counter_min_1<1>.LFBK & display<1>.PIN & 
+	display<0>.PIN
+
+MACROCELL | 0 | 13 | EXP8_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 14
+INPUTS | 16 | display<0>.PIN  | counter_sec_1<0>  | counter_sec_1<2>  | counter_sec_1<1>  | visningslage_s  | counter_min_0<0>  | counter_min_0<1>  | counter_min_0<3>  | counter_100_1<0>  | counter_100_1<1>  | counter_100_1<2>  | counter_100_0<0>  | counter_100_0<1>  | counter_100_0<3>  | EXP7_.EXP  | display<1>.PIN
+INPUTMC | 14 | 3 | 3 | 3 | 11 | 3 | 14 | 1 | 10 | 3 | 6 | 3 | 16 | 3 | 13 | 2 | 8 | 2 | 15 | 2 | 7 | 2 | 17 | 2 | 16 | 2 | 14 | 0 | 12
+INPUTP | 2 | 10 | 46
+EXPORTS | 1 | 0 | 14
+IMPORTS | 1 | 0 | 12
+EQ | 22 | 
+       EXP8_.EXP  =  !counter_100_0<0> & counter_100_0<1> & 
+	!counter_100_0<3> & !visningslage_s & !display<1>.PIN & !display<0>.PIN
+	# !counter_100_1<0> & !counter_100_1<1> & 
+	!counter_100_1<2> & !visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_min_0<0> & counter_min_0<1> & 
+	!counter_min_0<3> & visningslage_s & display<1>.PIN & !display<0>.PIN
+	# !counter_sec_1<0> & !counter_sec_1<2> & 
+	!counter_sec_1<1> & visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_sec_1<0> & !counter_sec_1<2> & 
+	!counter_sec_1<1> & !visningslage_s & display<1>.PIN & display<0>.PIN
+;Imported pterms FB1_13
+	# !counter_100_1<0> & counter_100_1<1> & 
+	!counter_100_1<3> & !visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_sec_0<0> & counter_sec_0<1> & 
+	!counter_sec_0<3> & !visningslage_s & display<1>.PIN & !display<0>.PIN
+	# !counter_sec_1<0> & counter_sec_1<1> & 
+	!counter_sec_1<3> & visningslage_s & !display<1>.PIN & display<0>.PIN
+	# !counter_sec_1<0> & counter_sec_1<1> & 
+	!counter_sec_1<3> & !visningslage_s & display<1>.PIN & display<0>.PIN
+	# !counter_min_1<0> & !counter_min_1<3> & 
+	visningslage_s & counter_min_1<1>.LFBK & display<1>.PIN & 
+	display<0>.PIN
+
+MACROCELL | 1 | 2 | EXP9_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 8 | visningslage_s.LFBK  | counter_sec_1<0>  | counter_sec_1<1>  | display<1>.PIN  | show<2>/show<2>_D2  | counter_sec_0<1>  | EXP10_.EXP  | mux_counter<0>.LFBK
+INPUTMC | 7 | 1 | 10 | 3 | 3 | 3 | 14 | 3 | 17 | 3 | 15 | 1 | 3 | 1 | 16
+INPUTP | 1 | 46
+EXPORTS | 1 | 1 | 1
+IMPORTS | 1 | 1 | 3
+EQ | 40 | 
+       EXP9_.EXP  =  counter_sec_1<0> & counter_sec_1<1> & 
+	mux_counter<0>.LFBK & visningslage_s.LFBK & !display<1>.PIN
+	# counter_sec_1<0> & counter_sec_1<1> & 
+	mux_counter<0>.LFBK & !visningslage_s.LFBK & display<1>.PIN
+	# counter_sec_0<1> & !show<2>/show<2>_D2 & 
+	!mux_counter<0>.LFBK & visningslage_s.LFBK & !display<1>.PIN
+	# counter_sec_0<1> & !show<2>/show<2>_D2 & 
+	!mux_counter<0>.LFBK & !visningslage_s.LFBK & display<1>.PIN
+	# counter_sec_1<1> & !show<2>/show<2>_D2 & 
+	mux_counter<0>.LFBK & !visningslage_s.LFBK & display<1>.PIN
+;Imported pterms FB2_4
+	# counter_sec_0<0> & counter_sec_0<1> & 
+	!mux_counter<0>.LFBK & visningslage_s.LFBK & !display<1>.PIN
+	# counter_sec_0<0> & counter_sec_0<1> & 
+	!mux_counter<0>.LFBK & !visningslage_s.LFBK & display<1>.PIN
+	# counter_100_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_100_1<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_min_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+;Imported pterms FB2_5
+	# counter_sec_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# counter_sec_1<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_1<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# !show<2>/show<2>_D2 & !show<3>/show<3>_D2 & 
+	counter_min_1<0>.LFBK & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+
+MACROCELL | 1 | 3 | EXP10_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 2
+INPUTS | 11 | visningslage_s.LFBK  | counter_sec_0<0>  | counter_sec_0<1>  | display<1>.PIN  | counter_min_0<0>  | show<2>/show<2>_D2  | show<3>/show<3>_D2  | counter_100_1<0>  | counter_100_0<0>  | EXP11_.EXP  | mux_counter<0>.LFBK
+INPUTMC | 10 | 1 | 10 | 2 | 2 | 3 | 15 | 3 | 6 | 3 | 17 | 0 | 15 | 2 | 8 | 2 | 17 | 1 | 4 | 1 | 16
+INPUTP | 1 | 46
+EXPORTS | 1 | 1 | 2
+IMPORTS | 1 | 1 | 4
+EQ | 29 | 
+       EXP10_.EXP  =  counter_sec_0<0> & counter_sec_0<1> & 
+	!mux_counter<0>.LFBK & visningslage_s.LFBK & !display<1>.PIN
+	# counter_sec_0<0> & counter_sec_0<1> & 
+	!mux_counter<0>.LFBK & !visningslage_s.LFBK & display<1>.PIN
+	# counter_100_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_100_1<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_min_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+;Imported pterms FB2_5
+	# counter_sec_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# counter_sec_1<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_1<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# !show<2>/show<2>_D2 & !show<3>/show<3>_D2 & 
+	counter_min_1<0>.LFBK & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+
+MACROCELL | 1 | 4 | EXP11_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 3
+INPUTS | 8 | visningslage_s.LFBK  | counter_sec_1<0>  | counter_min_1<0>.LFBK  | show<2>/show<2>_D2  | show<3>/show<3>_D2  | display<1>.PIN  | counter_sec_0<0>  | mux_counter<0>.LFBK
+INPUTMC | 7 | 1 | 10 | 3 | 3 | 1 | 15 | 3 | 17 | 0 | 15 | 2 | 2 | 1 | 16
+INPUTP | 1 | 46
+EXPORTS | 1 | 1 | 3
+EQ | 15 | 
+       EXP11_.EXP  =  counter_sec_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_0<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# counter_sec_1<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_1<0> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# !show<2>/show<2>_D2 & !show<3>/show<3>_D2 & 
+	counter_min_1<0>.LFBK & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+
+MACROCELL | 1 | 5 | EXP12_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 6
+INPUTS | 9 | visningslage_s.LFBK  | counter_sec_1<0>  | counter_sec_1<1>  | display<1>.PIN  | show<2>/show<2>_D2  | show<3>/show<3>_D2  | counter_100_0<0>  | counter_100_0<1>  | mux_counter<0>.LFBK
+INPUTMC | 8 | 1 | 10 | 3 | 3 | 3 | 14 | 3 | 17 | 0 | 15 | 2 | 17 | 2 | 16 | 1 | 16
+INPUTP | 1 | 46
+EXPORTS | 1 | 1 | 6
+EQ | 15 | 
+       EXP12_.EXP  =  counter_100_0<0> & counter_100_0<1> & 
+	show<2>/show<2>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_1<0> & counter_sec_1<1> & 
+	show<2>/show<2>_D2 & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_1<0> & counter_sec_1<1> & 
+	show<2>/show<2>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_100_0<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_sec_1<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+
+MACROCELL | 1 | 6 | EXP13_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 7
+INPUTS | 10 | visningslage_s.LFBK  | counter_sec_1<1>  | counter_min_1<0>.LFBK  | show<3>/show<3>_D2  | counter_sec_0<1>  | display<1>.PIN  | counter_min_1<1>  | show<2>/show<2>_D2  | EXP12_.EXP  | mux_counter<0>.LFBK
+INPUTMC | 9 | 1 | 10 | 3 | 14 | 1 | 15 | 0 | 15 | 3 | 15 | 0 | 10 | 3 | 17 | 1 | 5 | 1 | 16
+INPUTP | 1 | 46
+EXPORTS | 1 | 1 | 7
+IMPORTS | 1 | 1 | 5
+EQ | 27 | 
+       EXP13_.EXP  =  counter_sec_0<1> & show<3>/show<3>_D2 & 
+	!mux_counter<0>.LFBK & visningslage_s.LFBK & !display<1>.PIN
+	# counter_sec_0<1> & show<3>/show<3>_D2 & 
+	!mux_counter<0>.LFBK & !visningslage_s.LFBK & display<1>.PIN
+	# counter_sec_1<1> & show<3>/show<3>_D2 & 
+	mux_counter<0>.LFBK & visningslage_s.LFBK & !display<1>.PIN
+	# counter_sec_1<1> & show<3>/show<3>_D2 & 
+	mux_counter<0>.LFBK & !visningslage_s.LFBK & display<1>.PIN
+	# counter_min_1<1> & show<2>/show<2>_D2 & 
+	counter_min_1<0>.LFBK & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+;Imported pterms FB2_6
+	# counter_100_0<0> & counter_100_0<1> & 
+	show<2>/show<2>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_1<0> & counter_sec_1<1> & 
+	show<2>/show<2>_D2 & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_1<0> & counter_sec_1<1> & 
+	show<2>/show<2>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_100_0<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_sec_1<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+
+MACROCELL | 1 | 8 | EXP14_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 7
+INPUTS | 11 | visningslage_s.LFBK  | counter_min_1<1>  | display<1>.PIN  | show<2>/show<2>_D2  | show<3>/show<3>_D2  | counter_min_0<0>  | counter_min_0<1>  | counter_100_1<0>  | counter_100_1<1>  | EXP15_.EXP  | mux_counter<0>.LFBK
+INPUTMC | 10 | 1 | 10 | 0 | 10 | 3 | 17 | 0 | 15 | 3 | 6 | 3 | 16 | 2 | 8 | 2 | 15 | 1 | 9 | 1 | 16
+INPUTP | 1 | 46
+EXPORTS | 1 | 1 | 7
+IMPORTS | 1 | 1 | 9
+EQ | 31 | 
+       EXP14_.EXP  =  counter_100_1<0> & counter_100_1<1> & 
+	show<2>/show<2>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_min_0<0> & counter_min_0<1> & 
+	show<2>/show<2>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_100_1<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_min_0<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_min_1<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	display<1>.PIN
+;Imported pterms FB2_10
+	# counter_sec_0<0> & counter_sec_0<1> & 
+	show<2>/show<2>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_0<0> & counter_sec_0<1> & 
+	show<2>/show<2>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_sec_0<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_sec_0<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_sec_1<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+
+MACROCELL | 1 | 9 | EXP15_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 8
+INPUTS | 8 | visningslage_s.LFBK  | counter_sec_1<1>  | display<1>.PIN  | show<2>/show<2>_D2  | show<3>/show<3>_D2  | counter_sec_0<0>  | counter_sec_0<1>  | mux_counter<0>.LFBK
+INPUTMC | 7 | 1 | 10 | 3 | 14 | 3 | 17 | 0 | 15 | 2 | 2 | 3 | 15 | 1 | 16
+INPUTP | 1 | 46
+EXPORTS | 1 | 1 | 8
+EQ | 15 | 
+       EXP15_.EXP  =  counter_sec_0<0> & counter_sec_0<1> & 
+	show<2>/show<2>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# counter_sec_0<0> & counter_sec_0<1> & 
+	show<2>/show<2>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_sec_0<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_sec_0<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+	# !counter_sec_1<1> & !show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	display<1>.PIN
+
+MACROCELL | 1 | 12 | EXP16_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 13
+INPUTS | 12 | counter_min_1<0>.LFBK  | counter_sec_1<0>  | show<2>/show<2>_D2  | show<3>/show<3>_D2  | $OpTx$FX_DC$65  | show<1>/show<1>_D2  | visningslage_s.LFBK  | display<1>.PIN  | counter_min_0<0>  | counter_100_1<0>  | counter_100_0<0>  | mux_counter<0>.LFBK
+INPUTMC | 11 | 1 | 15 | 3 | 3 | 3 | 17 | 0 | 15 | 0 | 0 | 0 | 17 | 1 | 10 | 3 | 6 | 2 | 8 | 2 | 17 | 1 | 16
+INPUTP | 1 | 46
+EXPORTS | 1 | 1 | 13
+EQ | 15 | 
+       EXP16_.EXP  =  counter_sec_1<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & $OpTx$FX_DC$65 & !show<1>/show<1>_D2 & 
+	mux_counter<0>.LFBK
+	# counter_100_0<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !show<1>/show<1>_D2 & !mux_counter<0>.LFBK & 
+	!visningslage_s.LFBK & !display<1>.PIN
+	# counter_100_1<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !show<1>/show<1>_D2 & mux_counter<0>.LFBK & 
+	!visningslage_s.LFBK & !display<1>.PIN
+	# counter_min_0<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !show<1>/show<1>_D2 & !mux_counter<0>.LFBK & 
+	visningslage_s.LFBK & display<1>.PIN
+	# show<2>/show<2>_D2 & !show<3>/show<3>_D2 & 
+	!show<1>/show<1>_D2 & counter_min_1<0>.LFBK & mux_counter<0>.LFBK & 
+	visningslage_s.LFBK & display<1>.PIN
+
+MACROCELL | 1 | 13 | EXP17_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 14
+INPUTS | 11 | visningslage_s.LFBK  | counter_sec_1<0>  | show<2>/show<2>_D2  | $OpTx$FX_DC$65  | show<1>/show<1>_D2  | counter_100_1<0>  | display<1>.PIN  | show<3>/show<3>_D2  | counter_100_0<0>  | EXP16_.EXP  | mux_counter<0>.LFBK
+INPUTMC | 10 | 1 | 10 | 3 | 3 | 3 | 17 | 0 | 0 | 0 | 17 | 2 | 8 | 0 | 15 | 2 | 17 | 1 | 12 | 1 | 16
+INPUTP | 1 | 46
+EXPORTS | 1 | 1 | 14
+IMPORTS | 1 | 1 | 12
+EQ | 30 | 
+       EXP17_.EXP  =  !counter_sec_1<0> & !show<2>/show<2>_D2 & 
+	$OpTx$FX_DC$65 & !show<1>/show<1>_D2 & mux_counter<0>.LFBK
+	# !counter_100_0<0> & !show<2>/show<2>_D2 & 
+	!show<1>/show<1>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_100_0<0> & !show<3>/show<3>_D2 & 
+	show<1>/show<1>_D2 & !mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_100_1<0> & !show<2>/show<2>_D2 & 
+	!show<1>/show<1>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+	# !counter_100_1<0> & !show<3>/show<3>_D2 & 
+	show<1>/show<1>_D2 & mux_counter<0>.LFBK & !visningslage_s.LFBK & 
+	!display<1>.PIN
+;Imported pterms FB2_13
+	# counter_sec_1<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & $OpTx$FX_DC$65 & !show<1>/show<1>_D2 & 
+	mux_counter<0>.LFBK
+	# counter_100_0<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !show<1>/show<1>_D2 & !mux_counter<0>.LFBK & 
+	!visningslage_s.LFBK & !display<1>.PIN
+	# counter_100_1<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !show<1>/show<1>_D2 & mux_counter<0>.LFBK & 
+	!visningslage_s.LFBK & !display<1>.PIN
+	# counter_min_0<0> & show<2>/show<2>_D2 & 
+	!show<3>/show<3>_D2 & !show<1>/show<1>_D2 & !mux_counter<0>.LFBK & 
+	visningslage_s.LFBK & display<1>.PIN
+	# show<2>/show<2>_D2 & !show<3>/show<3>_D2 & 
+	!show<1>/show<1>_D2 & counter_min_1<0>.LFBK & mux_counter<0>.LFBK & 
+	visningslage_s.LFBK & display<1>.PIN
+
+MACROCELL | 2 | 3 | EXP18_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 4
+INPUTS | 11 | counter_sec_1<0>  | show<2>/show<2>_D2  | $OpTx$FX_DC$65  | show<1>/show<1>_D2  | counter_min_1<0>  | $OpTx$FX_SC$69  | counter_min_0<0>  | counter_100_0<0>.LFBK  | display<0>.PIN  | counter_sec_0<0>.EXP  | counter_sec_0<0>.LFBK
+INPUTMC | 10 | 3 | 3 | 3 | 17 | 0 | 0 | 0 | 17 | 1 | 15 | 0 | 11 | 3 | 6 | 2 | 17 | 2 | 2 | 2 | 2
+INPUTP | 1 | 10
+EXPORTS | 1 | 2 | 4
+IMPORTS | 1 | 2 | 2
+EQ | 24 | 
+       EXP18_.EXP  =  !counter_min_0<0> & show<2>/show<2>_D2 & 
+	$OpTx$FX_SC$69 & show<1>/show<1>_D2 & !display<0>.PIN
+	# !counter_sec_1<0> & show<2>/show<2>_D2 & 
+	$OpTx$FX_DC$65 & show<1>/show<1>_D2 & display<0>.PIN
+	# !counter_min_1<0> & show<2>/show<2>_D2 & 
+	$OpTx$FX_SC$69 & show<1>/show<1>_D2 & display<0>.PIN
+	# show<2>/show<2>_D2 & $OpTx$FX_DC$65 & 
+	show<1>/show<1>_D2 & !counter_sec_0<0>.LFBK & !display<0>.PIN
+	# show<2>/show<2>_D2 & !$OpTx$FX_DC$65 & 
+	!$OpTx$FX_SC$69 & !show<1>/show<1>_D2 & counter_100_0<0>.LFBK & 
+	!display<0>.PIN
+;Imported pterms FB3_3
+	# counter_min_0<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_SC$70 & !show<1>/show<1>_D2 & counter_sec_0<0>.LFBK & 
+	!display<0>.PIN
+	# counter_min_0<0> & show<2>/show<2>_D2 & 
+	!show<1>/show<1>_D2 & counter_100_0<0>.LFBK & counter_sec_0<0>.LFBK & 
+	!display<0>.PIN
+	# show<2>/show<2>_D2 & !$OpTx$FX_SC$70 & 
+	!$OpTx$FX_SC$69 & !show<1>/show<1>_D2 & counter_sec_0<0>.LFBK & 
+	!display<0>.PIN
+	# show<2>/show<2>_D2 & !$OpTx$FX_SC$69 & 
+	!show<1>/show<1>_D2 & counter_100_0<0>.LFBK & counter_sec_0<0>.LFBK & 
+	!display<0>.PIN
+
+MACROCELL | 2 | 5 | EXP19_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 4
+INPUTS | 11 | counter_100_0<0>.LFBK  | counter_min_1<0>  | show<2>/show<2>_D2  | $OpTx$FX_DC$65  | show<1>/show<1>_D2  | $OpTx$FX_SC$69  | $OpTx$FX_SC$70  | display<0>.PIN  | counter_min_0<0>  | old_nollstallning.EXP  | counter_100_1<0>.LFBK
+INPUTMC | 10 | 2 | 17 | 1 | 15 | 3 | 17 | 0 | 0 | 0 | 17 | 0 | 11 | 0 | 16 | 3 | 6 | 2 | 6 | 2 | 8
+INPUTP | 1 | 10
+EXPORTS | 1 | 2 | 4
+IMPORTS | 1 | 2 | 6
+EQ | 28 | 
+       EXP19_.EXP  =  counter_min_0<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_DC$65 & !$OpTx$FX_SC$70 & !show<1>/show<1>_D2 & 
+	!display<0>.PIN
+	# counter_min_0<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_DC$65 & !show<1>/show<1>_D2 & counter_100_0<0>.LFBK & 
+	!display<0>.PIN
+	# counter_min_1<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_DC$65 & !$OpTx$FX_SC$70 & !show<1>/show<1>_D2 & 
+	display<0>.PIN
+	# counter_min_1<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_DC$65 & !show<1>/show<1>_D2 & counter_100_1<0>.LFBK & 
+	display<0>.PIN
+	# show<2>/show<2>_D2 & !$OpTx$FX_DC$65 & 
+	!$OpTx$FX_SC$69 & !show<1>/show<1>_D2 & counter_100_1<0>.LFBK & 
+	display<0>.PIN
+;Imported pterms FB3_7
+	# counter_sec_1<0> & counter_min_1<0> & 
+	show<2>/show<2>_D2 & !$OpTx$FX_SC$70 & !show<1>/show<1>_D2 & 
+	display<0>.PIN
+	# counter_sec_1<0> & counter_min_1<0> & 
+	show<2>/show<2>_D2 & !show<1>/show<1>_D2 & counter_100_1<0>.LFBK & 
+	display<0>.PIN
+	# counter_sec_1<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_SC$70 & !$OpTx$FX_SC$69 & !show<1>/show<1>_D2 & 
+	display<0>.PIN
+	# counter_sec_1<0> & show<2>/show<2>_D2 & 
+	!$OpTx$FX_SC$69 & !show<1>/show<1>_D2 & counter_100_1<0>.LFBK & 
+	display<0>.PIN
+
+PIN | clk | 4096 | 0 | N/A | 20 | 38 | 2 | 10 | 1 | 16 | 3 | 10 | 2 | 17 | 2 | 8 | 3 | 6 | 2 | 2 | 3 | 3 | 3 | 11 | 2 | 16 | 2 | 9 | 2 | 15 | 2 | 7 | 2 | 13 | 3 | 16 | 3 | 5 | 3 | 13 | 3 | 15 | 2 | 1 | 3 | 12 | 3 | 14 | 2 | 14 | 1 | 15 | 0 | 10 | 2 | 12 | 3 | 2 | 3 | 4 | 3 | 0 | 1 | 10 | 1 | 17 | 2 | 11 | 3 | 8 | 3 | 7 | 3 | 9 | 1 | 0 | 1 | 11 | 2 | 0 | 2 | 6
+PIN | reset | 65600 | 0 | N/A | 91 | 33 | 1 | 17 | 2 | 11 | 3 | 8 | 3 | 7 | 3 | 9 | 2 | 10 | 1 | 16 | 3 | 10 | 2 | 17 | 2 | 8 | 3 | 6 | 2 | 2 | 3 | 3 | 3 | 11 | 2 | 16 | 2 | 9 | 2 | 15 | 2 | 7 | 2 | 13 | 3 | 16 | 3 | 5 | 3 | 13 | 3 | 15 | 2 | 1 | 3 | 12 | 3 | 14 | 2 | 14 | 1 | 15 | 0 | 10 | 2 | 12 | 3 | 2 | 3 | 4 | 3 | 0
+PIN | start_stopp | 64 | 0 | N/A | 29 | 2 | 3 | 10 | 3 | 0
+PIN | hundradelspuls | 64 | 0 | N/A | 50 | 7 | 2 | 17 | 2 | 16 | 2 | 9 | 2 | 14 | 1 | 17 | 1 | 11 | 2 | 15
+PIN | nollstallning | 64 | 0 | N/A | 87 | 30 | 2 | 17 | 2 | 8 | 3 | 6 | 2 | 2 | 3 | 3 | 3 | 11 | 2 | 16 | 2 | 9 | 2 | 15 | 2 | 7 | 2 | 13 | 3 | 16 | 3 | 5 | 3 | 13 | 3 | 15 | 2 | 1 | 3 | 12 | 3 | 14 | 2 | 14 | 0 | 11 | 2 | 6 | 2 | 12 | 3 | 2 | 3 | 4 | 1 | 17 | 2 | 11 | 3 | 8 | 3 | 7 | 3 | 9 | 1 | 16
+PIN | visningslage | 64 | 0 | N/A | 62 | 1 | 1 | 10
+PIN | muxfrekvens | 64 | 0 | N/A | 12 | 1 | 1 | 17
+PIN | digit<0> | 536871040 | 0 | N/A | 11
+PIN | digit<1> | 536871040 | 0 | N/A | 31
+PIN | digit<2> | 536871040 | 0 | N/A | 15
+PIN | digit<3> | 536871040 | 0 | N/A | 9
+PIN | digit<5> | 536871040 | 0 | N/A | 86
+PIN | digit<6> | 536871040 | 0 | N/A | 89
+PIN | digit<4> | 536871040 | 0 | N/A | 26
+PIN | digit<7> | 536871040 | 0 | N/A | 58
+PIN | display<1> | 536870976 | 0 | N/A | 46 | 33 | 0 | 1 | 3 | 0 | 1 | 15 | 1 | 12 | 1 | 9 | 1 | 8 | 1 | 6 | 1 | 5 | 1 | 4 | 1 | 3 | 1 | 2 | 1 | 0 | 0 | 13 | 0 | 12 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 6 | 0 | 5 | 0 | 4 | 0 | 3 | 0 | 2 | 0 | 17 | 0 | 11 | 0 | 16 | 0 | 0 | 0 | 15 | 3 | 17 | 0 | 14 | 1 | 7 | 1 | 1 | 1 | 13 | 0 | 7
+PIN | display<0> | 536870976 | 0 | N/A | 10 | 25 | 2 | 10 | 3 | 0 | 2 | 6 | 0 | 16 | 0 | 13 | 0 | 12 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 6 | 0 | 5 | 0 | 4 | 0 | 3 | 0 | 2 | 0 | 0 | 0 | 17 | 0 | 15 | 3 | 17 | 0 | 14 | 2 | 2 | 2 | 3 | 2 | 5 | 0 | 7 | 2 | 4 | 0 | 1
+PIN | raknar | 536870976 | 0 | N/A | 67 | 6 | 2 | 17 | 2 | 15 | 1 | 17 | 2 | 14 | 2 | 9 | 2 | 16

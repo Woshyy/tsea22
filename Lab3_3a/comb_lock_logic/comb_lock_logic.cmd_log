@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/chrwa634/TSEA22/Lab3/Lab3_3a/comb_lock_logic/comb_lock_logic.xst" -ofn "/home/chrwa634/TSEA22/Lab3/Lab3_3a/comb_lock_logic/comb_lock_logic.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572-PC44-7 comb_lock_logic.ngc comb_lock_logic.ngd  
+cpldfit -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk comb_lock_logic.ngd 
+XSLTProcess comb_lock_logic_build.xml 
+tsim -intstyle ise comb_lock_logic comb_lock_logic.nga 
+taengine -intstyle ise -f comb_lock_logic -w --format html1 -l comb_lock_logic_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n comb_lock_logic -i comb_lock_logic 

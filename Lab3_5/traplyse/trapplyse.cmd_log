@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "/home/chrwa634/TSEA22/Lab3/Lab3_5/traplyse/trapplyse.xst" -ofn "/home/chrwa634/TSEA22/Lab3/Lab3_5/traplyse/trapplyse.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572-PC44-7 trapplyse.ngc trapplyse.ngd  
+cpldfit -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk trapplyse.ngd 
+XSLTProcess trapplyse_build.xml 
+tsim -intstyle ise trapplyse trapplyse.nga 
+taengine -intstyle ise -f trapplyse -w --format html1 -l trapplyse_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n trapplyse -i trapplyse 
+xst -intstyle ise -ifn "/home/chrwa634/TSEA22/Lab3/Lab3_5/traplyse/trapplyse.xst" -ofn "/home/chrwa634/TSEA22/Lab3/Lab3_5/traplyse/trapplyse.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572-PC44-7 trapplyse.ngc trapplyse.ngd  
+cpldfit -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk trapplyse.ngd 
+XSLTProcess trapplyse_build.xml 
+tsim -intstyle ise trapplyse trapplyse.nga 
+hprep6 -s IEEE1149 -n trapplyse -i trapplyse 
+xst -intstyle ise -ifn "/home/chrwa634/TSEA22/Lab3/Lab3_5/traplyse/trapplyse.xst" -ofn "/home/chrwa634/TSEA22/Lab3/Lab3_5/traplyse/trapplyse.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572-PC44-7 trapplyse.ngc trapplyse.ngd  
+cpldfit -intstyle ise -p xc9572-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk trapplyse.ngd 
+XSLTProcess trapplyse_build.xml 
+tsim -intstyle ise trapplyse trapplyse.nga 
+hprep6 -s IEEE1149 -n trapplyse -i trapplyse 

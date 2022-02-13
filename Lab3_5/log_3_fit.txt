@@ -1,0 +1,424 @@
+Release 14.7 - CPLD Optimizer/Partitioner P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'trapplyse.ise'.
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/x0_last\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/x0_last\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/x0_last\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/clr\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/clr\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/clr\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/x1_last\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/x1_last\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/x1_last\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/rco\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/rco\/Q\/FDCP prop_name=FPGAINIT prop_terse=XDM_PROPERTY_INT32 "FPGAINIT" 1
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/rco\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/rco\/Q\/X_ONE prop_name=FPGAINIT prop_terse=XDM_PROPERTY_INT32 "FPGAINIT" 1
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/rco\/$1I41 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/rco\/$1I41 prop_name=FPGAINIT prop_terse=XDM_PROPERTY_INT32 "FPGAINIT" 1
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_3\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_3\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_3\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_2\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_2\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_2\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_1\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_1\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_1\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_0\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_0\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_0\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/Msub_counter_addsub0000_Mxor_Result<3>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/Msub_counter_addsub0000_Mxor_Result<2>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/Msub_counter_addsub0000_Mxor_Result<1>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/Mxor_ce_xor0001\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/Mxor_ce_xor0000\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce_mux00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce_mux00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce_mux00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce_or00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce_or00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/Msub_counter_addsub0000_Mxor_Result<3>_not00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/Msub_counter_addsub0000_Mxor_Result<2>_not00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/Msub_counter_addsub0000_Mxor_Result<1>_not00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/Msub_counter_addsub0000__or00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/Msub_counter_addsub0000__or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_cmp_eq00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_cmp_eq00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_cmp_eq00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_cmp_eq00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_cmp_eq00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND4"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/ce_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_2_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_2_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_2_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_2_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_2_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR3"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_2_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/rco_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/rco_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/rco_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/rco_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/rco_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR3"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_0_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_0_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_0_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_0_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_0_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_0_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR3"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_0_0_ClkEn7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_3_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_3_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_3_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_3_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_3_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR3"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_3_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_1_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_1_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_1_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_1_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_1_0_ClkEn5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR3"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/counter_1_0_ClkEn6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/clk_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/clk_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/reset_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/reset_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/x0_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/x0_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/x1_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/x1_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/u_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/u_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/tidkvar_3_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/tidkvar_3_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/tidkvar_2_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/tidkvar_2_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/tidkvar_1_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/tidkvar_1_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/tidkvar_0_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse/tidkvar_0_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+CS: block property: block_name=/trapplyse/EXPANDED_FlattenFull/trapplyse prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "trapplyse"
+
+Considering device XC9572-7-PC44.
+Flattening design..
+Timing optimization
+Timing driven global resource optimization
+General global resource optimization........
+Re-checking device resources ...
+Mapping a total of 9 equations into 4 function blocks..........
+Design trapplyse has been optimized and fit into device XC9572-7-PC44.

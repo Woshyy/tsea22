@@ -1,0 +1,58 @@
+# do first_time.do
+# 3
+# trapplyse
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 23 2018
+# Start time: 17:01:14 on Feb 24,2021
+# vcom -2002 trapplyse.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity trapplyse
+# -- Compiling architecture behav of trapplyse
+# End time: 17:01:15 on Feb 24,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 23 2018
+# Start time: 17:01:15 on Feb 24,2021
+# vcom -2002 trapplyse_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity trapplyse_tb
+# -- Compiling architecture sim of trapplyse_tb
+# End time: 17:01:15 on Feb 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" trapplyse_tb 
+# Start time: 17:01:15 on Feb 24,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.6d Feb 23 2018Linux 3.10.0-1160.15.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.trapplyse_tb(sim)#1
+# Loading work.trapplyse(behav)#1
+# 1
+# ** Note: ### 10. Turn on/off a few times
+#    Time: 2 us  Iteration: 0  Instance: /trapplyse_tb
+# ** Note: ### 20. Timeout test. Also check tidkvar
+#    Time: 21 us  Iteration: 0  Instance: /trapplyse_tb
+# ** Note: ### TEST BENCH DONE. Did you get any error message?
+#    Time: 42 us  Iteration: 0  Instance: /trapplyse_tb
+# wave zoomfull not supported in batch mode
+# End time: 17:01:22 on Feb 24,2021, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0

@@ -1,0 +1,7 @@
+run
+-ifn CountOnes.prj
+-top CountOnes
+-p xc9500
+-ofn CountOnes.ngc
+-opt_mode speed
+-opt_level 1

@@ -1,0 +1,71 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+FDCPE_clr: FDCPE port map (clr,ce.LFBK,clk,reset,'0');
+</td></tr><tr><td>
+</td></tr><tr><td>
+counter(3)/counter(3)_SETF <= ((reset)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (ce.LFBK AND NOT clr.LFBK));
+</td></tr><tr><td>
+FTCPE_rco: FTCPE port map (rco,rco_T,clk,'0',counter(3)/counter(3)_SETF.LFBK);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rco_T <= (ce.LFBK AND rco.LFBK AND NOT tidkvar(0).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT tidkvar(1).PIN AND NOT tidkvar(2).PIN AND NOT tidkvar(3).PIN);
+</td></tr><tr><td>
+FTCPE_tidkvar0: FTCPE port map (tidkvar(0),tidkvar_T(0),clk,'0',counter(3)/counter(3)_SETF);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tidkvar_T(0) <= ((NOT u.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter(0).LFBK AND NOT tidkvar(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT tidkvar(2).PIN AND NOT tidkvar(3).PIN));
+</td></tr><tr><td>
+FTCPE_tidkvar1: FTCPE port map (tidkvar(1),tidkvar_T(1),clk,'0',counter(3)/counter(3)_SETF);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tidkvar_T(1) <= ((counter(1).LFBK AND u.PIN AND NOT tidkvar(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (u.PIN AND NOT tidkvar(0).PIN AND tidkvar(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (u.PIN AND NOT tidkvar(0).PIN AND tidkvar(3).PIN));
+</td></tr><tr><td>
+FTCPE_tidkvar2: FTCPE port map (tidkvar(2),tidkvar_T(2),clk,'0',counter(3)/counter(3)_SETF);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tidkvar_T(2) <= ((counter(3).LFBK AND u.PIN AND NOT tidkvar(0).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT tidkvar(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter(2).LFBK AND u.PIN AND NOT tidkvar(0).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT tidkvar(1).PIN));
+</td></tr><tr><td>
+FTCPE_tidkvar3: FTCPE port map (tidkvar(3),tidkvar_T(3),clk,'0',counter(3)/counter(3)_SETF);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tidkvar_T(3) <= (counter(3).LFBK AND NOT counter(2).LFBK AND u.PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT tidkvar(0).PIN AND NOT tidkvar(1).PIN);
+</td></tr><tr><td>
+</td></tr><tr><td>
+u <= ((NOT reset AND x0 AND NOT x1 AND ce.LFBK AND NOT x1_last.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x0_last.LFBK AND rco.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND NOT x0 AND x1 AND ce.LFBK AND x1_last.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x0_last.LFBK AND rco.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND NOT x0 AND NOT x1 AND ce.LFBK AND NOT x1_last.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT x0_last.LFBK AND rco.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND x0 AND NOT ce.LFBK AND NOT x0_last.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND NOT x0 AND NOT ce.LFBK AND x0_last.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND x1 AND NOT ce.LFBK AND NOT x1_last.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND NOT x1 AND NOT ce.LFBK AND x1_last.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND x0 AND x1 AND ce.LFBK AND x1_last.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	x0_last.LFBK AND rco.LFBK));
+</td></tr><tr><td>
+FDCPE_x0_last: FDCPE port map (x0_last,x0,clk,reset,'0');
+</td></tr><tr><td>
+FDCPE_x1_last: FDCPE port map (x1_last,x1,clk,reset,'0');
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

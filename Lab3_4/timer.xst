@@ -1,0 +1,7 @@
+run
+-ifn timer.prj
+-top timer
+-p xc9500
+-ofn timer.ngc
+-opt_mode speed
+-opt_level 1

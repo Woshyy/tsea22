@@ -1,0 +1,6 @@
+V3 3
+FL /home/chrwa634/TSEA22/Lab3/Lab4_1/stopwatch.vhd 2021/03/04.09:42:07 P.20131013
+EN work/stopwatch 1614851298 FL /home/chrwa634/TSEA22/Lab3/Lab4_1/stopwatch.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/stopwatch/rtl 1614851299 \
+      FL /home/chrwa634/TSEA22/Lab3/Lab4_1/stopwatch.vhd EN work/stopwatch 1614851298

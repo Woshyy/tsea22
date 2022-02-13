@@ -1,0 +1,248 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: stopwatch.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "stopwatch.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "stopwatch"
+Output Format                      : NGC
+Target Device                      : XC9500 CPLDs
+
+---- Source Options
+Top Module Name                    : stopwatch
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/chrwa634/TSEA22/Lab3/Lab4_1/stopwatch.vhd" in Library work.
+Entity <stopwatch> compiled.
+Entity <stopwatch> (Architecture <rtl>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <stopwatch> in library <work> (architecture <rtl>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <stopwatch> in library <work> (Architecture <rtl>).
+INFO:Xst:1561 - "/home/chrwa634/TSEA22/Lab3/Lab4_1/stopwatch.vhd" line 210: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "/home/chrwa634/TSEA22/Lab3/Lab4_1/stopwatch.vhd" line 225: Mux is complete : default of case is discarded
+Entity <stopwatch> analyzed. Unit <stopwatch> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <stopwatch>.
+    Related source file is "/home/chrwa634/TSEA22/Lab3/Lab4_1/stopwatch.vhd".
+WARNING:Xst:1780 - Signal <muxfrekvens_older> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <muxfrekvens_old> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <muxfrekvens_enpuls> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 16x8-bit ROM for signal <digit>.
+    Found 1-bit register for signal <ce>.
+    Found 4-bit register for signal <counter_100_0>.
+    Found 4-bit adder for signal <counter_100_0$addsub0000> created at line 87.
+    Found 4-bit register for signal <counter_100_1>.
+    Found 4-bit adder for signal <counter_100_1$addsub0000> created at line 107.
+    Found 4-bit register for signal <counter_min_0>.
+    Found 4-bit adder for signal <counter_min_0$addsub0000> created at line 164.
+    Found 4-bit register for signal <counter_min_1>.
+    Found 4-bit adder for signal <counter_min_1$addsub0000> created at line 182.
+    Found 4-bit register for signal <counter_sec_0>.
+    Found 4-bit adder for signal <counter_sec_0$addsub0000> created at line 126.
+    Found 4-bit register for signal <counter_sec_1>.
+    Found 4-bit adder for signal <counter_sec_1$addsub0000> created at line 145.
+    Found 1-bit register for signal <hundradelspuls_gammal>.
+    Found 2-bit up counter for signal <mux_counter>.
+    Found 1-bit register for signal <old_nollstallning>.
+    Found 1-bit register for signal <rco_100_0>.
+    Found 1-bit register for signal <rco_100_1>.
+    Found 1-bit register for signal <rco_min_0>.
+    Found 1-bit register for signal <rco_sec_0>.
+    Found 1-bit register for signal <rco_sec_1>.
+    Found 4-bit 4-to-1 multiplexer for signal <show>.
+    Found 1-bit register for signal <start_stopp_old>.
+    Found 1-bit register for signal <visningslage_s>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+Unit <stopwatch> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 6
+ 4-bit adder                                           : 6
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 16
+ 1-bit register                                        : 10
+ 4-bit register                                        : 6
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 6
+ 4-bit adder                                           : 6
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <stopwatch> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : stopwatch.ngr
+Top Level Output File Name         : stopwatch
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : XC9500 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 476
+#      AND2                        : 162
+#      AND3                        : 35
+#      AND4                        : 4
+#      GND                         : 1
+#      INV                         : 179
+#      OR2                         : 50
+#      OR3                         : 11
+#      XOR2                        : 34
+# FlipFlops/Latches                : 36
+#      FD                          : 5
+#      FDC                         : 30
+#      FDCP                        : 1
+# IO Buffers                       : 18
+#      IBUF                        : 7
+#      OBUF                        : 11
+=========================================================================
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.17 secs
+ 
+--> 
+
+
+Total memory usage is 611912 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

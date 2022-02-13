@@ -1,0 +1,7 @@
+run
+-ifn stopwatch.prj
+-top stopwatch
+-p xc9500
+-ofn stopwatch.ngc
+-opt_mode speed
+-opt_level 1

@@ -1,0 +1,667 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$FX_DC$63 <= display(1).PIN
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	 XOR 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$OpTx$FX_DC$63 <= visningslage_s;
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$FX_SC$67 <= (visningslage_s AND display(1).PIN);
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$FX_SC$68 <= (NOT visningslage_s AND NOT display(1).PIN);
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+FDCPE_counter_100_00: FDCPE port map (counter_100_0(0),counter_100_0_D(0),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_100_0_D(0) <= ((nollstallning AND NOT old_nollstallning.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_100_0(0).LFBK AND NOT raknar.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (hundradelspuls AND counter_100_0(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT hundradelspuls_gammal.LFBK AND raknar.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_100_0(1) AND NOT counter_100_0(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_0(3) AND rco_100_0 AND NOT counter_100_0(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT hundradelspuls AND NOT counter_100_0(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_100_0(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	hundradelspuls_gammal.LFBK));
+</td></tr><tr><td>
+FTCPE_counter_100_01: FTCPE port map (counter_100_0(1),counter_100_0_T(1),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_100_0_T(1) <= ((counter_100_0(0) AND hundradelspuls AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT hundradelspuls_gammal AND NOT nollstallning AND counter_100_0(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	raknar.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_0(0) AND hundradelspuls AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT hundradelspuls_gammal AND NOT nollstallning AND NOT counter_100_0(3).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	raknar.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nollstallning AND NOT old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_0(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_0(0) AND hundradelspuls AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT hundradelspuls_gammal AND counter_100_0(1).LFBK AND raknar.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_0(0) AND hundradelspuls AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT hundradelspuls_gammal AND old_nollstallning AND counter_100_0(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	raknar.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_0(0) AND hundradelspuls AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT hundradelspuls_gammal AND old_nollstallning AND NOT counter_100_0(3).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	raknar.PIN));
+</td></tr><tr><td>
+FTCPE_counter_100_02: FTCPE port map (counter_100_0(2),counter_100_0_T(2),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_100_0_T(2) <= ((nollstallning AND NOT old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_0(2).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_0(0) AND hundradelspuls AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT hundradelspuls_gammal AND NOT nollstallning AND counter_100_0(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	raknar.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_0(0) AND hundradelspuls AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT hundradelspuls_gammal AND old_nollstallning AND counter_100_0(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	raknar.PIN));
+</td></tr><tr><td>
+FTCPE_counter_100_03: FTCPE port map (counter_100_0(3),counter_100_0_T(3),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_100_0_T(3) <= ((counter_100_0(0) AND hundradelspuls AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT hundradelspuls_gammal AND NOT nollstallning AND counter_100_0(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_0(2).LFBK AND raknar.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_0(0) AND hundradelspuls AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT hundradelspuls_gammal AND old_nollstallning AND counter_100_0(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_0(2).LFBK AND raknar.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nollstallning AND NOT old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_0(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_0(0) AND hundradelspuls AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT hundradelspuls_gammal AND NOT counter_100_0(1).LFBK AND NOT counter_100_0(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_0(3).LFBK AND raknar.PIN));
+</td></tr><tr><td>
+FDCPE_counter_100_10: FDCPE port map (counter_100_1(0),counter_100_1_D(0),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_100_1_D(0) <= ((nollstallning AND NOT old_nollstallning)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_1(0).LFBK AND rco_100_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_100_1(0).LFBK AND NOT rco_100_0.LFBK));
+</td></tr><tr><td>
+FDCPE_counter_100_11: FDCPE port map (counter_100_1(1),counter_100_1_D(1),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_100_1_D(1) <= ((counter_100_1(0).LFBK AND rco_100_0.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_1(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nollstallning AND NOT old_nollstallning)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_100_1(0).LFBK AND NOT counter_100_1(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT rco_100_0.LFBK AND NOT counter_100_1(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_100_1(1).LFBK AND NOT counter_100_1(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_1(3).LFBK));
+</td></tr><tr><td>
+FTCPE_counter_100_12: FTCPE port map (counter_100_1(2),counter_100_1_T(2),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_100_1_T(2) <= ((nollstallning AND NOT old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_1(2).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nollstallning AND counter_100_1(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	rco_100_0.LFBK AND counter_100_1(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (old_nollstallning AND counter_100_1(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	rco_100_0.LFBK AND counter_100_1(1).LFBK));
+</td></tr><tr><td>
+FTCPE_counter_100_13: FTCPE port map (counter_100_1(3),counter_100_1_T(3),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_100_1_T(3) <= ((NOT nollstallning AND counter_100_1(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	rco_100_0.LFBK AND counter_100_1(1).LFBK AND counter_100_1(2).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (old_nollstallning AND counter_100_1(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	rco_100_0.LFBK AND counter_100_1(1).LFBK AND counter_100_1(2).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nollstallning AND NOT old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_1(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_1(0).LFBK AND rco_100_0.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_1(1).LFBK AND NOT counter_100_1(2).LFBK AND counter_100_1(3).LFBK));
+</td></tr><tr><td>
+FDCPE_counter_min_00: FDCPE port map (counter_min_0(0),counter_min_0_D(0),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_min_0_D(0) <= ((counter_min_0(0).LFBK AND rco_sec_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_min_0(0).LFBK AND NOT rco_sec_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nollstallning AND NOT old_nollstallning));
+</td></tr><tr><td>
+FDCPE_counter_min_01: FDCPE port map (counter_min_0(1),counter_min_0_D(1),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_min_0_D(1) <= ((counter_min_0(0).LFBK AND counter_min_0(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	rco_sec_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nollstallning AND NOT old_nollstallning)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_min_0(0).LFBK AND NOT counter_min_0(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_min_0(1).LFBK AND NOT rco_sec_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_min_0(1).LFBK AND NOT counter_min_0(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_0(3).LFBK));
+</td></tr><tr><td>
+FTCPE_counter_min_02: FTCPE port map (counter_min_0(2),counter_min_0_T(2),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_min_0_T(2) <= ((nollstallning AND NOT old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_0(2).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nollstallning AND counter_min_0(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_0(1).LFBK AND rco_sec_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (old_nollstallning AND counter_min_0(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_0(1).LFBK AND rco_sec_1.LFBK));
+</td></tr><tr><td>
+FTCPE_counter_min_03: FTCPE port map (counter_min_0(3),counter_min_0_T(3),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_min_0_T(3) <= ((NOT nollstallning AND counter_min_0(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_0(1).LFBK AND counter_min_0(2).LFBK AND rco_sec_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (old_nollstallning AND counter_min_0(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_0(1).LFBK AND counter_min_0(2).LFBK AND rco_sec_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_0(0).LFBK AND NOT counter_min_0(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_min_0(2).LFBK AND rco_sec_1.LFBK AND counter_min_0(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nollstallning AND NOT old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_0(3).LFBK));
+</td></tr><tr><td>
+FDCPE_counter_min_10: FDCPE port map (counter_min_1(0),counter_min_1_D(0),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_min_1_D(0) <= ((nollstallning AND NOT old_nollstallning.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (rco_min_0 AND counter_min_1(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT rco_min_0 AND NOT counter_min_1(0).LFBK));
+</td></tr><tr><td>
+FDCPE_counter_min_11: FDCPE port map (counter_min_1(1),counter_min_1_D(1),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_min_1_D(1) <= ((counter_min_1(0) AND counter_min_1(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	rco_min_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_1(2) AND NOT counter_min_1(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_min_1(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_min_1(0) AND NOT counter_min_1(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nollstallning AND NOT old_nollstallning)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_min_1(1).LFBK AND NOT rco_min_0.LFBK));
+</td></tr><tr><td>
+FTCPE_counter_min_12: FTCPE port map (counter_min_1(2),counter_min_1_T(2),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_min_1_T(2) <= ((nollstallning AND NOT old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_1(2).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_1(0) AND counter_min_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nollstallning AND rco_min_0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_1(0) AND counter_min_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	old_nollstallning AND rco_min_0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_1(0) AND NOT counter_min_1(3) AND rco_min_0 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_1(2).LFBK));
+</td></tr><tr><td>
+FTCPE_counter_min_13: FTCPE port map (counter_min_1(3),counter_min_1_T(3),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_min_1_T(3) <= ((nollstallning AND NOT old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_1(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_1(0) AND counter_min_1(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nollstallning AND counter_min_1(1).LFBK AND rco_min_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_1(0) AND counter_min_1(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	old_nollstallning AND counter_min_1(1).LFBK AND rco_min_0.LFBK));
+</td></tr><tr><td>
+FDCPE_counter_sec_00: FDCPE port map (counter_sec_0(0),counter_sec_0_D(0),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_sec_0_D(0) <= ((nollstallning AND NOT old_nollstallning)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (rco_100_1 AND counter_sec_0(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT rco_100_1 AND NOT counter_sec_0(0).LFBK));
+</td></tr><tr><td>
+FDCPE_counter_sec_01: FDCPE port map (counter_sec_0(1),counter_sec_0_D(1),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_sec_0_D(1) <= ((counter_sec_0(0) AND counter_sec_0(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	rco_100_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_sec_0(1).LFBK AND NOT counter_sec_0(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_0(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_sec_0(0) AND NOT counter_sec_0(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nollstallning AND NOT old_nollstallning)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_sec_0(1).LFBK AND NOT rco_100_1.LFBK));
+</td></tr><tr><td>
+FTCPE_counter_sec_02: FTCPE port map (counter_sec_0(2),counter_sec_0_T(2),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_sec_0_T(2) <= ((nollstallning AND NOT old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_0(2).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_0(0) AND NOT nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_0(1).LFBK AND rco_100_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_0(0) AND old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_0(1).LFBK AND rco_100_1.LFBK));
+</td></tr><tr><td>
+FTCPE_counter_sec_03: FTCPE port map (counter_sec_0(3),counter_sec_0_T(3),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_sec_0_T(3) <= ((counter_sec_0(0) AND NOT nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_0(1).LFBK AND counter_sec_0(2).LFBK AND rco_100_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_0(0) AND old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_0(1).LFBK AND counter_sec_0(2).LFBK AND rco_100_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nollstallning AND NOT old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_0(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_0(0) AND NOT counter_sec_0(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_0(2).LFBK AND rco_100_1.LFBK AND counter_sec_0(3).LFBK));
+</td></tr><tr><td>
+FDCPE_counter_sec_10: FDCPE port map (counter_sec_1(0),counter_sec_1_D(0),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_sec_1_D(0) <= ((nollstallning AND NOT old_nollstallning)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_1(0).LFBK AND rco_sec_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_sec_1(0).LFBK AND NOT rco_sec_0.LFBK));
+</td></tr><tr><td>
+FDCPE_counter_sec_11: FDCPE port map (counter_sec_1(1),counter_sec_1_D(1),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_sec_1_D(1) <= ((nollstallning AND NOT old_nollstallning)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_1(0).LFBK AND rco_sec_0.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_1(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_1(2).LFBK AND NOT counter_sec_1(3).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_1(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_sec_1(0).LFBK AND NOT counter_sec_1(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT rco_sec_0.LFBK AND NOT counter_sec_1(1).LFBK));
+</td></tr><tr><td>
+FTCPE_counter_sec_12: FTCPE port map (counter_sec_1(2),counter_sec_1_T(2),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_sec_1_T(2) <= ((NOT nollstallning AND counter_sec_1(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	rco_sec_0.LFBK AND counter_sec_1(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (old_nollstallning AND counter_sec_1(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	rco_sec_0.LFBK AND counter_sec_1(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_1(0).LFBK AND counter_sec_1(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_1(3).LFBK AND rco_sec_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nollstallning AND NOT old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_1(2).LFBK));
+</td></tr><tr><td>
+FTCPE_counter_sec_13: FTCPE port map (counter_sec_1(3),counter_sec_1_T(3),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_sec_1_T(3) <= ((nollstallning AND NOT old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_1(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nollstallning AND counter_sec_1(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_1(2).LFBK AND rco_sec_0.LFBK AND counter_sec_1(1).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (old_nollstallning AND counter_sec_1(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_1(2).LFBK AND rco_sec_0.LFBK AND counter_sec_1(1).LFBK));
+</td></tr><tr><td>
+</td></tr><tr><td>
+digit(0) <= NOT (((EXP1_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_sec_0(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(3)/show(3)_D2.LFBK AND NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_sec_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(3)/show(3)_D2.LFBK AND NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_sec_0(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(3)/show(3)_D2.LFBK AND display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_sec_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(3)/show(3)_D2.LFBK AND display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND NOT counter_min_1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_min_1(1) AND show(2)/show(2)_D2 AND display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (show(2)/show(2)_D2 AND show(3)/show(3)_D2.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_min_0(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(3)/show(3)_D2.LFBK AND display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_min_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(3)/show(3)_D2.LFBK AND display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_100_0(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(3)/show(3)_D2.LFBK AND NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_100_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(3)/show(3)_D2.LFBK AND NOT display(1).PIN AND display(0).PIN)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+digit(1) <= NOT (((mux_counter(0).EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_min_0(0) AND show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	$OpTx$FX_SC$67 AND show(1)/show(1)_D2 AND NOT mux_counter(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_sec_0(0) AND show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	$OpTx$FX_DC$63 AND show(1)/show(1)_D2 AND NOT mux_counter(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_sec_1(0) AND show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	$OpTx$FX_DC$63 AND show(1)/show(1)_D2 AND mux_counter(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_min_1(0) AND show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	$OpTx$FX_SC$67 AND show(1)/show(1)_D2 AND mux_counter(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_0(0) AND show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$FX_DC$63 AND NOT $OpTx$FX_SC$67 AND NOT show(1)/show(1)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mux_counter(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP19_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_0(0) AND counter_min_0(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(2)/show(2)_D2 AND NOT $OpTx$FX_DC$63 AND NOT show(1)/show(1)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mux_counter(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_0(0) AND show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$FX_DC$63 AND NOT $OpTx$FX_SC$68 AND NOT show(1)/show(1)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT mux_counter(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_1(0) AND show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$FX_DC$63 AND NOT $OpTx$FX_SC$68 AND NOT show(1)/show(1)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	mux_counter(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_1(0) AND show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$FX_DC$63 AND NOT show(1)/show(1)_D2 AND mux_counter(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_1(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (show(2)/show(2)_D2 AND NOT $OpTx$FX_DC$63 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$FX_SC$67 AND NOT show(1)/show(1)_D2 AND mux_counter(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_1(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (show(2)/show(2)_D2 AND show(3)/show(3)_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (show(3)/show(3)_D2 AND show(1)/show(1)_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_100_0(0) AND show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	$OpTx$FX_SC$68 AND show(1)/show(1)_D2 AND NOT mux_counter(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (show(2)/show(2)_D2 AND NOT $OpTx$FX_DC$63 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$FX_SC$68 AND NOT $OpTx$FX_SC$67 AND NOT show(1)/show(1)_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (show(2)/show(2)_D2 AND $OpTx$FX_SC$68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(1)/show(1)_D2 AND mux_counter(0).LFBK AND NOT counter_100_1(0).LFBK)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+digit(2) <= ((visningslage_s AND counter_sec_0(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_0(3) AND NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_sec_0(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_0(3) AND NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_min_1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_min_1(3) AND display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND NOT counter_min_1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_1(2).LFBK AND display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_sec_0(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_0(3) AND display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP6_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_sec_1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_1(3) AND NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_100_1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_1(3) AND NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_sec_1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_1(3) AND display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_sec_1(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_1(3) AND display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_100_1(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_1(3) AND NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_min_0(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_min_0(3) AND display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_min_0(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_min_0(3) AND display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_100_0(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_0(3) AND NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_sec_0(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_0(3) AND display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_100_0(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_0(3) AND NOT display(1).PIN AND NOT display(0).PIN));
+</td></tr><tr><td>
+</td></tr><tr><td>
+digit(3) <= ((EXP15_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_sec_1(0) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	$OpTx$FX_DC$63 AND NOT show(1)/show(1)_D2 AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_100_1(0) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT show(1)/show(1)_D2 AND NOT visningslage_s.LFBK AND NOT display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_100_1(0) AND NOT show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(1)/show(1)_D2 AND NOT visningslage_s.LFBK AND NOT display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT show(2)/show(2)_D2 AND NOT show(1)/show(1)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT visningslage_s.LFBK AND NOT counter_100_0(0).LFBK AND NOT display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT show(3)/show(3)_D2 AND show(1)/show(1)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT visningslage_s.LFBK AND NOT counter_100_0(0).LFBK AND NOT display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_min_0(0) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT show(1)/show(1)_D2 AND visningslage_s.LFBK AND display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_min_0(0) AND NOT show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(1)/show(1)_D2 AND visningslage_s.LFBK AND display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT show(2)/show(2)_D2 AND show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT show(1)/show(1)_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT show(2)/show(2)_D2 AND NOT show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(1)/show(1)_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_sec_0(0) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	$OpTx$FX_DC$63 AND NOT show(1)/show(1)_D2 AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_sec_0(0) AND NOT show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	$OpTx$FX_DC$63 AND show(1)/show(1)_D2 AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_sec_1(0) AND NOT show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	$OpTx$FX_DC$63 AND show(1)/show(1)_D2 AND display(0).PIN));
+</td></tr><tr><td>
+</td></tr><tr><td>
+digit(4) <= ((EXP7_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND NOT counter_min_0(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_0(1) AND NOT counter_min_0(3) AND display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND NOT counter_sec_1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_1(2) AND NOT counter_sec_1(1) AND NOT display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND NOT counter_100_0(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_0(1) AND NOT counter_100_0(3) AND NOT display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND NOT counter_100_1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_1(1) AND NOT counter_100_1(2) AND NOT display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND NOT counter_sec_1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_1(2) AND NOT counter_sec_1(1) AND display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND NOT counter_sec_0(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_0(1) AND NOT counter_sec_0(3) AND display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND NOT counter_min_0(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_min_0(1) AND NOT counter_min_0(2) AND display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND NOT counter_sec_0(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_0(1) AND NOT counter_sec_0(2) AND NOT display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND NOT counter_min_1(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_min_1(1) AND NOT counter_min_1(2).LFBK AND display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND NOT counter_100_0(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_0(1) AND NOT counter_100_0(2) AND NOT display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND NOT counter_sec_0(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_0(1) AND NOT counter_sec_0(2) AND display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(0).PIN));
+</td></tr><tr><td>
+</td></tr><tr><td>
+digit(5) <= NOT (((EXP18_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_1(0) AND counter_100_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT visningslage_s.LFBK AND NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_0(1) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT visningslage_s.LFBK AND NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_0(1) AND NOT visningslage_s.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_0(0).LFBK AND NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_1(1) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT visningslage_s.LFBK AND NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_1(1) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	visningslage_s.LFBK AND NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP11_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_1(0) AND counter_sec_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	visningslage_s.LFBK AND NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_1(0) AND counter_sec_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT visningslage_s.LFBK AND display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_0(1) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	visningslage_s.LFBK AND NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_0(1) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT visningslage_s.LFBK AND display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_1(1) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT visningslage_s.LFBK AND display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (show(2)/show(2)_D2 AND show(3)/show(3)_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_0(0) AND counter_min_0(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	visningslage_s.LFBK AND display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_0(1) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	visningslage_s.LFBK AND display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_1(1) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	visningslage_s.LFBK AND display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_1(1) AND visningslage_s.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_1(0).LFBK AND display(1).PIN AND display(0).PIN)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+digit(6) <= NOT (((visningslage_s.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_0(1) AND show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	visningslage_s.LFBK AND NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_0(1) AND show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT visningslage_s.LFBK AND display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_1(1) AND show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	visningslage_s.LFBK AND NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_sec_1(1) AND show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT visningslage_s.LFBK AND display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_1(1) AND show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	visningslage_s.LFBK AND counter_min_1(0).LFBK AND display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP14_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_1(0) AND counter_100_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(2)/show(2)_D2 AND NOT visningslage_s.LFBK AND NOT display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_0(0) AND counter_min_0(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	show(2)/show(2)_D2 AND visningslage_s.LFBK AND display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_100_1(1) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT show(3)/show(3)_D2 AND NOT visningslage_s.LFBK AND NOT display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_min_0(1) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT show(3)/show(3)_D2 AND visningslage_s.LFBK AND display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter_min_1(1) AND NOT show(2)/show(2)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT show(3)/show(3)_D2 AND visningslage_s.LFBK AND display(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (show(2)/show(2)_D2 AND show(3)/show(3)_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_0(1) AND show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT visningslage_s.LFBK AND NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_100_1(1) AND show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT visningslage_s.LFBK AND NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_0(1) AND show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	visningslage_s.LFBK AND display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter_min_1(1) AND show(3)/show(3)_D2 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	visningslage_s.LFBK AND display(1).PIN AND display(0).PIN)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+digit(7) <= '0';
+</td></tr><tr><td>
+FTCPE_display0: FTCPE port map (display(0),'1',muxfrekvens,reset,'0');
+</td></tr><tr><td>
+FTCPE_display1: FTCPE port map (display(1),mux_counter(0).LFBK,muxfrekvens,reset,'0');
+</td></tr><tr><td>
+FDCPE_hundradelspuls_gammal: FDCPE port map (hundradelspuls_gammal,hundradelspuls,clk,reset,'0');
+</td></tr><tr><td>
+FDCPE_old_nollstallning: FDCPE port map (old_nollstallning,nollstallning,clk,reset,'0');
+</td></tr><tr><td>
+FTCPE_raknar: FTCPE port map (raknar,raknar_T,clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raknar_T <= (start_stopp AND NOT start_stopp_old.LFBK);
+</td></tr><tr><td>
+FTCPE_rco_100_0: FTCPE port map (rco_100_0,rco_100_0_T,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rco_100_0_T <= ((NOT reset AND NOT counter_100_0(0) AND NOT nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	rco_100_0.LFBK AND NOT counter_100_0(1).LFBK AND NOT counter_100_0(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_0(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND NOT counter_100_0(0) AND old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	rco_100_0.LFBK AND NOT counter_100_0(1).LFBK AND NOT counter_100_0(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_0(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND counter_100_0(0) AND hundradelspuls AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT hundradelspuls_gammal AND NOT nollstallning AND NOT rco_100_0.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_0(1).LFBK AND NOT counter_100_0(2).LFBK AND counter_100_0(3).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	raknar.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND counter_100_0(0) AND hundradelspuls AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT hundradelspuls_gammal AND old_nollstallning AND NOT rco_100_0.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_0(1).LFBK AND NOT counter_100_0(2).LFBK AND counter_100_0(3).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	raknar.PIN));
+</td></tr><tr><td>
+FTCPE_rco_100_1: FTCPE port map (rco_100_1,rco_100_1_T,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rco_100_1_T <= ((NOT reset AND NOT nollstallning AND NOT rco_100_1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_1(0).LFBK AND rco_100_0.LFBK AND NOT counter_100_1(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_1(2).LFBK AND counter_100_1(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND NOT nollstallning AND rco_100_1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_1(0).LFBK AND NOT rco_100_0.LFBK AND NOT counter_100_1(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_1(2).LFBK AND NOT counter_100_1(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND old_nollstallning AND rco_100_1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_1(0).LFBK AND NOT rco_100_0.LFBK AND NOT counter_100_1(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_1(2).LFBK AND NOT counter_100_1(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND old_nollstallning AND NOT rco_100_1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_100_1(0).LFBK AND rco_100_0.LFBK AND NOT counter_100_1(1).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_100_1(2).LFBK AND counter_100_1(3).LFBK));
+</td></tr><tr><td>
+FTCPE_rco_min_0: FTCPE port map (rco_min_0,rco_min_0_T,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rco_min_0_T <= ((NOT reset AND NOT nollstallning AND counter_min_0(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_min_0(1).LFBK AND NOT counter_min_0(2).LFBK AND rco_sec_1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_0(3).LFBK AND NOT rco_min_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND NOT nollstallning AND NOT counter_min_0(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_min_0(1).LFBK AND NOT counter_min_0(2).LFBK AND NOT rco_sec_1.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_min_0(3).LFBK AND rco_min_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_min_0(0).LFBK AND NOT counter_min_0(1).LFBK AND NOT counter_min_0(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	rco_sec_1.LFBK AND counter_min_0(3).LFBK AND NOT rco_min_0.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_min_0(0).LFBK AND NOT counter_min_0(1).LFBK AND NOT counter_min_0(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT rco_sec_1.LFBK AND NOT counter_min_0(3).LFBK AND rco_min_0.LFBK));
+</td></tr><tr><td>
+FTCPE_rco_sec_0: FTCPE port map (rco_sec_0,rco_sec_0_T,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rco_sec_0_T <= ((NOT reset AND NOT counter_sec_0(1) AND NOT counter_sec_0(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_0(3) AND NOT nollstallning AND rco_100_1 AND NOT rco_sec_0.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_0(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND NOT counter_sec_0(1) AND NOT counter_sec_0(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_0(3) AND old_nollstallning AND rco_100_1 AND NOT rco_sec_0.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_0(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND NOT counter_sec_0(1) AND NOT counter_sec_0(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_0(3) AND NOT nollstallning AND NOT rco_100_1 AND rco_sec_0.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_0(0).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND NOT counter_sec_0(1) AND NOT counter_sec_0(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_0(3) AND old_nollstallning AND NOT rco_100_1 AND rco_sec_0.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_0(0).LFBK));
+</td></tr><tr><td>
+FTCPE_rco_sec_1: FTCPE port map (rco_sec_1,rco_sec_1_T,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rco_sec_1_T <= ((NOT reset AND NOT nollstallning AND counter_sec_1(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_1(2).LFBK AND NOT counter_sec_1(3).LFBK AND rco_sec_0.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_1(1).LFBK AND NOT rco_sec_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND NOT nollstallning AND NOT counter_sec_1(0).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_1(2).LFBK AND NOT counter_sec_1(3).LFBK AND NOT rco_sec_0.LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_1(1).LFBK AND rco_sec_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	counter_sec_1(0).LFBK AND counter_sec_1(2).LFBK AND NOT counter_sec_1(3).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	rco_sec_0.LFBK AND NOT counter_sec_1(1).LFBK AND NOT rco_sec_1.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset AND old_nollstallning AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT counter_sec_1(0).LFBK AND NOT counter_sec_1(2).LFBK AND NOT counter_sec_1(3).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT rco_sec_0.LFBK AND NOT counter_sec_1(1).LFBK AND rco_sec_1.LFBK));
+</td></tr><tr><td>
+</td></tr><tr><td>
+show(1)/show(1)_D2 <= ((visningslage_s AND counter_sec_0(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_sec_0(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_sec_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_min_0(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_sec_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_min_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_100_0(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_100_1(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(1).PIN AND display(0).PIN));
+</td></tr><tr><td>
+</td></tr><tr><td>
+show(2)/show(2)_D2 <= ((visningslage_s AND counter_sec_1(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_sec_0(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_sec_1(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_sec_0(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_min_1(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_min_0(2).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_100_0(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_100_1(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(1).PIN AND display(0).PIN));
+</td></tr><tr><td>
+</td></tr><tr><td>
+show(3)/show(3)_D2 <= ((visningslage_s AND counter_sec_0(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_sec_1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_sec_0(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_sec_1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_min_0(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(1).PIN AND NOT display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (visningslage_s AND counter_min_1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_100_1(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(1).PIN AND display(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT visningslage_s AND counter_100_0(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT display(1).PIN AND NOT display(0).PIN));
+</td></tr><tr><td>
+FDCPE_start_stopp_old: FDCPE port map (start_stopp_old,start_stopp,clk,reset,'0');
+</td></tr><tr><td>
+FDCPE_visningslage_s: FDCPE port map (visningslage_s,visningslage,clk,visningslage_s_CLR,visningslage_s_PRE);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visningslage_s_CLR <= (NOT visningslage AND reset);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;visningslage_s_PRE <= (visningslage AND reset);
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

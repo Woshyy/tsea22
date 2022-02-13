@@ -1,0 +1,137 @@
+MDF Database:  version 1.0
+MDF_INFO | trapplyse | XC9572-7-PC44
+MACROCELL | 1 | 4 | ce
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 1 | 1 | 4
+INPUTS | 6 | x0  | x0_last  | x1  | x1_last  | rco  | ce.LFBK
+INPUTMC | 4 | 0 | 15 | 0 | 14 | 0 | 17 | 1 | 4
+INPUTP | 2 | 9 | 89
+EQ | 7 | 
+   u.T = !rco & ce.LFBK
+	# x0 & !x0_last
+	# !x0 & x0_last
+	# x1 & !x1_last
+	# !x1 & x1_last;
+   u.CLK = clk;	// GCK
+   u.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 1 | counter<0>
+ATTRIBUTES | 8889090 | 0
+OUTPUTMC | 3 | 0 | 1 | 0 | 7 | 0 | 17
+INPUTS | 6 | tidkvar<1>.PIN  | clr.LFBK  | counter<3>.LFBK  | tidkvar<2>.PIN  | u.PIN  | counter<0>.LFBK
+INPUTMC | 3 | 0 | 16 | 0 | 7 | 0 | 1
+INPUTP | 3 | 29 | 58 | 87
+EQ | 6 | 
+   !tidkvar<0>.D = !u.PIN
+	# counter<0>.LFBK & clr.LFBK
+	# clr.LFBK & !counter<3>.LFBK & !tidkvar<1>.PIN & 
+	!tidkvar<2>.PIN;
+   tidkvar<0>.CLK = clk;	// GCK
+   tidkvar<0>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 1 | counter<1>
+ATTRIBUTES | 8889090 | 0
+OUTPUTMC | 1 | 2 | 1
+INPUTS | 6 | tidkvar<0>.PIN  | clr  | tidkvar<2>.PIN  | u.PIN  | tidkvar<3>.PIN  | counter<1>.LFBK
+INPUTMC | 2 | 0 | 16 | 2 | 1
+INPUTP | 4 | 11 | 58 | 87 | 15
+EQ | 8 | 
+   tidkvar<1>.D = !clr & u.PIN
+	# counter<1>.LFBK & u.PIN & tidkvar<0>.PIN
+	# !counter<1>.LFBK & u.PIN & !tidkvar<0>.PIN & 
+	tidkvar<2>.PIN
+	# !counter<1>.LFBK & u.PIN & !tidkvar<0>.PIN & 
+	tidkvar<3>.PIN;
+   tidkvar<1>.CLK = clk;	// GCK
+   tidkvar<1>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 1 | counter<2>
+ATTRIBUTES | 8889090 | 0
+OUTPUTMC | 1 | 3 | 1
+INPUTS | 6 | tidkvar<0>.PIN  | clr  | tidkvar<1>.PIN  | u.PIN  | tidkvar<3>.PIN  | counter<2>.LFBK
+INPUTMC | 2 | 0 | 16 | 3 | 1
+INPUTP | 4 | 11 | 29 | 87 | 15
+EQ | 7 | 
+   tidkvar<2>.D = !clr & u.PIN
+	# counter<2>.LFBK & u.PIN & tidkvar<0>.PIN
+	# counter<2>.LFBK & u.PIN & tidkvar<1>.PIN
+	# !counter<2>.LFBK & u.PIN & !tidkvar<0>.PIN & 
+	!tidkvar<1>.PIN & tidkvar<3>.PIN;
+   tidkvar<2>.CLK = clk;	// GCK
+   tidkvar<2>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 7 | counter<3>
+ATTRIBUTES | 8889090 | 0
+OUTPUTMC | 3 | 0 | 1 | 0 | 7 | 0 | 17
+INPUTS | 6 | tidkvar<1>.PIN  | clr.LFBK  | counter<0>.LFBK  | u.PIN  | tidkvar<2>.PIN  | counter<3>.LFBK
+INPUTMC | 3 | 0 | 16 | 0 | 1 | 0 | 7
+INPUTP | 3 | 29 | 87 | 58
+EQ | 6 | 
+   !tidkvar<3>.D = !u.PIN
+	# clr.LFBK & !counter<3>.LFBK
+	# !counter<0>.LFBK & clr.LFBK & !tidkvar<1>.PIN & 
+	!tidkvar<2>.PIN;
+   tidkvar<3>.CLK = clk;	// GCK
+   tidkvar<3>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 16 | clr
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 5 | 3 | 1 | 2 | 1 | 0 | 1 | 0 | 7 | 0 | 17
+INPUTS | 1 | u.PIN
+INPUTP | 1 | 87
+EQ | 3 | 
+   clr.D = u.PIN;
+   clr.CLK = clk;	// GCK
+   clr.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 17 | rco
+ATTRIBUTES | 8622848 | 0
+OUTPUTMC | 2 | 1 | 4 | 0 | 17
+INPUTS | 7 | tidkvar<1>.PIN  | rco.LFBK  | counter<0>.LFBK  | counter<3>.LFBK  | tidkvar<2>.PIN  | u.PIN  | clr.LFBK
+INPUTMC | 4 | 0 | 17 | 0 | 1 | 0 | 7 | 0 | 16
+INPUTP | 3 | 29 | 58 | 87
+EQ | 5 | 
+   !rco.D = clr.LFBK & !rco.LFBK & u.PIN
+	# !counter<0>.LFBK & clr.LFBK & !counter<3>.LFBK & 
+	u.PIN & !tidkvar<1>.PIN & !tidkvar<2>.PIN;
+   rco.CLK = clk;	// GCK
+   rco.AP = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 0 | 15 | x0_last
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 1 | 4
+INPUTS | 1 | x0
+INPUTP | 1 | 9
+EQ | 3 | 
+   x0_last.D = x0;
+   x0_last.CLK = clk;	// GCK
+   x0_last.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 14 | x1_last
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 1 | 4
+INPUTS | 1 | x1
+INPUTP | 1 | 89
+EQ | 3 | 
+   x1_last.D = x1;
+   x1_last.CLK = clk;	// GCK
+   x1_last.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+PIN | clk | 4096 | 0 | N/A | 20 | 9 | 1 | 4 | 0 | 1 | 2 | 1 | 3 | 1 | 0 | 7 | 0 | 16 | 0 | 17 | 0 | 15 | 0 | 14
+PIN | reset | 65536 | 0 | N/A | 91 | 9 | 1 | 4 | 0 | 1 | 2 | 1 | 3 | 1 | 0 | 7 | 0 | 16 | 0 | 17 | 0 | 15 | 0 | 14
+PIN | x0 | 64 | 0 | N/A | 9 | 2 | 1 | 4 | 0 | 15
+PIN | x1 | 64 | 0 | N/A | 89 | 2 | 1 | 4 | 0 | 14
+PIN | u | 536870976 | 0 | N/A | 87 | 6 | 0 | 17 | 0 | 16 | 0 | 7 | 3 | 1 | 2 | 1 | 0 | 1
+PIN | tidkvar<0> | 536870976 | 0 | N/A | 11 | 2 | 3 | 1 | 2 | 1
+PIN | tidkvar<1> | 536870976 | 0 | N/A | 29 | 4 | 0 | 1 | 0 | 7 | 3 | 1 | 0 | 17
+PIN | tidkvar<2> | 536870976 | 0 | N/A | 58 | 4 | 0 | 1 | 0 | 7 | 0 | 17 | 2 | 1
+PIN | tidkvar<3> | 536870976 | 0 | N/A | 15 | 2 | 3 | 1 | 2 | 1

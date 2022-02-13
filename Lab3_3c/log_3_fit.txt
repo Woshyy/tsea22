@@ -1,0 +1,214 @@
+Release 14.7 - CPLD Optimizer/Partitioner P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'comb_lock_prom.ise'.
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/q1\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/q1\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/q1\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/q0\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/q0\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/q0\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x1s\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x1s\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x1s\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x0s\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x0s\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x0s\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/u1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/u2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/u3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x1s_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x1s_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x1s_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x1s_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x0s_0_ClkEn1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x0s_0_ClkEn2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x0s_0_ClkEn3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x0s_0_ClkEn4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<2>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<2>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<2>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<2>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<2>5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<2>6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<2>7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<1>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<1>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<1>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<1>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<1>5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<1>6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<1>7 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND3"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<1>8 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<1>9 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/Mrom_data_doA<1>10 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/clk_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/clk_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/reset_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/reset_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x0_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x0_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x1_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/x1_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/u_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom/u_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+CS: block property: block_name=/comb_lock_prom/EXPANDED_FlattenFull/comb_lock_prom prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "comb_lock_prom"
+
+Considering device XC9572-7-PC44.
+Flattening design..
+Timing optimization
+Timing driven global resource optimization
+General global resource optimization........
+Re-checking device resources ...
+Mapping a total of 5 equations into 4 function blocks.......
+Design comb_lock_prom has been optimized and fit into device XC9572-7-PC44.

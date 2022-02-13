@@ -1,0 +1,57 @@
+Pin Freeze File:  version P.20131013
+
+957244 XC9572-7-PC44
+clk S:PIN5
+data<0> S:PIN20
+data<1> S:PIN36
+data<2> S:PIN4
+data<3> S:PIN2
+reset S:PIN39
+startknapp S:PIN34
+LED S:PIN29
+BCD0<3> S:PIN35
+addr<0> S:PIN25
+addr<1> S:PIN26
+addr<2> S:PIN27
+addr<3> S:PIN28
+BCD2<0> S:PIN18
+BCD2<1> S:PIN8
+BCD2<2> S:PIN43
+BCD2<3> S:PIN9
+BCD1<0> S:PIN19
+BCD1<1> S:PIN11
+BCD1<2> S:PIN22
+BCD1<3> S:PIN13
+BCD0<0> S:PIN38
+BCD0<1> S:PIN1
+BCD0<2> S:PIN3
+cs2 S:PIN24
+cs1 S:PIN44
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 EXP0_ counter_unit<1> EXP1_ EXP2_
+		 EXP3_ counter_unit<2> EXP4_ EXP5_
+		
+PARTITION FB1_10 zero_old EXP6_ EXP7_ rco_unit
+		 EXP8_ counter_hundred<1> Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D counter_hundred<3>
+		 rco_tenth
+PARTITION FB2_1 EXP9_ Madd_counter_unit_add0000_Mxor_Result<3>__xor0000 EXP10_ EXP11_
+		 EXP12_ EXP13_ EXP14_ counter_unit<0>
+		 EXP15_ EXP16_ EXP17_
+PARTITION FB2_13 startknapp_old Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D counter_hundred<2> Madd_counter_unit_add0000_Mxor_Result<1>__xor0000/Madd_counter_unit_add0000_Mxor_Result<1>__xor0000_D
+		 rco_address Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2
+PARTITION FB3_1 EXP18_ counter_tenth<1> EXP19_ Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2
+		 $OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347 counter_stop<0> counter_stop<1> counter_tenth<3>
+		 counter_stop<2> counter_stop<3> counter_hundred<0> counter_stop<4>
+		 counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D counter_tenth<0> ce EXP20_
+		 counter_tenth<2> $OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346
+PARTITION FB4_2 cs2_OBUF
+PARTITION FB4_5 counter_address<0>
+PARTITION FB4_8 counter_address<1> counter_address<2>
+PARTITION FB4_11 counter_address<3>
+PARTITION FB4_14 LED_OBUF
+
+

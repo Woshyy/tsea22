@@ -1,0 +1,47 @@
+Pin Freeze File:  version P.20131013
+
+957244 XC9572-7-PC44
+clk S:PIN5
+hundradelspuls S:PIN20
+muxfrekvens S:PIN2
+nollstallning S:PIN36
+reset S:PIN39
+start_stopp S:PIN11
+visningslage S:PIN26
+digit<7> S:PIN24
+raknar S:PIN28
+digit<0> S:PIN1
+digit<1> S:PIN12
+digit<2> S:PIN4
+digit<3> S:PIN43
+digit<4> S:PIN8
+digit<5> S:PIN35
+digit<6> S:PIN38
+display<0> S:PIN44
+display<1> S:PIN18
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 $OpTx$FX_DC$65 digit_0_OBUF EXP0_ EXP1_
+		 EXP2_ EXP3_ EXP4_ digit_2_OBUF
+		 EXP5_ EXP6_ counter_min_1<1> $OpTx$FX_SC$69
+		 EXP7_ EXP8_ digit_4_OBUF show<3>/show<3>_D2
+		 $OpTx$FX_SC$70 show<1>/show<1>_D2
+PARTITION FB2_1 muxfrekvens_old digit_5_OBUF EXP9_ EXP10_
+		 EXP11_ EXP12_ EXP13_ digit_6_OBUF
+		 EXP14_ EXP15_ visningslage_s hundradelspuls_gammal
+		 EXP16_ EXP17_ digit_3_OBUF counter_min_1<0>
+		 mux_counter<0> rco_100_0
+PARTITION FB3_1 muxfrekvens_older counter_sec_0<2> counter_sec_0<0> EXP18_
+		 digit_1_OBUF EXP19_ old_nollstallning counter_100_1<2>
+		 counter_100_1<0> counter_100_0<2> mux_counter<1> rco_100_1
+		 counter_min_1<2> counter_100_1<3> counter_100_0<3> counter_100_1<1>
+		 counter_100_0<1> counter_100_0<0>
+PARTITION FB4_1 start_stopp_old N0 counter_sec_1<3> counter_sec_1<0>
+		 counter_min_1<3> counter_min_0<2> counter_min_0<0> rco_sec_1
+		 rco_sec_0 rco_min_0 ce counter_sec_1<2>
+		 counter_sec_0<3> counter_min_0<3> counter_sec_1<1> counter_sec_0<1>
+		 counter_min_0<1> show<2>/show<2>_D2
+

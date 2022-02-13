@@ -1,0 +1,7 @@
+run
+-ifn comb_lock_prom.prj
+-top comb_lock_prom
+-p xc9500
+-ofn comb_lock_prom.ngc
+-opt_mode speed
+-opt_level 1

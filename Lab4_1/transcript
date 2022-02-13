@@ -1,0 +1,65 @@
+# do first_time.do
+# 3
+# stopwatch
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 23 2018
+# Start time: 10:47:52 on Mar 04,2021
+# vcom -2002 stopwatch.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity stopwatch
+# -- Compiling architecture rtl of stopwatch
+# End time: 10:47:53 on Mar 04,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 23 2018
+# Start time: 10:47:53 on Mar 04,2021
+# vcom -2002 stopwatch_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity stopwatch_tb
+# -- Compiling architecture sim of stopwatch_tb
+# End time: 10:47:53 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" stopwatch_tb 
+# Start time: 10:47:53 on Mar 04,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.6d Feb 23 2018Linux 3.10.0-1160.15.2.el7.x86_64
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.stopwatch_tb(sim)#1
+# Loading work.stopwatch(rtl)#1
+# 1
+# ** Note: Init with reset
+#    Time: 0 ns  Iteration: 0  Instance: /stopwatch_tb
+# ** Note: Starting
+#    Time: 100 us  Iteration: 0  Instance: /stopwatch_tb
+# ** Note: zero
+#    Time: 1600 us  Iteration: 0  Instance: /stopwatch_tb
+# ** Note: Stop/start
+#    Time: 74600 us  Iteration: 0  Instance: /stopwatch_tb
+# ** Note: Switch to mm:ss view
+#    Time: 84600 us  Iteration: 0  Instance: /stopwatch_tb
+# ** Note: Now simulate one hour in x1000 speed. Done at 3.69 sec. (have a look at bottom left corner)
+#    Time: 84610 us  Iteration: 0  Instance: /stopwatch_tb
+# ** Note: After one hour: Stop.
+#    Time: 3684610 us  Iteration: 0  Instance: /stopwatch_tb
+# End time: 10:48:14 on Mar 04,2021, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 0

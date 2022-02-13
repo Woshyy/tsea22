@@ -1,0 +1,8 @@
+V3 3
+FL /home/chrwa634/TSEA22/Lab3/Lab3_3a/comb_lock_logic.vhd 2021/02/17.14:10:25 P.20131013
+EN work/comb_lock_logic 1613576607 \
+      FL /home/chrwa634/TSEA22/Lab3/Lab3_3a/comb_lock_logic.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/comb_lock_logic/behav 1613576608 \
+      FL /home/chrwa634/TSEA22/Lab3/Lab3_3a/comb_lock_logic.vhd \
+      EN work/comb_lock_logic 1613576607

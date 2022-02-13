@@ -1,0 +1,64 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_clr: FDCPE port map (clr,u.PIN,clk,reset,'0');
+</td></tr><tr><td>
+FDCPE_rco: FDCPE port map (rco,rco_D,clk,'0',reset);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rco_D <= ((clr.LFBK AND NOT rco.LFBK AND u.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter(0).LFBK AND clr.LFBK AND NOT counter(3).LFBK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	u.PIN AND NOT tidkvar(1).PIN AND NOT tidkvar(2).PIN));
+</td></tr><tr><td>
+FDCPE_tidkvar0: FDCPE port map (tidkvar(0),tidkvar_D(0),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tidkvar_D(0) <= ((NOT u.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter(0).LFBK AND clr.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (clr.LFBK AND NOT counter(3).LFBK AND NOT tidkvar(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT tidkvar(2).PIN));
+</td></tr><tr><td>
+FDCPE_tidkvar1: FDCPE port map (tidkvar(1),tidkvar_D(1),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tidkvar_D(1) <= ((NOT clr AND u.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter(1).LFBK AND u.PIN AND tidkvar(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter(1).LFBK AND u.PIN AND NOT tidkvar(0).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	tidkvar(2).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter(1).LFBK AND u.PIN AND NOT tidkvar(0).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	tidkvar(3).PIN));
+</td></tr><tr><td>
+FDCPE_tidkvar2: FDCPE port map (tidkvar(2),tidkvar_D(2),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tidkvar_D(2) <= ((NOT clr AND u.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter(2).LFBK AND u.PIN AND tidkvar(0).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (counter(2).LFBK AND u.PIN AND tidkvar(1).PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter(2).LFBK AND u.PIN AND NOT tidkvar(0).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT tidkvar(1).PIN AND tidkvar(3).PIN));
+</td></tr><tr><td>
+FDCPE_tidkvar3: FDCPE port map (tidkvar(3),tidkvar_D(3),clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tidkvar_D(3) <= ((NOT u.PIN)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (clr.LFBK AND NOT counter(3).LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT counter(0).LFBK AND clr.LFBK AND NOT tidkvar(1).PIN AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT tidkvar(2).PIN));
+</td></tr><tr><td>
+FTCPE_u: FTCPE port map (u,u_T,clk,reset,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u_T <= ((NOT rco AND ce.LFBK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x0 AND NOT x0_last)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x0 AND x0_last)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (x1 AND NOT x1_last)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT x1 AND x1_last));
+</td></tr><tr><td>
+FDCPE_x0_last: FDCPE port map (x0_last,x0,clk,reset,'0');
+</td></tr><tr><td>
+FDCPE_x1_last: FDCPE port map (x1_last,x1,clk,reset,'0');
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

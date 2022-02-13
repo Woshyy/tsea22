@@ -1,0 +1,87 @@
+MDF Database:  version 1.0
+MDF_INFO | timer | XC9572-7-PC44
+MACROCELL | 0 | 1 | alarm_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 4 | tidkvar<1>.PIN  | tidkvar<2>.PIN  | tidkvar<0>.PIN  | q_int<3>.LFBK
+INPUTMC | 1 | 0 | 7
+INPUTP | 3 | 86 | 58 | 29
+EQ | 2 | 
+   alarm = !q_int<3>.LFBK & !tidkvar<0>.PIN & !tidkvar<1>.PIN & 
+	!tidkvar<2>.PIN;
+
+MACROCELL | 2 | 1 | q_int<0>
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 1 | 2 | 1
+INPUTS | 5 | tidkvar<1>.PIN  | tidkvar<2>.PIN  | ce  | startknapp  | q_int<0>.LFBK
+INPUTMC | 2 | 0 | 17 | 2 | 1
+INPUTP | 3 | 86 | 58 | 89
+EQ | 6 | 
+   !tidkvar<0>.T = !startknapp & !q_int<0>.LFBK & !tidkvar<1>.PIN & 
+	!tidkvar<2>.PIN
+	# ce & !q_int<0>.LFBK & !tidkvar<1>.PIN & 
+	!tidkvar<2>.PIN;
+   tidkvar<0>.CLK = clk;	// GCK
+   tidkvar<0>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 1 | q_int<1>
+ATTRIBUTES | 8889090 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 5 | startknapp  | tidkvar<2>.PIN  | tidkvar<0>.PIN  | ce  | q_int<1>.LFBK
+INPUTMC | 2 | 0 | 17 | 1 | 1
+INPUTP | 3 | 89 | 58 | 29
+EQ | 6 | 
+   tidkvar<1>.D = q_int<1>.LFBK & tidkvar<0>.PIN
+	# !q_int<1>.LFBK & !tidkvar<0>.PIN & tidkvar<2>.PIN
+	# startknapp & !ce & !q_int<1>.LFBK & 
+	!tidkvar<0>.PIN;
+   tidkvar<1>.CLK = clk;	// GCK
+   tidkvar<1>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 1 | q_int<2>
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 1 | 3 | 1
+INPUTS | 5 | startknapp  | tidkvar<1>.PIN  | ce  | tidkvar<0>.PIN  | q_int<2>.LFBK
+INPUTMC | 2 | 0 | 17 | 3 | 1
+INPUTP | 3 | 89 | 86 | 29
+EQ | 5 | 
+   tidkvar<2>.T = q_int<2>.LFBK & !tidkvar<0>.PIN & !tidkvar<1>.PIN
+	# startknapp & !ce & !tidkvar<0>.PIN & 
+	!tidkvar<1>.PIN;
+   tidkvar<2>.CLK = clk;	// GCK
+   tidkvar<2>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 7 | q_int<3>
+ATTRIBUTES | 4690690 | 0
+OUTPUTMC | 2 | 0 | 1 | 0 | 7
+INPUTS | 6 | startknapp  | tidkvar<1>.PIN  | tidkvar<2>.PIN  | ce.LFBK  | tidkvar<0>.PIN  | q_int<3>.LFBK
+INPUTMC | 2 | 0 | 17 | 0 | 7
+INPUTP | 4 | 89 | 86 | 58 | 29
+EQ | 4 | 
+   tidkvar<3>.T = startknapp & q_int<3>.LFBK & !ce.LFBK & 
+	!tidkvar<0>.PIN & !tidkvar<1>.PIN & !tidkvar<2>.PIN;
+   tidkvar<3>.CLK = clk;	// GCK
+   tidkvar<3>.AP = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 0 | 17 | ce
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 4 | 2 | 1 | 1 | 1 | 3 | 1 | 0 | 7
+INPUTS | 1 | startknapp
+INPUTP | 1 | 89
+EQ | 3 | 
+   ce.D = startknapp;
+   ce.CLK = clk;	// GCK
+   ce.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+PIN | startknapp | 64 | 0 | N/A | 89 | 5 | 2 | 1 | 1 | 1 | 3 | 1 | 0 | 7 | 0 | 17
+PIN | clk | 4096 | 0 | N/A | 20 | 5 | 2 | 1 | 1 | 1 | 3 | 1 | 0 | 7 | 0 | 17
+PIN | reset | 65536 | 0 | N/A | 91 | 5 | 2 | 1 | 1 | 1 | 3 | 1 | 0 | 7 | 0 | 17
+PIN | alarm | 536871040 | 0 | N/A | 11
+PIN | tidkvar<3> | 536871040 | 0 | N/A | 15
+PIN | tidkvar<0> | 536870976 | 0 | N/A | 29 | 4 | 0 | 1 | 3 | 1 | 1 | 1 | 0 | 7
+PIN | tidkvar<1> | 536870976 | 0 | N/A | 86 | 4 | 0 | 1 | 3 | 1 | 0 | 7 | 2 | 1
+PIN | tidkvar<2> | 536870976 | 0 | N/A | 58 | 4 | 0 | 1 | 0 | 7 | 1 | 1 | 2 | 1

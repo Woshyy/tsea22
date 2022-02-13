@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/chrwa634/TSEA22/Lab3/Lab3_3c
+T_opt
+!s110 1613569606
+VH@1U0mGBh6V6G2k=C9fBH1
+04 17 3 work comb_lock_prom_tb sim 1
+=1-6805cab2485b-602d1e46-3bd1f-28c7
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;10.6d;65
+R0
+Ecomb_lock_prom
+Z1 w1613569566
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8comb_lock_prom.vhd
+Z6 Fcomb_lock_prom.vhd
+l0
+L5
+V<Y441ma]=X0UfW`VSU^Zb1
+!s100 Ygd;O4Rgb[oiW9EoK@T2a1
+Z7 OL;C;10.6d;65
+32
+Z8 !s110 1613579658
+!i10b 1
+Z9 !s108 1613579658.000000
+Z10 !s90 -2002|comb_lock_prom.vhd|
+Z11 !s107 comb_lock_prom.vhd|
+!i113 0
+Z12 o-2002
+Z13 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+R4
+DEx4 work 14 comb_lock_prom 0 22 <Y441ma]=X0UfW`VSU^Zb1
+l36
+L12
+Vm@U1R6``1=d`OF9W1lnaL2
+!s100 Uh?8EREkDk9PRfF]oY3C32
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Ecomb_lock_prom_tb
+Z14 w1612860136
+R2
+R3
+R4
+R0
+Z15 8comb_lock_prom_tb.vhd
+Z16 Fcomb_lock_prom_tb.vhd
+l0
+L5
+VDkXjMCAoDKg>Si0@8oGZC3
+!s100 MVCDJ49dn^1aWi2aJj9:?0
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -2002|comb_lock_prom_tb.vhd|
+Z18 !s107 comb_lock_prom_tb.vhd|
+!i113 0
+R12
+R13
+Asim
+R2
+R3
+R4
+Z19 DEx4 work 17 comb_lock_prom_tb 0 22 DkXjMCAoDKg>Si0@8oGZC3
+l23
+L8
+Z20 VF;7b4gOc?:QL^7gIEVG<92
+Z21 !s100 C=A<dmVNj754k2480:hDA1
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R12
+R13

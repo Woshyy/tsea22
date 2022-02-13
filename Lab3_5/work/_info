@@ -1,0 +1,111 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/chrwa634/TSEA22/Lab3/Lab3_5
+T_opt
+!s110 1614182201
+VfP9ICFlKU?`^dQD@e1@KI3
+Z1 04 12 3 work trapplyse_tb sim 1
+=1-6805caa7b6c1-60367739-26b0f-479a
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;10.6d;65
+R0
+T_opt1
+Z5 !s110 1614182475
+V[C7:KMg4A?QbO5NdAAU2`3
+R1
+=1-6805caa7b6c1-6036784b-444c6-554e
+R2
+R3
+n@_opt1
+R4
+Etrapplyse
+Z6 w1614182193
+Z7 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z10 8trapplyse.vhd
+Z11 Ftrapplyse.vhd
+l0
+L5
+Vi2iPHj`QgcHV^O8Q>@Xj]3
+!s100 F7gnz[ff4Z@f1c3m8ie<:1
+Z12 OL;C;10.6d;65
+32
+R5
+!i10b 1
+Z13 !s108 1614182474.000000
+Z14 !s90 -2002|trapplyse.vhd|
+Z15 !s107 trapplyse.vhd|
+!i113 0
+Z16 o-2002
+Z17 tExplicit 1 CvgOpt 0
+Abehav
+R7
+R8
+R9
+DEx4 work 9 trapplyse 0 22 i2iPHj`QgcHV^O8Q>@Xj]3
+l17
+L13
+V1ndAC0zYJnd2j1z81hz:61
+!s100 S1^7]FLQU<LH=HO;Nezba3
+R12
+32
+R5
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Etrapplyse_tb
+Z18 w1612090129
+R7
+R8
+R9
+R0
+Z19 8trapplyse_tb.vhd
+Z20 Ftrapplyse_tb.vhd
+l0
+L5
+V]Jb=nMZI3YaSCKZ^oFOKK3
+!s100 ]::enA5Ueb@M:UW`_RdUB2
+R12
+32
+R5
+!i10b 1
+Z21 !s108 1614182475.000000
+Z22 !s90 -2002|trapplyse_tb.vhd|
+Z23 !s107 trapplyse_tb.vhd|
+!i113 0
+R16
+R17
+Asim
+R7
+R8
+R9
+DEx4 work 12 trapplyse_tb 0 22 ]Jb=nMZI3YaSCKZ^oFOKK3
+l24
+L8
+V@UjhK247PM?P1l623XHYL2
+!s100 o<N1K8<[f@RfmBze2F8bf2
+R12
+32
+R5
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R16
+R17

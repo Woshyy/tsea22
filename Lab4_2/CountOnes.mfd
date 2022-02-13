@@ -1,0 +1,1570 @@
+MDF Database:  version 1.0
+MDF_INFO | CountOnes | XC9572-7-PC44
+MACROCELL | 0 | 1 | counter_unit<1>
+ATTRIBUTES | 8889090 | 0
+OUTPUTMC | 12 | 0 | 1 | 0 | 5 | 0 | 14 | 0 | 12 | 0 | 0 | 0 | 2 | 0 | 3 | 0 | 6 | 0 | 7 | 0 | 10 | 0 | 11 | 0 | 13
+INPUTS | 11 | zero_old.LFBK  | ce  | BCD0<3>.PIN  | $OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347  | Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D  | $OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346  | Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2  | data<1>  | EXP0_.EXP  | EXP1_.EXP  | counter_unit<1>.LFBK
+INPUTMC | 9 | 0 | 9 | 2 | 14 | 2 | 4 | 1 | 13 | 2 | 17 | 2 | 3 | 0 | 0 | 0 | 2 | 0 | 1
+INPUTP | 2 | 86 | 87
+IMPORTS | 2 | 0 | 0 | 0 | 2
+EQ | 82 | 
+   BCD0<1>.D = !ce & counter_unit<1>.LFBK
+	# ce & 
+	!$OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347 & !zero_old.LFBK
+	# 
+	Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & zero_old.LFBK & BCD0<3>.PIN
+	# !data<1> & ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & !zero_old.LFBK
+	# ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & zero_old.LFBK & BCD0<3>.PIN
+;Imported pterms FB1_1
+	# !data<2> & ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & !zero_old.LFBK
+	# !data<2> & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & counter_unit<1>.LFBK & !zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# !data<1> & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & counter_unit<1>.LFBK & !zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# !data<0> & ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & !zero_old.LFBK
+	# !data<0> & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & counter_unit<1>.LFBK & !zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+;Imported pterms FB1_18
+	# ce & 
+	Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & 
+	!Madd_counter_unit_add0000_Mxor_Result<1>__xor0000/Madd_counter_unit_add0000_Mxor_Result<1>__xor0000_D & zero_old.LFBK & !BCD0<3>.PIN
+;Imported pterms FB1_3
+	# !data<3> & ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & !zero_old.LFBK
+	# !data<3> & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & counter_unit<1>.LFBK & !zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK
+	# ce & 
+	$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & 
+	Madd_counter_unit_add0000_Mxor_Result<1>__xor0000/Madd_counter_unit_add0000_Mxor_Result<1>__xor0000_D & zero_old.LFBK & !BCD0<3>.PIN
+	# 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & 
+	Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+;Imported pterms FB1_4
+	# ce & 
+	Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & 
+	$OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347 & zero_old.LFBK & 
+	Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & 
+	Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# 
+	Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & 
+	$OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN;
+   BCD0<1>.CLK = clk;	// GCK
+   BCD0<1>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 5 | counter_unit<2>
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 5 | 0 | 5 | 0 | 15 | 0 | 4 | 0 | 6 | 0 | 7
+INPUTS | 14 | data<3>  | data<2>  | data<1>  | data<0>  | BCD0<0>.PIN  | ce  | counter_unit<1>.LFBK  | $OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346  | Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2  | counter_unit<2>.LFBK  | BCD0<3>.PIN  | EXP3_.EXP  | EXP4_.EXP  | zero_old.LFBK
+INPUTMC | 8 | 2 | 14 | 0 | 1 | 2 | 17 | 1 | 17 | 0 | 5 | 0 | 4 | 0 | 6 | 0 | 9
+INPUTP | 6 | 12 | 15 | 87 | 50 | 89 | 86
+IMPORTS | 2 | 0 | 4 | 0 | 6
+EQ | 50 | 
+   BCD0<2>.T = data<3> & data<2> & data<1> & data<0> & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & !counter_unit<2>.LFBK
+	# data<3> & data<2> & data<1> & data<0> & ce & 
+	$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & !BCD0<3>.PIN
+	# data<3> & data<2> & data<0> & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!counter_unit<2>.LFBK & BCD0<0>.PIN
+	# data<3> & data<1> & data<0> & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!counter_unit<2>.LFBK & BCD0<0>.PIN
+	# data<2> & data<1> & data<0> & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!counter_unit<2>.LFBK & BCD0<0>.PIN
+;Imported pterms FB1_5
+	# !data<3> & ce & !zero_old.LFBK & 
+	counter_unit<2>.LFBK
+	# !data<2> & ce & !zero_old.LFBK & 
+	counter_unit<2>.LFBK
+	# !data<1> & ce & !zero_old.LFBK & 
+	counter_unit<2>.LFBK
+	# !data<0> & ce & !zero_old.LFBK & 
+	counter_unit<2>.LFBK
+	# ce & 
+	Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & counter_unit<2>.LFBK
+;Imported pterms FB1_7
+	# ce & 
+	!$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & !counter_unit<2>.LFBK & 
+	!BCD0<3>.PIN
+	# data<3> & data<2> & data<1> & data<0> & ce & 
+	!zero_old.LFBK & !counter_unit<2>.LFBK
+	# data<3> & data<2> & data<1> & data<0> & ce & 
+	zero_old.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN
+	# !data<3> & !data<2> & !data<1> & !data<0> & ce & 
+	!counter_unit<1>.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN
+	# !data<2> & !data<1> & !data<0> & ce & 
+	!counter_unit<1>.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN & !BCD0<0>.PIN
+;Imported pterms FB1_8
+	# !data<3> & !data<2> & !data<1> & ce & 
+	!counter_unit<1>.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN & !BCD0<0>.PIN
+	# !data<3> & !data<2> & !data<0> & ce & 
+	!counter_unit<1>.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN & !BCD0<0>.PIN
+	# !data<3> & !data<1> & !data<0> & ce & 
+	!counter_unit<1>.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN & !BCD0<0>.PIN
+	# data<3> & data<2> & data<1> & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!counter_unit<2>.LFBK & BCD0<0>.PIN;
+   BCD0<2>.CLK = clk;	// GCK
+   BCD0<2>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 4 | counter_address<0>
+ATTRIBUTES | 8889090 | 0
+OUTPUTMC | 5 | 3 | 4 | 3 | 7 | 3 | 8 | 3 | 10 | 3 | 1
+INPUTS | 3 | ce  | zero_old  | counter_address<0>.LFBK
+INPUTMC | 3 | 2 | 14 | 0 | 9 | 3 | 4
+EQ | 4 | 
+   addr<0>.D = !ce & counter_address<0>.LFBK
+	# ce & zero_old & !counter_address<0>.LFBK;
+   addr<0>.CLK = clk;	// GCK
+   addr<0>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 7 | counter_address<1>
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 4 | 3 | 7 | 3 | 8 | 3 | 10 | 3 | 1
+INPUTS | 4 | counter_address<1>.LFBK  | ce  | zero_old  | counter_address<0>.LFBK
+INPUTMC | 4 | 3 | 7 | 2 | 14 | 0 | 9 | 3 | 4
+EQ | 4 | 
+   addr<1>.T = ce & zero_old & counter_address<0>.LFBK
+	# ce & !zero_old & counter_address<1>.LFBK;
+   addr<1>.CLK = clk;	// GCK
+   addr<1>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 8 | counter_address<2>
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 3 | 3 | 8 | 3 | 10 | 3 | 1
+INPUTS | 5 | counter_address<1>.LFBK  | counter_address<2>.LFBK  | ce  | zero_old  | counter_address<0>.LFBK
+INPUTMC | 5 | 3 | 7 | 3 | 8 | 2 | 14 | 0 | 9 | 3 | 4
+EQ | 5 | 
+   addr<2>.T = ce & !zero_old & counter_address<2>.LFBK
+	# ce & zero_old & counter_address<0>.LFBK & 
+	counter_address<1>.LFBK;
+   addr<2>.CLK = clk;	// GCK
+   addr<2>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 10 | counter_hundred<0>
+ATTRIBUTES | 8889090 | 0
+OUTPUTMC | 1 | 2 | 10
+INPUTS | 4 | counter_hundred<0>.LFBK  | zero_old  | rco_tenth  | ce.LFBK
+INPUTMC | 4 | 2 | 10 | 0 | 9 | 0 | 17 | 2 | 14
+EQ | 5 | 
+   !BCD2<0>.D = rco_tenth & counter_hundred<0>.LFBK
+	# !rco_tenth & !counter_hundred<0>.LFBK
+	# !zero_old & ce.LFBK;
+   BCD2<0>.CLK = clk;	// GCK
+   BCD2<0>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 14 | counter_hundred<1>
+ATTRIBUTES | 8889090 | 0
+OUTPUTMC | 4 | 0 | 13 | 0 | 14 | 0 | 16 | 0 | 15
+INPUTS | 14 | BCD0<3>.PIN  | rco_tenth.LFBK  | counter_unit<1>.LFBK  | data<3>  | data<1>  | data<0>  | reset  | zero_old.LFBK  | ce  | BCD2<0>.PIN  | Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2  | data<2>  | Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.EXP  | counter_hundred<1>.LFBK
+INPUTMC | 7 | 0 | 17 | 0 | 1 | 0 | 9 | 2 | 14 | 1 | 17 | 0 | 15 | 0 | 14
+INPUTP | 7 | 86 | 12 | 87 | 50 | 91 | 46 | 15
+EXPORTS | 1 | 0 | 13
+IMPORTS | 1 | 0 | 15
+EQ | 20 | 
+   !BCD2<1>.D = !counter_hundred<1>.LFBK & !rco_tenth.LFBK
+	# !counter_hundred<1>.LFBK & !BCD2<0>.PIN
+;Imported pterms FB1_16
+	# ce & !zero_old.LFBK
+	# counter_hundred<1>.LFBK & rco_tenth.LFBK & 
+	BCD2<0>.PIN
+	# !counter_hundred<1>.LFBK & counter_hundred<3>.LFBK & 
+	!BCD2<2>.PIN;
+   BCD2<1>.CLK = clk;	// GCK
+   BCD2<1>.AR = reset;	// GSR
+    counter_hundred<1>.EXP  =  !data<3> & !data<1> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# !data<2> & !data<1> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# data<3> & data<2> & data<1> & data<0> & !reset & 
+	ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 14 | counter_hundred<2>
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 2 | 1 | 15 | 1 | 14
+INPUTS | 10 | BCD2<0>.PIN  | ce  | zero_old  | BCD2<1>.PIN  | rco_tenth  | data<3>  | data<2>  | data<1>  | data<0>  | counter_hundred<2>.LFBK
+INPUTMC | 4 | 2 | 14 | 0 | 9 | 0 | 17 | 1 | 14
+INPUTP | 6 | 46 | 26 | 12 | 15 | 87 | 50
+EXPORTS | 1 | 1 | 15
+EQ | 7 | 
+   BCD2<2>.T = ce & !zero_old & counter_hundred<2>.LFBK
+	# !ce & rco_tenth & BCD2<0>.PIN & BCD2<1>.PIN
+	# rco_tenth & zero_old & BCD2<0>.PIN & 
+	BCD2<1>.PIN;
+   BCD2<2>.CLK = clk;	// GCK
+   BCD2<2>.AR = reset;	// GSR
+    counter_hundred<2>.EXP  =  data<3> & data<2> & data<1> & data<0>
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 13 | counter_tenth<0>
+ATTRIBUTES | 8889090 | 0
+OUTPUTMC | 5 | 2 | 13 | 2 | 1 | 2 | 16 | 2 | 7 | 2 | 15
+INPUTS | 4 | ce.LFBK  | rco_unit  | zero_old  | counter_tenth<0>.LFBK
+INPUTMC | 4 | 2 | 14 | 0 | 12 | 0 | 9 | 2 | 13
+EQ | 5 | 
+   !BCD1<0>.D = rco_unit & counter_tenth<0>.LFBK
+	# !rco_unit & !counter_tenth<0>.LFBK
+	# !zero_old & ce.LFBK;
+   BCD1<0>.CLK = clk;	// GCK
+   BCD1<0>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 1 | counter_tenth<1>
+ATTRIBUTES | 8889090 | 0
+OUTPUTMC | 4 | 2 | 1 | 2 | 16 | 2 | 7 | 2 | 15
+INPUTS | 7 | counter_tenth<1>.LFBK  | ce.LFBK  | rco_unit  | counter_tenth<2>.LFBK  | zero_old  | counter_tenth<3>.LFBK  | counter_tenth<0>.LFBK
+INPUTMC | 7 | 2 | 1 | 2 | 14 | 0 | 12 | 2 | 16 | 0 | 9 | 2 | 7 | 2 | 13
+EQ | 9 | 
+   !BCD1<1>.D = !rco_unit & !counter_tenth<1>.LFBK
+	# !zero_old & ce.LFBK
+	# !counter_tenth<0>.LFBK & !counter_tenth<1>.LFBK
+	# rco_unit & counter_tenth<0>.LFBK & 
+	counter_tenth<1>.LFBK
+	# !counter_tenth<1>.LFBK & !counter_tenth<2>.LFBK & 
+	counter_tenth<3>.LFBK;
+   BCD1<1>.CLK = clk;	// GCK
+   BCD1<1>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 16 | counter_tenth<2>
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 4 | 2 | 17 | 2 | 1 | 2 | 16 | 2 | 7
+INPUTS | 13 | ce.LFBK  | counter_tenth<0>.LFBK  | zero_old  | counter_tenth<1>.LFBK  | BCD0<1>.PIN  | rco_unit  | data<3>  | data<0>  | BCD0<0>.PIN  | data<1>  | data<2>  | EXP20_.EXP  | counter_tenth<2>.LFBK
+INPUTMC | 7 | 2 | 14 | 2 | 13 | 0 | 9 | 2 | 1 | 0 | 12 | 2 | 15 | 2 | 16
+INPUTP | 6 | 11 | 12 | 50 | 89 | 87 | 15
+EXPORTS | 1 | 2 | 17
+IMPORTS | 1 | 2 | 15
+EQ | 11 | 
+   BCD1<2>.T = !zero_old & ce.LFBK & counter_tenth<2>.LFBK
+	# rco_unit & !ce.LFBK & counter_tenth<0>.LFBK & 
+	counter_tenth<1>.LFBK
+;Imported pterms FB3_16
+	# rco_unit & zero_old & counter_tenth<0>.LFBK & 
+	counter_tenth<1>.LFBK;
+   BCD1<2>.CLK = clk;	// GCK
+   BCD1<2>.AR = reset;	// GSR
+    counter_tenth<2>.EXP  =  !data<3> & !data<0> & !BCD0<1>.PIN
+	# !data<1> & !data<0> & !BCD0<1>.PIN
+	# !data<3> & !data<2> & !data<1> & !BCD0<0>.PIN
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 1 | Madd_counter_unit_add0000_Mxor_Result<3>__xor0000
+ATTRIBUTES | 8889090 | 0
+OUTPUTMC | 6 | 1 | 0 | 1 | 1 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5
+INPUTS | 11 | data<3>  | data<1>  | data<0>  | BCD0<2>.PIN  | counter_unit<0>.LFBK  | BCD0<1>.PIN  | ce  | zero_old  | data<2>  | EXP10_.EXP  | Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK
+INPUTMC | 5 | 1 | 7 | 2 | 14 | 0 | 9 | 1 | 2 | 1 | 1
+INPUTP | 6 | 12 | 87 | 50 | 13 | 11 | 15
+EXPORTS | 1 | 1 | 0
+IMPORTS | 1 | 1 | 2
+EQ | 59 | 
+   BCD0<3>.D = data<3> & data<2> & data<1> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & !BCD0<1>.PIN & BCD0<2>.PIN
+	# data<3> & data<2> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & !BCD0<1>.PIN & BCD0<2>.PIN
+	# data<3> & data<1> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & !BCD0<1>.PIN & BCD0<2>.PIN
+;Imported pterms FB2_3
+	# data<3> & !data<2> & !data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<3> & !data<2> & data<1> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<2> & data<1> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & !BCD0<1>.PIN & BCD0<2>.PIN
+	# data<2> & data<1> & !data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<2> & !data<1> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+;Imported pterms FB2_4
+	# data<3> & !data<2> & data<1> & !data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<3> & data<2> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<3> & data<2> & !data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<3> & !data<1> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<2> & data<1> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+;Imported pterms FB2_5
+	# !ce & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK
+	# !data<3> & !data<2> & !data<1> & !data<0> & 
+	zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<3> & !data<1> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# data<3> & data<2> & !data<1> & !data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<3> & !data<2> & !data<1> & data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+;Imported pterms FB2_6
+	# !data<3> & !data<2> & !data<1> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<3> & !data<2> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<2> & !data<1> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# data<3> & data<2> & data<1> & data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !BCD0<1>.PIN & BCD0<2>.PIN;
+   BCD0<3>.CLK = clk;	// GCK
+   BCD0<3>.AR = reset;	// GSR
+    Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.EXP  =  data<3> & data<2> & data<1> & data<0> & 
+	BCD0<2>.PIN
+	# data<3> & data<2> & data<0> & 
+	counter_unit<0>.LFBK & BCD0<2>.PIN
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 10 | counter_address<3>
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 2 | 3 | 10 | 3 | 1
+INPUTS | 6 | counter_address<1>.LFBK  | counter_address<2>.LFBK  | counter_address<3>.LFBK  | ce  | zero_old  | counter_address<0>.LFBK
+INPUTMC | 6 | 3 | 7 | 3 | 8 | 3 | 10 | 2 | 14 | 0 | 9 | 3 | 4
+EQ | 5 | 
+   addr<3>.T = ce & !zero_old & counter_address<3>.LFBK
+	# ce & zero_old & counter_address<0>.LFBK & 
+	counter_address<1>.LFBK & counter_address<2>.LFBK;
+   addr<3>.CLK = clk;	// GCK
+   addr<3>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 16 | counter_hundred<3>
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 2 | 0 | 16 | 0 | 15
+INPUTS | 7 | zero_old.LFBK  | ce  | counter_hundred<1>.LFBK  | BCD2<2>.PIN  | rco_tenth.LFBK  | BCD2<0>.PIN  | counter_hundred<3>.LFBK
+INPUTMC | 5 | 0 | 9 | 2 | 14 | 0 | 14 | 0 | 17 | 0 | 16
+INPUTP | 2 | 9 | 46
+EQ | 9 | 
+   BCD2<3>.T = ce & !zero_old.LFBK & counter_hundred<3>.LFBK
+	# !ce & counter_hundred<1>.LFBK & rco_tenth.LFBK & 
+	BCD2<0>.PIN & BCD2<2>.PIN
+	# zero_old.LFBK & counter_hundred<1>.LFBK & 
+	rco_tenth.LFBK & BCD2<0>.PIN & BCD2<2>.PIN
+	# !counter_hundred<1>.LFBK & rco_tenth.LFBK & 
+	counter_hundred<3>.LFBK & BCD2<0>.PIN & !BCD2<2>.PIN;
+   BCD2<3>.CLK = clk;	// GCK
+   BCD2<3>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 7 | counter_tenth<3>
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 3 | 2 | 6 | 2 | 1 | 2 | 7
+INPUTS | 12 | ce.LFBK  | counter_tenth<0>.LFBK  | zero_old  | counter_tenth<1>.LFBK  | counter_tenth<2>.LFBK  | counter_stop<0>.LFBK  | rco_unit  | counter_stop<1>.LFBK  | counter_stop<2>.LFBK  | counter_stop<3>.LFBK  | counter_stop<4>.LFBK  | counter_tenth<3>.LFBK
+INPUTMC | 12 | 2 | 14 | 2 | 13 | 0 | 9 | 2 | 1 | 2 | 16 | 2 | 5 | 0 | 12 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 11 | 2 | 7
+EXPORTS | 1 | 2 | 6
+EQ | 11 | 
+   BCD1<3>.T = !zero_old & ce.LFBK & counter_tenth<3>.LFBK
+	# rco_unit & zero_old & counter_tenth<0>.LFBK & 
+	counter_tenth<1>.LFBK & counter_tenth<2>.LFBK
+	# rco_unit & !ce.LFBK & counter_tenth<0>.LFBK & 
+	counter_tenth<1>.LFBK & counter_tenth<2>.LFBK
+	# rco_unit & counter_tenth<0>.LFBK & 
+	!counter_tenth<1>.LFBK & !counter_tenth<2>.LFBK & counter_tenth<3>.LFBK;
+   BCD1<3>.CLK = clk;	// GCK
+   BCD1<3>.AR = reset;	// GSR
+    counter_tenth<3>.EXP  =  counter_stop<0>.LFBK & counter_stop<1>.LFBK & 
+	counter_stop<2>.LFBK & counter_stop<3>.LFBK & counter_stop<4>.LFBK
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 7 | counter_unit<0>
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 12 | 1 | 1 | 1 | 16 | 1 | 17 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10
+INPUTS | 8 | data<3>  | data<2>  | data<1>  | data<0>  | ce  | zero_old  | EXP14_.EXP  | EXP15_.EXP
+INPUTMC | 4 | 2 | 14 | 0 | 9 | 1 | 6 | 1 | 8
+INPUTP | 4 | 12 | 15 | 87 | 50
+IMPORTS | 2 | 1 | 6 | 1 | 8
+EQ | 54 | 
+   BCD0<0>.T = data<3> & data<2> & data<1> & !data<0> & ce & 
+	zero_old
+	# data<3> & !data<2> & !data<1> & !data<0> & ce & 
+	zero_old
+	# !data<3> & data<2> & !data<1> & !data<0> & ce & 
+	zero_old
+	# !data<3> & !data<2> & data<1> & !data<0> & ce & 
+	zero_old
+	# !data<3> & !data<2> & !data<1> & data<0> & ce & 
+	zero_old
+;Imported pterms FB2_7
+	# data<3> & data<2> & !data<1> & data<0> & ce & 
+	zero_old
+	# data<3> & !data<2> & data<1> & data<0> & ce & 
+	zero_old
+	# data<3> & !data<2> & data<1> & data<0> & ce & 
+	!counter_unit<0>.LFBK
+	# !data<3> & data<2> & data<1> & data<0> & ce & 
+	zero_old
+	# !data<3> & data<2> & data<1> & data<0> & ce & 
+	!counter_unit<0>.LFBK
+;Imported pterms FB2_9
+	# data<3> & data<2> & data<1> & !data<0> & ce & 
+	!counter_unit<0>.LFBK
+	# data<3> & data<2> & !data<1> & data<0> & ce & 
+	!counter_unit<0>.LFBK
+	# data<3> & !data<2> & !data<1> & !data<0> & ce & 
+	!counter_unit<0>.LFBK
+	# !data<3> & !data<2> & data<1> & !data<0> & ce & 
+	!counter_unit<0>.LFBK
+	# !data<3> & !data<2> & !data<1> & data<0> & ce & 
+	!counter_unit<0>.LFBK
+;Imported pterms FB2_10
+	# !data<3> & data<2> & !data<1> & !data<0> & ce & 
+	!counter_unit<0>.LFBK
+	# data<3> & data<2> & data<1> & data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# data<3> & !data<2> & !data<1> & data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & data<2> & !data<1> & data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & !data<2> & data<1> & data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+;Imported pterms FB2_11
+	# data<3> & data<2> & !data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# data<3> & !data<2> & data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & data<2> & data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & !data<2> & !data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK;
+   BCD0<0>.CLK = clk;	// GCK
+   BCD0<0>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 1 | 16 | rco_address
+ATTRIBUTES | 4694786 | 0
+OUTPUTMC | 2 | 1 | 17 | 1 | 16
+INPUTS | 14 | counter_unit<0>.LFBK  | ce  | zero_old  | addr<1>.PIN  | addr<2>.PIN  | addr<3>.PIN  | data<3>  | data<1>  | BCD0<2>.PIN  | addr<0>.PIN  | BCD0<1>.PIN  | data<2>  | data<0>  | rco_address.LFBK
+INPUTMC | 4 | 1 | 7 | 2 | 14 | 0 | 9 | 1 | 16
+INPUTP | 10 | 62 | 64 | 67 | 12 | 87 | 13 | 61 | 11 | 15 | 50
+EXPORTS | 1 | 1 | 17
+EQ | 9 | 
+   cs1.T = ce & !zero_old & rco_address.LFBK
+	# ce & zero_old & !rco_address.LFBK & addr<0>.PIN & 
+	addr<1>.PIN & addr<2>.PIN & addr<3>.PIN;
+   cs1.CLK = clk;	// GCK
+   cs1.AR = reset;	// GSR
+    rco_address.EXP  =  data<3> & data<1> & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<3> & counter_unit<0>.LFBK & BCD0<1>.PIN & 
+	BCD0<2>.PIN
+	# data<2> & data<0> & BCD0<1>.PIN & BCD0<2>.PIN
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 14 | ce
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 46 | 0 | 1 | 0 | 5 | 3 | 4 | 3 | 7 | 3 | 8 | 1 | 10 | 0 | 13 | 1 | 14 | 1 | 9 | 1 | 8 | 1 | 6 | 1 | 1 | 3 | 10 | 0 | 16 | 1 | 5 | 1 | 7 | 1 | 16 | 1 | 4 | 0 | 17 | 1 | 3 | 1 | 2 | 0 | 15 | 0 | 14 | 0 | 11 | 3 | 13 | 0 | 12 | 0 | 9 | 3 | 1 | 0 | 0 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 10 | 2 | 10 | 2 | 13 | 2 | 1 | 2 | 16 | 2 | 7 | 2 | 14 | 2 | 5 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 11
+INPUTS | 8 | counter_stop<0>.LFBK  | startknapp  | startknapp_old  | counter_stop<1>.LFBK  | counter_stop<2>.LFBK  | counter_stop<3>.LFBK  | counter_stop<4>.LFBK  | ce.LFBK
+INPUTMC | 7 | 2 | 5 | 1 | 12 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 11 | 2 | 14
+INPUTP | 1 | 82
+EQ | 9 | 
+   ce.T = startknapp & !startknapp_old & !ce.LFBK
+	# !startknapp & ce.LFBK & counter_stop<0>.LFBK & 
+	counter_stop<1>.LFBK & counter_stop<2>.LFBK & counter_stop<3>.LFBK & 
+	counter_stop<4>.LFBK
+	# startknapp_old & ce.LFBK & counter_stop<0>.LFBK & 
+	counter_stop<1>.LFBK & counter_stop<2>.LFBK & counter_stop<3>.LFBK & 
+	counter_stop<4>.LFBK;
+   ce.CLK = clk;	// GCK
+   ce.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 17 | rco_tenth
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 7 | 2 | 10 | 1 | 14 | 0 | 0 | 0 | 14 | 0 | 16 | 0 | 17 | 0 | 15
+INPUTS | 12 | ce  | zero_old.LFBK  | rco_unit.LFBK  | BCD1<1>.PIN  | BCD1<2>.PIN  | BCD0<3>.PIN  | BCD1<0>.PIN  | BCD1<3>.PIN  | Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2  | Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2  | Madd_counter_unit_add0000_Mxor_Result<1>__xor0000/Madd_counter_unit_add0000_Mxor_Result<1>__xor0000_D  | rco_tenth.LFBK
+INPUTMC | 7 | 2 | 14 | 0 | 9 | 0 | 12 | 2 | 3 | 1 | 17 | 1 | 15 | 0 | 17
+INPUTP | 5 | 29 | 52 | 86 | 49 | 33
+EXPORTS | 1 | 0 | 0
+EQ | 11 | 
+   rco_tenth.D = ce & !zero_old.LFBK & rco_tenth.LFBK
+	# !ce & rco_unit.LFBK & BCD1<0>.PIN & !BCD1<1>.PIN & 
+	!BCD1<2>.PIN & BCD1<3>.PIN
+	# zero_old.LFBK & rco_unit.LFBK & BCD1<0>.PIN & 
+	!BCD1<1>.PIN & !BCD1<2>.PIN & BCD1<3>.PIN;
+   rco_tenth.CLK = clk;	// GCK
+   rco_tenth.AR = reset;	// GSR
+    rco_tenth.EXP  =  ce & 
+	Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & 
+	!Madd_counter_unit_add0000_Mxor_Result<1>__xor0000/Madd_counter_unit_add0000_Mxor_Result<1>__xor0000_D & zero_old.LFBK & !BCD0<3>.PIN
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 5 | counter_stop<0>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 8 | 2 | 4 | 2 | 7 | 2 | 14 | 2 | 5 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 11
+INPUTS | 7 | counter_stop<0>.LFBK  | data<3>  | data<1>  | data<0>  | data<2>  | counter_stop<1>.EXP  | ce.LFBK
+INPUTMC | 3 | 2 | 5 | 2 | 6 | 2 | 14
+INPUTP | 4 | 12 | 87 | 50 | 15
+EXPORTS | 1 | 2 | 4
+IMPORTS | 1 | 2 | 6
+EQ | 11 | 
+   !counter_stop<0>.D = ce.LFBK & counter_stop<0>.LFBK
+	# !ce.LFBK & !counter_stop<0>.LFBK
+;Imported pterms FB3_7
+	# startknapp & !startknapp_old
+	# counter_stop<0>.LFBK & counter_stop<1>.LFBK & 
+	counter_stop<2>.LFBK & counter_stop<3>.LFBK & counter_stop<4>.LFBK;
+   counter_stop<0>.CLK = clk;	// GCK
+   counter_stop<0>.AR = reset;	// GSR
+    counter_stop<0>.EXP  =  !data<3> & !data<1> & !data<0>
+	# !data<2> & !data<1> & !data<0>
+	# data<3> & data<2> & data<1> & data<0>
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 6 | counter_stop<1>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 7 | 2 | 5 | 2 | 7 | 2 | 14 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 11
+INPUTS | 9 | ce.LFBK  | startknapp  | startknapp_old  | counter_stop<0>.LFBK  | counter_stop<2>.LFBK  | counter_stop<3>.LFBK  | counter_stop<4>.LFBK  | counter_tenth<3>.EXP  | counter_stop<1>.LFBK
+INPUTMC | 8 | 2 | 14 | 1 | 12 | 2 | 5 | 2 | 8 | 2 | 9 | 2 | 11 | 2 | 7 | 2 | 6
+INPUTP | 1 | 82
+EXPORTS | 1 | 2 | 5
+IMPORTS | 1 | 2 | 7
+EQ | 12 | 
+   counter_stop<1>.T = startknapp & !startknapp_old & 
+	counter_stop<1>.LFBK
+	# !startknapp & ce.LFBK & counter_stop<0>.LFBK
+	# startknapp_old & ce.LFBK & counter_stop<0>.LFBK
+;Imported pterms FB3_8
+	# counter_stop<0>.LFBK & counter_stop<1>.LFBK & 
+	counter_stop<2>.LFBK & counter_stop<3>.LFBK & counter_stop<4>.LFBK;
+   counter_stop<1>.CLK = clk;	// GCK
+   counter_stop<1>.AR = reset;	// GSR
+    counter_stop<1>.EXP  =  startknapp & !startknapp_old
+	# counter_stop<0>.LFBK & counter_stop<1>.LFBK & 
+	counter_stop<2>.LFBK & counter_stop<3>.LFBK & counter_stop<4>.LFBK
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 8 | counter_stop<2>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 6 | 2 | 7 | 2 | 14 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 11
+INPUTS | 8 | ce.LFBK  | startknapp  | startknapp_old  | counter_stop<0>.LFBK  | counter_stop<1>.LFBK  | counter_stop<3>.LFBK  | counter_stop<4>.LFBK  | counter_stop<2>.LFBK
+INPUTMC | 7 | 2 | 14 | 1 | 12 | 2 | 5 | 2 | 6 | 2 | 9 | 2 | 11 | 2 | 8
+INPUTP | 1 | 82
+EQ | 10 | 
+   counter_stop<2>.T = startknapp & !startknapp_old & 
+	counter_stop<2>.LFBK
+	# !startknapp & ce.LFBK & counter_stop<0>.LFBK & 
+	counter_stop<1>.LFBK
+	# startknapp_old & ce.LFBK & counter_stop<0>.LFBK & 
+	counter_stop<1>.LFBK
+	# counter_stop<0>.LFBK & counter_stop<1>.LFBK & 
+	counter_stop<2>.LFBK & counter_stop<3>.LFBK & counter_stop<4>.LFBK;
+   counter_stop<2>.CLK = clk;	// GCK
+   counter_stop<2>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 9 | counter_stop<3>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 6 | 2 | 7 | 2 | 14 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 11
+INPUTS | 8 | counter_stop<0>.LFBK  | startknapp  | startknapp_old  | counter_stop<1>.LFBK  | counter_stop<2>.LFBK  | counter_stop<4>.LFBK  | ce.LFBK  | counter_stop<3>.LFBK
+INPUTMC | 7 | 2 | 5 | 1 | 12 | 2 | 6 | 2 | 8 | 2 | 11 | 2 | 14 | 2 | 9
+INPUTP | 1 | 82
+EQ | 10 | 
+   counter_stop<3>.T = startknapp & !startknapp_old & 
+	counter_stop<3>.LFBK
+	# !startknapp & ce.LFBK & counter_stop<0>.LFBK & 
+	counter_stop<1>.LFBK & counter_stop<2>.LFBK
+	# startknapp_old & ce.LFBK & counter_stop<0>.LFBK & 
+	counter_stop<1>.LFBK & counter_stop<2>.LFBK
+	# counter_stop<0>.LFBK & counter_stop<1>.LFBK & 
+	counter_stop<2>.LFBK & counter_stop<3>.LFBK & counter_stop<4>.LFBK;
+   counter_stop<3>.CLK = clk;	// GCK
+   counter_stop<3>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 2 | 11 | counter_stop<4>
+ATTRIBUTES | 4432640 | 0
+OUTPUTMC | 6 | 2 | 7 | 2 | 14 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 11
+INPUTS | 8 | counter_stop<0>.LFBK  | startknapp  | startknapp_old  | counter_stop<1>.LFBK  | counter_stop<2>.LFBK  | counter_stop<3>.LFBK  | ce.LFBK  | counter_stop<4>.LFBK
+INPUTMC | 7 | 2 | 5 | 1 | 12 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 14 | 2 | 11
+INPUTP | 1 | 82
+EQ | 10 | 
+   counter_stop<4>.T = startknapp & !startknapp_old & 
+	counter_stop<4>.LFBK
+	# counter_stop<0>.LFBK & counter_stop<1>.LFBK & 
+	counter_stop<2>.LFBK & counter_stop<3>.LFBK & counter_stop<4>.LFBK
+	# !startknapp & ce.LFBK & counter_stop<0>.LFBK & 
+	counter_stop<1>.LFBK & counter_stop<2>.LFBK & counter_stop<3>.LFBK
+	# startknapp_old & ce.LFBK & counter_stop<0>.LFBK & 
+	counter_stop<1>.LFBK & counter_stop<2>.LFBK & counter_stop<3>.LFBK;
+   counter_stop<4>.CLK = clk;	// GCK
+   counter_stop<4>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 3 | 13 | LED_OBUF
+ATTRIBUTES | 8823554 | 0
+INPUTS | 1 | ce
+INPUTMC | 1 | 2 | 14
+EQ | 3 | 
+   LED.D = ce;
+   LED.CLK = clk;	// GCK
+   LED.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 12 | rco_unit
+ATTRIBUTES | 8618752 | 0
+OUTPUTMC | 8 | 2 | 13 | 2 | 1 | 2 | 16 | 2 | 7 | 2 | 15 | 0 | 17 | 0 | 10 | 0 | 13
+INPUTS | 13 | data<3>  | data<2>  | data<1>  | data<0>  | reset  | BCD0<0>.PIN  | ce  | counter_unit<1>.LFBK  | Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2  | BCD0<3>.PIN  | EXP7_.EXP  | EXP8_.EXP  | zero_old.LFBK
+INPUTMC | 6 | 2 | 14 | 0 | 1 | 1 | 17 | 0 | 11 | 0 | 13 | 0 | 9
+INPUTP | 7 | 12 | 15 | 87 | 50 | 91 | 89 | 86
+IMPORTS | 2 | 0 | 11 | 0 | 13
+EQ | 72 | 
+   rco_unit.D = data<3> & !data<1> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN & BCD0<0>.PIN
+	# data<2> & !data<1> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN & BCD0<0>.PIN
+	# data<3> & data<2> & data<1> & !data<0> & !reset & 
+	ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & BCD0<3>.PIN & BCD0<0>.PIN
+	# data<3> & data<2> & !data<1> & data<0> & !reset & 
+	ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & BCD0<3>.PIN & BCD0<0>.PIN
+	# !data<3> & data<2> & data<1> & data<0> & !reset & 
+	ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & BCD0<3>.PIN & BCD0<0>.PIN
+;Imported pterms FB1_12
+	# data<3> & data<2> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# !data<3> & data<1> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN & BCD0<0>.PIN
+	# !data<3> & data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN & BCD0<0>.PIN
+	# !data<2> & data<1> & data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# data<3> & !data<2> & data<1> & data<0> & !reset & 
+	ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & BCD0<3>.PIN & BCD0<0>.PIN
+;Imported pterms FB1_11
+	# ce & !zero_old.LFBK & rco_unit.LFBK
+	# !reset & ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & BCD0<3>.PIN
+	# !reset & ce & 
+	Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & !BCD0<3>.PIN
+	# !data<3> & !data<2> & !data<1> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# !data<3> & !data<2> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+;Imported pterms FB1_14
+	# reset & rco_unit.LFBK
+	# data<3> & data<1> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# data<3> & !data<1> & data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# !data<3> & data<2> & data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# data<2> & data<1> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+;Imported pterms FB1_15
+	# !data<3> & !data<1> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# !data<2> & !data<1> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# data<3> & data<2> & data<1> & data<0> & !reset & 
+	ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN;
+   rco_unit.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 9 | zero_old
+ATTRIBUTES | 8618752 | 0
+OUTPUTMC | 38 | 2 | 15 | 1 | 10 | 3 | 4 | 3 | 7 | 3 | 8 | 2 | 10 | 1 | 9 | 1 | 14 | 2 | 13 | 2 | 1 | 2 | 16 | 1 | 1 | 3 | 10 | 1 | 6 | 2 | 7 | 1 | 7 | 1 | 16 | 1 | 5 | 1 | 4 | 3 | 1 | 1 | 2 | 1 | 3 | 0 | 1 | 0 | 5 | 0 | 14 | 0 | 16 | 0 | 17 | 0 | 12 | 0 | 15 | 0 | 0 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 10 | 0 | 11 | 0 | 13
+INPUTS | 1 | ce
+INPUTMC | 1 | 2 | 14
+EQ | 2 | 
+   zero_old.D = ce;
+   zero_old.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 1 | 12 | startknapp_old
+ATTRIBUTES | 8553216 | 0
+OUTPUTMC | 5 | 2 | 14 | 2 | 11 | 2 | 6 | 2 | 8 | 2 | 9
+INPUTS | 1 | startknapp
+INPUTP | 1 | 82
+EQ | 2 | 
+   startknapp_old.D = startknapp;
+   startknapp_old.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 3 | 1 | cs2_OBUF
+ATTRIBUTES | 8819462 | 0
+INPUTS | 7 | ce  | zero_old  | counter_address<1>.LFBK  | counter_address<2>.LFBK  | counter_address<3>.LFBK  | cs1.PIN  | counter_address<0>.LFBK
+INPUTMC | 6 | 2 | 14 | 0 | 9 | 3 | 7 | 3 | 8 | 3 | 10 | 3 | 4
+INPUTP | 1 | 10
+EQ | 6 | 
+   !cs2.D = !ce & cs1.PIN
+	# zero_old & cs1.PIN
+	# ce & zero_old & counter_address<0>.LFBK & 
+	counter_address<1>.LFBK & counter_address<2>.LFBK & counter_address<3>.LFBK;
+   cs2.CLK = clk;	// GCK
+   cs2.AP = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 1 | reset
+
+MACROCELL | 1 | 13 | Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 5 | 0 | 1 | 0 | 10 | 0 | 0 | 0 | 2 | 0 | 3
+INPUTS | 5 | data<3>  | data<2>  | data<1>  | data<0>  | BCD0<2>.PIN
+INPUTP | 5 | 12 | 15 | 87 | 50 | 13
+EQ | 5 | 
+   Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D = BCD0<2>.PIN
+	$ !data<3> & !data<2> & !data<1>
+	# !data<3> & !data<2> & !data<0>
+	# !data<3> & !data<1> & !data<0>
+	# !data<2> & !data<1> & !data<0>;
+
+MACROCELL | 0 | 15 | Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D
+ATTRIBUTES | 199424 | 0
+OUTPUTMC | 4 | 0 | 14 | 0 | 0 | 0 | 2 | 0 | 3
+INPUTS | 12 | data<3>  | data<2>  | data<1>  | data<0>  | zero_old.LFBK  | ce  | counter_hundred<1>.LFBK  | BCD2<2>.PIN  | rco_tenth.LFBK  | counter_hundred<3>.LFBK  | BCD2<0>.PIN  | counter_unit<2>.LFBK
+INPUTMC | 6 | 0 | 9 | 2 | 14 | 0 | 14 | 0 | 17 | 0 | 16 | 0 | 5
+INPUTP | 6 | 12 | 15 | 87 | 50 | 9 | 46
+EXPORTS | 1 | 0 | 14
+EQ | 7 | 
+   Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D = data<3> & data<2> & data<1> & data<0>
+	$ counter_unit<2>.LFBK;
+    Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.EXP  =  ce & !zero_old.LFBK
+	# counter_hundred<1>.LFBK & rco_tenth.LFBK & 
+	BCD2<0>.PIN
+	# !counter_hundred<1>.LFBK & counter_hundred<3>.LFBK & 
+	!BCD2<2>.PIN
+
+MACROCELL | 2 | 17 | $OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 5 | 0 | 1 | 0 | 5 | 0 | 0 | 0 | 2 | 0 | 6
+INPUTS | 8 | BCD0<0>.PIN  | data<3>  | data<2>  | data<1>  | data<0>  | EXP18_.EXP  | counter_tenth<2>.EXP  | BCD0<1>.PIN
+INPUTMC | 2 | 2 | 0 | 2 | 16
+INPUTP | 6 | 89 | 12 | 15 | 87 | 50 | 11
+IMPORTS | 2 | 2 | 0 | 2 | 16
+EQ | 15 | 
+   $OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 = !BCD0<1>.PIN & !BCD0<0>.PIN
+	# !data<3> & !data<2> & !BCD0<1>.PIN
+	# !data<3> & !data<1> & !BCD0<1>.PIN
+	# !data<2> & !data<1> & !BCD0<1>.PIN
+	# !data<2> & !data<0> & !BCD0<1>.PIN
+;Imported pterms FB3_1
+	# data<3> & data<2> & data<1> & data<0>
+	# !data<3> & !data<2> & !data<1> & !data<0>
+	# !data<3> & !data<2> & !data<0> & !BCD0<0>.PIN
+	# !data<3> & !data<1> & !data<0> & !BCD0<0>.PIN
+	# !data<2> & !data<1> & !data<0> & !BCD0<0>.PIN
+;Imported pterms FB3_17
+	# !data<3> & !data<0> & !BCD0<1>.PIN
+	# !data<1> & !data<0> & !BCD0<1>.PIN
+	# !data<3> & !data<2> & !data<1> & !BCD0<0>.PIN;
+
+MACROCELL | 2 | 3 | Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 6 | 0 | 1 | 0 | 10 | 0 | 0 | 0 | 2 | 0 | 3 | 0 | 17
+INPUTS | 8 | data<3>  | data<2>  | data<1>  | BCD0<0>.PIN  | data<0>  | EXP19_.EXP  | $OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347.EXP  | BCD0<1>.PIN
+INPUTMC | 2 | 2 | 2 | 2 | 4
+INPUTP | 6 | 12 | 15 | 87 | 89 | 50 | 11
+IMPORTS | 2 | 2 | 2 | 2 | 4
+EQ | 24 | 
+   Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 = !data<3> & !data<2> & !data<1> & BCD0<1>.PIN
+	# !data<3> & !data<2> & !data<0> & BCD0<1>.PIN
+	# !data<3> & !data<1> & !data<0> & BCD0<1>.PIN
+	# !data<2> & !data<1> & !data<0> & BCD0<1>.PIN
+	# data<3> & data<2> & data<1> & BCD0<1>.PIN & 
+	BCD0<0>.PIN
+;Imported pterms FB3_3
+	# data<3> & data<2> & data<1> & data<0> & 
+	BCD0<1>.PIN
+	# data<3> & data<2> & data<0> & BCD0<1>.PIN & 
+	BCD0<0>.PIN
+	# data<3> & data<1> & data<0> & BCD0<1>.PIN & 
+	BCD0<0>.PIN
+	# !data<3> & !data<2> & !data<1> & data<0> & 
+	BCD0<0>.PIN
+	# data<2> & data<1> & data<0> & BCD0<1>.PIN & 
+	BCD0<0>.PIN
+;Imported pterms FB3_5
+	# data<3> & !data<2> & !data<1> & !data<0> & 
+	BCD0<0>.PIN
+	# !data<3> & data<2> & !data<1> & !data<0> & 
+	BCD0<0>.PIN
+	# !data<3> & !data<2> & data<1> & !data<0> & 
+	BCD0<0>.PIN;
+
+MACROCELL | 2 | 12 | counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 3 | 0 | 0 | 0 | 2 | 0 | 3
+INPUTS | 4 | data<3>  | data<2>  | data<1>  | data<0>
+INPUTP | 4 | 12 | 15 | 87 | 50
+EQ | 4 | 
+   counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D = !data<3> & !data<2> & !data<1>
+	# !data<3> & !data<2> & !data<0>
+	# !data<3> & !data<1> & !data<0>
+	# !data<2> & !data<1> & !data<0>;
+
+MACROCELL | 1 | 17 | Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 12 | 0 | 12 | 0 | 5 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 10 | 0 | 11 | 0 | 13 | 0 | 14 | 0 | 17
+INPUTS | 8 | data<1>  | BCD0<2>.PIN  | BCD0<1>.PIN  | data<0>  | data<2>  | EXP9_.EXP  | rco_address.EXP  | counter_unit<0>.LFBK
+INPUTMC | 3 | 1 | 0 | 1 | 16 | 1 | 7
+INPUTP | 5 | 87 | 13 | 11 | 50 | 15
+IMPORTS | 2 | 1 | 0 | 1 | 16
+EQ | 27 | 
+   Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 = data<2> & data<1> & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<2> & counter_unit<0>.LFBK & BCD0<1>.PIN & 
+	BCD0<2>.PIN
+	# data<1> & data<0> & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<1> & counter_unit<0>.LFBK & BCD0<1>.PIN & 
+	BCD0<2>.PIN
+	# data<0> & counter_unit<0>.LFBK & BCD0<1>.PIN & 
+	BCD0<2>.PIN
+;Imported pterms FB2_1
+	# data<3> & data<2> & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<3> & data<0> & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<3> & data<2> & data<1> & 
+	counter_unit<0>.LFBK & BCD0<2>.PIN
+	# data<3> & data<1> & data<0> & 
+	counter_unit<0>.LFBK & BCD0<2>.PIN
+	# data<2> & data<1> & data<0> & 
+	counter_unit<0>.LFBK & BCD0<2>.PIN
+;Imported pterms FB2_2
+	# data<3> & data<2> & data<1> & data<0> & 
+	BCD0<2>.PIN
+	# data<3> & data<2> & data<0> & 
+	counter_unit<0>.LFBK & BCD0<2>.PIN
+;Imported pterms FB2_17
+	# data<3> & data<1> & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<3> & counter_unit<0>.LFBK & BCD0<1>.PIN & 
+	BCD0<2>.PIN
+	# data<2> & data<0> & BCD0<1>.PIN & BCD0<2>.PIN;
+
+MACROCELL | 2 | 4 | $OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 3 | 0 | 1 | 0 | 3 | 2 | 3
+INPUTS | 6 | data<3>  | data<2>  | data<1>  | data<0>  | counter_stop<0>.EXP  | BCD0<0>.PIN
+INPUTMC | 1 | 2 | 5
+INPUTP | 5 | 12 | 15 | 87 | 50 | 89
+EXPORTS | 1 | 2 | 3
+IMPORTS | 1 | 2 | 5
+EQ | 12 | 
+   $OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347 = !data<3> & !data<2> & !data<1>
+	# !data<3> & !data<2> & !data<0>
+;Imported pterms FB3_6
+	# !data<3> & !data<1> & !data<0>
+	# !data<2> & !data<1> & !data<0>
+	# data<3> & data<2> & data<1> & data<0>;
+    $OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347.EXP  =  data<3> & !data<2> & !data<1> & !data<0> & 
+	BCD0<0>.PIN
+	# !data<3> & data<2> & !data<1> & !data<0> & 
+	BCD0<0>.PIN
+	# !data<3> & !data<2> & data<1> & !data<0> & 
+	BCD0<0>.PIN
+
+MACROCELL | 1 | 15 | Madd_counter_unit_add0000_Mxor_Result<1>__xor0000/Madd_counter_unit_add0000_Mxor_Result<1>__xor0000_D
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 2 | 0 | 2 | 0 | 17
+INPUTS | 6 | data<3>  | data<1>  | data<0>  | data<2>  | counter_hundred<2>.EXP  | BCD0<1>.PIN
+INPUTMC | 1 | 1 | 14
+INPUTP | 5 | 12 | 87 | 50 | 15 | 11
+IMPORTS | 1 | 1 | 14
+EQ | 7 | 
+   !Madd_counter_unit_add0000_Mxor_Result<1>__xor0000/Madd_counter_unit_add0000_Mxor_Result<1>__xor0000_D = BCD0<1>.PIN
+	$ !data<3> & !data<2> & !data<1>
+	# !data<3> & !data<2> & !data<0>
+	# !data<3> & !data<1> & !data<0>
+	# !data<2> & !data<1> & !data<0>
+;Imported pterms FB2_15
+	# data<3> & data<2> & data<1> & data<0>;
+
+MACROCELL | 0 | 0 | EXP0_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 13 | data<2>  | zero_old.LFBK  | Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK  | BCD0<3>.PIN  | counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D  | ce  | Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D  | $OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346  | Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2  | data<1>  | data<0>  | rco_tenth.EXP  | counter_unit<1>.LFBK
+INPUTMC | 9 | 0 | 9 | 0 | 15 | 2 | 12 | 2 | 14 | 1 | 13 | 2 | 17 | 2 | 3 | 0 | 17 | 0 | 1
+INPUTP | 4 | 15 | 86 | 87 | 50
+EXPORTS | 1 | 0 | 1
+IMPORTS | 1 | 0 | 17
+EQ | 22 | 
+       EXP0_.EXP  =  !data<2> & ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & !zero_old.LFBK
+	# !data<2> & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & counter_unit<1>.LFBK & !zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# !data<1> & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & counter_unit<1>.LFBK & !zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# !data<0> & ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & !zero_old.LFBK
+	# !data<0> & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & counter_unit<1>.LFBK & !zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+;Imported pterms FB1_18
+	# ce & 
+	Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & 
+	!Madd_counter_unit_add0000_Mxor_Result<1>__xor0000/Madd_counter_unit_add0000_Mxor_Result<1>__xor0000_D & zero_old.LFBK & !BCD0<3>.PIN
+
+MACROCELL | 0 | 2 | EXP1_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 13 | data<3>  | zero_old.LFBK  | Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK  | BCD0<3>.PIN  | counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D  | ce  | Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D  | $OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346  | Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2  | Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2  | Madd_counter_unit_add0000_Mxor_Result<1>__xor0000/Madd_counter_unit_add0000_Mxor_Result<1>__xor0000_D  | EXP2_.EXP  | counter_unit<1>.LFBK
+INPUTMC | 11 | 0 | 9 | 0 | 15 | 2 | 12 | 2 | 14 | 1 | 13 | 2 | 17 | 2 | 3 | 1 | 17 | 1 | 15 | 0 | 3 | 0 | 1
+INPUTP | 2 | 12 | 86
+EXPORTS | 1 | 0 | 1
+IMPORTS | 1 | 0 | 3
+EQ | 41 | 
+       EXP1_.EXP  =  !data<3> & ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & !zero_old.LFBK
+	# !data<3> & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & counter_unit<1>.LFBK & !zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK
+	# ce & 
+	$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & 
+	Madd_counter_unit_add0000_Mxor_Result<1>__xor0000/Madd_counter_unit_add0000_Mxor_Result<1>__xor0000_D & zero_old.LFBK & !BCD0<3>.PIN
+	# 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & 
+	Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+;Imported pterms FB1_4
+	# ce & 
+	Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & 
+	$OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347 & zero_old.LFBK & 
+	Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & 
+	Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# 
+	Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & 
+	$OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+
+MACROCELL | 0 | 3 | EXP2_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 2
+INPUTS | 10 | zero_old.LFBK  | Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK  | Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D  | BCD0<3>.PIN  | counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D  | $OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347  | Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2  | ce  | Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2  | counter_unit<1>.LFBK
+INPUTMC | 9 | 0 | 9 | 0 | 15 | 1 | 13 | 2 | 12 | 2 | 4 | 2 | 3 | 2 | 14 | 1 | 17 | 0 | 1
+INPUTP | 1 | 86
+EXPORTS | 1 | 0 | 2
+EQ | 20 | 
+       EXP2_.EXP  =  ce & 
+	Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & 
+	$OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347 & zero_old.LFBK & 
+	Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & 
+	Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# 
+	Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & 
+	$OpTx$amount_of_zero<1>/amount_of_zero<1>_D2_INV$347 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+	# 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	!counter_unit_addsub0000<2>/counter_unit_addsub0000<2>_D & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!Madd_counter_unit_add0000_Mxor_Result<2>__xor0000/Madd_counter_unit_add0000_Mxor_Result<2>__xor0000_D.LFBK & BCD0<3>.PIN
+
+MACROCELL | 0 | 4 | EXP3_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 5
+INPUTS | 8 | data<3>  | zero_old.LFBK  | ce  | data<2>  | data<1>  | data<0>  | Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2  | counter_unit<2>.LFBK
+INPUTMC | 4 | 0 | 9 | 2 | 14 | 1 | 17 | 0 | 5
+INPUTP | 4 | 12 | 15 | 87 | 50
+EXPORTS | 1 | 0 | 5
+EQ | 10 | 
+       EXP3_.EXP  =  !data<3> & ce & !zero_old.LFBK & 
+	counter_unit<2>.LFBK
+	# !data<2> & ce & !zero_old.LFBK & 
+	counter_unit<2>.LFBK
+	# !data<1> & ce & !zero_old.LFBK & 
+	counter_unit<2>.LFBK
+	# !data<0> & ce & !zero_old.LFBK & 
+	counter_unit<2>.LFBK
+	# ce & 
+	Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & counter_unit<2>.LFBK
+
+MACROCELL | 0 | 6 | EXP4_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 5
+INPUTS | 13 | zero_old.LFBK  | BCD0<0>.PIN  | ce  | counter_unit<1>.LFBK  | $OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346  | Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2  | data<3>  | data<2>  | data<1>  | data<0>  | BCD0<3>.PIN  | EXP5_.EXP  | counter_unit<2>.LFBK
+INPUTMC | 7 | 0 | 9 | 2 | 14 | 0 | 1 | 2 | 17 | 1 | 17 | 0 | 7 | 0 | 5
+INPUTP | 6 | 89 | 12 | 15 | 87 | 50 | 86
+EXPORTS | 1 | 0 | 5
+IMPORTS | 1 | 0 | 7
+EQ | 22 | 
+       EXP4_.EXP  =  ce & 
+	!$OpTx$Madd_counter_unit_add0000__or0000/Madd_counter_unit_add0000__or0000_D2_INV$346 & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & !counter_unit<2>.LFBK & 
+	!BCD0<3>.PIN
+	# data<3> & data<2> & data<1> & data<0> & ce & 
+	!zero_old.LFBK & !counter_unit<2>.LFBK
+	# data<3> & data<2> & data<1> & data<0> & ce & 
+	zero_old.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN
+	# !data<3> & !data<2> & !data<1> & !data<0> & ce & 
+	!counter_unit<1>.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN
+	# !data<2> & !data<1> & !data<0> & ce & 
+	!counter_unit<1>.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN & !BCD0<0>.PIN
+;Imported pterms FB1_8
+	# !data<3> & !data<2> & !data<1> & ce & 
+	!counter_unit<1>.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN & !BCD0<0>.PIN
+	# !data<3> & !data<2> & !data<0> & ce & 
+	!counter_unit<1>.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN & !BCD0<0>.PIN
+	# !data<3> & !data<1> & !data<0> & ce & 
+	!counter_unit<1>.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN & !BCD0<0>.PIN
+	# data<3> & data<2> & data<1> & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!counter_unit<2>.LFBK & BCD0<0>.PIN
+
+MACROCELL | 0 | 7 | EXP5_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 6
+INPUTS | 11 | data<3>  | data<2>  | data<1>  | counter_unit<2>.LFBK  | zero_old.LFBK  | BCD0<0>.PIN  | ce  | data<0>  | BCD0<3>.PIN  | Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2  | counter_unit<1>.LFBK
+INPUTMC | 5 | 0 | 5 | 0 | 9 | 2 | 14 | 1 | 17 | 0 | 1
+INPUTP | 6 | 12 | 15 | 87 | 89 | 50 | 86
+EXPORTS | 1 | 0 | 6
+EQ | 9 | 
+       EXP5_.EXP  =  !data<3> & !data<2> & !data<1> & ce & 
+	!counter_unit<1>.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN & !BCD0<0>.PIN
+	# !data<3> & !data<2> & !data<0> & ce & 
+	!counter_unit<1>.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN & !BCD0<0>.PIN
+	# !data<3> & !data<1> & !data<0> & ce & 
+	!counter_unit<1>.LFBK & counter_unit<2>.LFBK & BCD0<3>.PIN & !BCD0<0>.PIN
+	# data<3> & data<2> & data<1> & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	!counter_unit<2>.LFBK & BCD0<0>.PIN
+
+MACROCELL | 0 | 10 | EXP6_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 11
+INPUTS | 13 | ce  | zero_old.LFBK  | counter_unit<1>.LFBK  | reset  | Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D  | Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2  | Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2  | data<3>  | data<2>  | data<1>  | BCD0<3>.PIN  | data<0>  | rco_unit.LFBK
+INPUTMC | 7 | 2 | 14 | 0 | 9 | 0 | 1 | 1 | 13 | 1 | 17 | 2 | 3 | 0 | 12
+INPUTP | 6 | 91 | 12 | 15 | 87 | 86 | 50
+EXPORTS | 1 | 0 | 11
+EQ | 14 | 
+       EXP6_.EXP  =  ce & !zero_old.LFBK & rco_unit.LFBK
+	# !reset & ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & BCD0<3>.PIN
+	# !reset & ce & 
+	Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & !BCD0<3>.PIN
+	# !data<3> & !data<2> & !data<1> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# !data<3> & !data<2> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+
+MACROCELL | 0 | 11 | EXP7_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 12
+INPUTS | 12 | data<3>  | data<2>  | data<0>  | reset  | zero_old.LFBK  | BCD0<0>.PIN  | ce  | BCD0<3>.PIN  | Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2  | data<1>  | EXP6_.EXP  | counter_unit<1>.LFBK
+INPUTMC | 5 | 0 | 9 | 2 | 14 | 1 | 17 | 0 | 10 | 0 | 1
+INPUTP | 7 | 12 | 15 | 50 | 91 | 89 | 86 | 87
+EXPORTS | 1 | 0 | 12
+IMPORTS | 1 | 0 | 10
+EQ | 30 | 
+       EXP7_.EXP  =  data<3> & data<2> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# !data<3> & data<1> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN & BCD0<0>.PIN
+	# !data<3> & data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN & BCD0<0>.PIN
+	# !data<2> & data<1> & data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# data<3> & !data<2> & data<1> & data<0> & !reset & 
+	ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & BCD0<3>.PIN & BCD0<0>.PIN
+;Imported pterms FB1_11
+	# ce & !zero_old.LFBK & rco_unit.LFBK
+	# !reset & ce & 
+	!Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & BCD0<3>.PIN
+	# !reset & ce & 
+	Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000/Madd_counter_unit_addsub0001_Mxor_Result<2>__xor0000_D & 
+	Madd_counter_unit_addsub0001__or0000/Madd_counter_unit_addsub0001__or0000_D2 & 
+	Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & zero_old.LFBK & !BCD0<3>.PIN
+	# !data<3> & !data<2> & !data<1> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# !data<3> & !data<2> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+
+MACROCELL | 0 | 13 | EXP8_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 12
+INPUTS | 12 | reset  | counter_unit<1>.LFBK  | data<3>  | data<1>  | data<0>  | zero_old.LFBK  | ce  | BCD0<3>.PIN  | Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2  | data<2>  | counter_hundred<1>.EXP  | rco_unit.LFBK
+INPUTMC | 6 | 0 | 1 | 0 | 9 | 2 | 14 | 1 | 17 | 0 | 14 | 0 | 12
+INPUTP | 6 | 91 | 12 | 87 | 50 | 86 | 15
+EXPORTS | 1 | 0 | 12
+IMPORTS | 1 | 0 | 14
+EQ | 24 | 
+       EXP8_.EXP  =  reset & rco_unit.LFBK
+	# data<3> & data<1> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# data<3> & !data<1> & data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# !data<3> & data<2> & data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# data<2> & data<1> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & !counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+;Imported pterms FB1_15
+	# !data<3> & !data<1> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# !data<2> & !data<1> & !data<0> & !reset & ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+	# data<3> & data<2> & data<1> & data<0> & !reset & 
+	ce & 
+	!Madd_counter_unit_add0000__or0001/Madd_counter_unit_add0000__or0001_D2 & counter_unit<1>.LFBK & zero_old.LFBK & 
+	BCD0<3>.PIN
+
+MACROCELL | 1 | 0 | EXP9_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 17
+INPUTS | 8 | data<3>  | data<2>  | BCD0<2>.PIN  | data<0>  | data<1>  | BCD0<1>.PIN  | Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.EXP  | counter_unit<0>.LFBK
+INPUTMC | 2 | 1 | 1 | 1 | 7
+INPUTP | 6 | 12 | 15 | 13 | 50 | 87 | 11
+EXPORTS | 1 | 1 | 17
+IMPORTS | 1 | 1 | 1
+EQ | 13 | 
+       EXP9_.EXP  =  data<3> & data<2> & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<3> & data<0> & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<3> & data<2> & data<1> & 
+	counter_unit<0>.LFBK & BCD0<2>.PIN
+	# data<3> & data<1> & data<0> & 
+	counter_unit<0>.LFBK & BCD0<2>.PIN
+	# data<2> & data<1> & data<0> & 
+	counter_unit<0>.LFBK & BCD0<2>.PIN
+;Imported pterms FB2_2
+	# data<3> & data<2> & data<1> & data<0> & 
+	BCD0<2>.PIN
+	# data<3> & data<2> & data<0> & 
+	counter_unit<0>.LFBK & BCD0<2>.PIN
+
+MACROCELL | 1 | 2 | EXP10_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 11 | data<3>  | data<2>  | data<0>  | BCD0<2>.PIN  | counter_unit<0>.LFBK  | BCD0<1>.PIN  | ce  | zero_old  | data<1>  | EXP11_.EXP  | Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK
+INPUTMC | 5 | 1 | 7 | 2 | 14 | 0 | 9 | 1 | 3 | 1 | 1
+INPUTP | 6 | 12 | 15 | 50 | 13 | 11 | 87
+EXPORTS | 1 | 1 | 1
+IMPORTS | 1 | 1 | 3
+EQ | 46 | 
+       EXP10_.EXP  =  data<3> & !data<2> & !data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<3> & !data<2> & data<1> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<2> & data<1> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & !BCD0<1>.PIN & BCD0<2>.PIN
+	# data<2> & data<1> & !data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<2> & !data<1> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+;Imported pterms FB2_4
+	# data<3> & !data<2> & data<1> & !data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<3> & data<2> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<3> & data<2> & !data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<3> & !data<1> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<2> & data<1> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+;Imported pterms FB2_5
+	# !ce & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK
+	# !data<3> & !data<2> & !data<1> & !data<0> & 
+	zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<3> & !data<1> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# data<3> & data<2> & !data<1> & !data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<3> & !data<2> & !data<1> & data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+;Imported pterms FB2_6
+	# !data<3> & !data<2> & !data<1> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<3> & !data<2> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<2> & !data<1> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# data<3> & data<2> & data<1> & data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !BCD0<1>.PIN & BCD0<2>.PIN
+
+MACROCELL | 1 | 3 | EXP11_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 2
+INPUTS | 11 | data<3>  | data<2>  | data<1>  | data<0>  | BCD0<2>.PIN  | counter_unit<0>.LFBK  | ce  | zero_old  | BCD0<1>.PIN  | EXP12_.EXP  | Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK
+INPUTMC | 5 | 1 | 7 | 2 | 14 | 0 | 9 | 1 | 4 | 1 | 1
+INPUTP | 6 | 12 | 15 | 87 | 50 | 13 | 11
+EXPORTS | 1 | 1 | 2
+IMPORTS | 1 | 1 | 4
+EQ | 35 | 
+       EXP11_.EXP  =  data<3> & !data<2> & data<1> & !data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<3> & data<2> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<3> & data<2> & !data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<3> & !data<1> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# !data<2> & data<1> & data<0> & ce & zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+;Imported pterms FB2_5
+	# !ce & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK
+	# !data<3> & !data<2> & !data<1> & !data<0> & 
+	zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<3> & !data<1> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# data<3> & data<2> & !data<1> & !data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<3> & !data<2> & !data<1> & data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+;Imported pterms FB2_6
+	# !data<3> & !data<2> & !data<1> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<3> & !data<2> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<2> & !data<1> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# data<3> & data<2> & data<1> & data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !BCD0<1>.PIN & BCD0<2>.PIN
+
+MACROCELL | 1 | 4 | EXP12_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 3
+INPUTS | 11 | counter_unit<0>.LFBK  | ce  | data<3>  | data<2>  | data<1>  | data<0>  | BCD0<2>.PIN  | zero_old  | BCD0<1>.PIN  | EXP13_.EXP  | Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK
+INPUTMC | 5 | 1 | 7 | 2 | 14 | 0 | 9 | 1 | 5 | 1 | 1
+INPUTP | 6 | 12 | 15 | 87 | 50 | 13 | 11
+EXPORTS | 1 | 1 | 3
+IMPORTS | 1 | 1 | 5
+EQ | 23 | 
+       EXP12_.EXP  =  !ce & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK
+	# !data<3> & !data<2> & !data<1> & !data<0> & 
+	zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<3> & !data<1> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# data<3> & data<2> & !data<1> & !data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+	# data<3> & !data<2> & !data<1> & data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & BCD0<1>.PIN & BCD0<2>.PIN
+;Imported pterms FB2_6
+	# !data<3> & !data<2> & !data<1> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<3> & !data<2> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<2> & !data<1> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# data<3> & data<2> & data<1> & data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !BCD0<1>.PIN & BCD0<2>.PIN
+
+MACROCELL | 1 | 5 | EXP13_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 4
+INPUTS | 10 | data<3>  | data<2>  | data<1>  | BCD0<2>.PIN  | counter_unit<0>.LFBK  | BCD0<1>.PIN  | zero_old  | data<0>  | ce  | Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK
+INPUTMC | 4 | 1 | 7 | 0 | 9 | 2 | 14 | 1 | 1
+INPUTP | 6 | 12 | 15 | 87 | 13 | 11 | 50
+EXPORTS | 1 | 1 | 4
+EQ | 9 | 
+       EXP13_.EXP  =  !data<3> & !data<2> & !data<1> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<3> & !data<2> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# !data<2> & !data<1> & !data<0> & zero_old & 
+	Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !counter_unit<0>.LFBK & !BCD0<1>.PIN & !BCD0<2>.PIN
+	# data<3> & data<2> & data<1> & data<0> & ce & 
+	zero_old & 
+	!Madd_counter_unit_add0000_Mxor_Result<3>__xor0000.LFBK & !BCD0<1>.PIN & BCD0<2>.PIN
+
+MACROCELL | 1 | 6 | EXP14_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 7
+INPUTS | 7 | data<3>  | data<2>  | data<1>  | data<0>  | ce  | zero_old  | counter_unit<0>.LFBK
+INPUTMC | 3 | 2 | 14 | 0 | 9 | 1 | 7
+INPUTP | 4 | 12 | 15 | 87 | 50
+EXPORTS | 1 | 1 | 7
+EQ | 10 | 
+       EXP14_.EXP  =  data<3> & data<2> & !data<1> & data<0> & ce & 
+	zero_old
+	# data<3> & !data<2> & data<1> & data<0> & ce & 
+	zero_old
+	# data<3> & !data<2> & data<1> & data<0> & ce & 
+	!counter_unit<0>.LFBK
+	# !data<3> & data<2> & data<1> & data<0> & ce & 
+	zero_old
+	# !data<3> & data<2> & data<1> & data<0> & ce & 
+	!counter_unit<0>.LFBK
+
+MACROCELL | 1 | 8 | EXP15_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 7
+INPUTS | 7 | data<3>  | data<2>  | data<1>  | data<0>  | ce  | EXP16_.EXP  | counter_unit<0>.LFBK
+INPUTMC | 3 | 2 | 14 | 1 | 9 | 1 | 7
+INPUTP | 4 | 12 | 15 | 87 | 50
+EXPORTS | 1 | 1 | 7
+IMPORTS | 1 | 1 | 9
+EQ | 30 | 
+       EXP15_.EXP  =  data<3> & data<2> & data<1> & !data<0> & ce & 
+	!counter_unit<0>.LFBK
+	# data<3> & data<2> & !data<1> & data<0> & ce & 
+	!counter_unit<0>.LFBK
+	# data<3> & !data<2> & !data<1> & !data<0> & ce & 
+	!counter_unit<0>.LFBK
+	# !data<3> & !data<2> & data<1> & !data<0> & ce & 
+	!counter_unit<0>.LFBK
+	# !data<3> & !data<2> & !data<1> & data<0> & ce & 
+	!counter_unit<0>.LFBK
+;Imported pterms FB2_10
+	# !data<3> & data<2> & !data<1> & !data<0> & ce & 
+	!counter_unit<0>.LFBK
+	# data<3> & data<2> & data<1> & data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# data<3> & !data<2> & !data<1> & data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & data<2> & !data<1> & data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & !data<2> & data<1> & data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+;Imported pterms FB2_11
+	# data<3> & data<2> & !data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# data<3> & !data<2> & data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & data<2> & data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & !data<2> & !data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+
+MACROCELL | 1 | 9 | EXP16_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 8
+INPUTS | 8 | data<3>  | data<2>  | data<1>  | data<0>  | ce  | zero_old  | EXP17_.EXP  | counter_unit<0>.LFBK
+INPUTMC | 4 | 2 | 14 | 0 | 9 | 1 | 10 | 1 | 7
+INPUTP | 4 | 12 | 15 | 87 | 50
+EXPORTS | 1 | 1 | 8
+IMPORTS | 1 | 1 | 10
+EQ | 19 | 
+       EXP16_.EXP  =  !data<3> & data<2> & !data<1> & !data<0> & ce & 
+	!counter_unit<0>.LFBK
+	# data<3> & data<2> & data<1> & data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# data<3> & !data<2> & !data<1> & data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & data<2> & !data<1> & data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & !data<2> & data<1> & data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+;Imported pterms FB2_11
+	# data<3> & data<2> & !data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# data<3> & !data<2> & data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & data<2> & data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & !data<2> & !data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+
+MACROCELL | 1 | 10 | EXP17_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 9
+INPUTS | 7 | data<3>  | data<2>  | data<1>  | data<0>  | ce  | zero_old  | counter_unit<0>.LFBK
+INPUTMC | 3 | 2 | 14 | 0 | 9 | 1 | 7
+INPUTP | 4 | 12 | 15 | 87 | 50
+EXPORTS | 1 | 1 | 9
+EQ | 8 | 
+       EXP17_.EXP  =  data<3> & data<2> & !data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# data<3> & !data<2> & data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & data<2> & data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+	# !data<3> & !data<2> & !data<1> & !data<0> & ce & 
+	!zero_old & counter_unit<0>.LFBK
+
+MACROCELL | 2 | 0 | EXP18_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 17
+INPUTS | 5 | data<3>  | data<2>  | data<1>  | data<0>  | BCD0<0>.PIN
+INPUTP | 5 | 12 | 15 | 87 | 50 | 89
+EXPORTS | 1 | 2 | 17
+EQ | 5 | 
+       EXP18_.EXP  =  data<3> & data<2> & data<1> & data<0>
+	# !data<3> & !data<2> & !data<1> & !data<0>
+	# !data<3> & !data<2> & !data<0> & !BCD0<0>.PIN
+	# !data<3> & !data<1> & !data<0> & !BCD0<0>.PIN
+	# !data<2> & !data<1> & !data<0> & !BCD0<0>.PIN
+
+MACROCELL | 2 | 2 | EXP19_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 3
+INPUTS | 6 | data<3>  | data<2>  | data<1>  | data<0>  | BCD0<0>.PIN  | BCD0<1>.PIN
+INPUTP | 6 | 12 | 15 | 87 | 50 | 89 | 11
+EXPORTS | 1 | 2 | 3
+EQ | 10 | 
+       EXP19_.EXP  =  data<3> & data<2> & data<1> & data<0> & 
+	BCD0<1>.PIN
+	# data<3> & data<2> & data<0> & BCD0<1>.PIN & 
+	BCD0<0>.PIN
+	# data<3> & data<1> & data<0> & BCD0<1>.PIN & 
+	BCD0<0>.PIN
+	# !data<3> & !data<2> & !data<1> & data<0> & 
+	BCD0<0>.PIN
+	# data<2> & data<1> & data<0> & BCD0<1>.PIN & 
+	BCD0<0>.PIN
+
+MACROCELL | 2 | 15 | EXP20_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 2 | 16
+INPUTS | 4 | counter_tenth<1>.LFBK  | rco_unit  | zero_old  | counter_tenth<0>.LFBK
+INPUTMC | 4 | 2 | 1 | 0 | 12 | 0 | 9 | 2 | 13
+EXPORTS | 1 | 2 | 16
+EQ | 2 | 
+       EXP20_.EXP  =  rco_unit & zero_old & counter_tenth<0>.LFBK & 
+	counter_tenth<1>.LFBK
+
+PIN | data<3> | 64 | 0 | N/A | 12 | 34 | 1 | 15 | 0 | 5 | 1 | 1 | 1 | 7 | 0 | 12 | 1 | 13 | 0 | 15 | 2 | 17 | 2 | 3 | 2 | 12 | 1 | 16 | 2 | 4 | 0 | 2 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 10 | 0 | 11 | 0 | 13 | 0 | 14 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 14 | 2 | 0 | 2 | 2 | 2 | 5 | 2 | 16
+PIN | data<2> | 64 | 0 | N/A | 15 | 35 | 0 | 0 | 0 | 5 | 1 | 1 | 1 | 7 | 0 | 12 | 1 | 13 | 0 | 15 | 2 | 17 | 2 | 3 | 2 | 12 | 1 | 17 | 2 | 4 | 1 | 15 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 10 | 0 | 11 | 0 | 13 | 0 | 14 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 14 | 1 | 16 | 2 | 0 | 2 | 2 | 2 | 5 | 2 | 16
+PIN | data<1> | 64 | 0 | N/A | 87 | 36 | 0 | 1 | 0 | 5 | 1 | 1 | 1 | 7 | 0 | 12 | 1 | 13 | 0 | 15 | 2 | 17 | 2 | 3 | 2 | 12 | 1 | 17 | 2 | 4 | 1 | 15 | 0 | 0 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 10 | 0 | 11 | 0 | 13 | 0 | 14 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 14 | 1 | 16 | 2 | 0 | 2 | 2 | 2 | 5 | 2 | 16
+PIN | data<0> | 64 | 0 | N/A | 50 | 35 | 0 | 0 | 0 | 5 | 1 | 1 | 1 | 7 | 0 | 12 | 1 | 13 | 0 | 15 | 2 | 17 | 2 | 3 | 2 | 12 | 1 | 17 | 2 | 4 | 1 | 15 | 0 | 4 | 0 | 6 | 0 | 7 | 0 | 10 | 0 | 11 | 0 | 13 | 0 | 14 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 14 | 1 | 16 | 2 | 0 | 2 | 2 | 2 | 5 | 2 | 16
+PIN | clk | 4096 | 0 | N/A | 20 | 29 | 0 | 1 | 0 | 5 | 3 | 4 | 3 | 7 | 3 | 8 | 2 | 10 | 0 | 14 | 1 | 14 | 2 | 13 | 2 | 1 | 2 | 16 | 1 | 1 | 3 | 10 | 0 | 16 | 2 | 7 | 1 | 7 | 1 | 16 | 2 | 14 | 0 | 17 | 2 | 5 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 11 | 3 | 13 | 0 | 12 | 0 | 9 | 1 | 12 | 3 | 1
+PIN | reset | 65600 | 0 | N/A | 91 | 30 | 0 | 12 | 0 | 10 | 0 | 11 | 0 | 13 | 0 | 14 | 0 | 1 | 0 | 5 | 3 | 4 | 3 | 7 | 3 | 8 | 2 | 10 | 1 | 14 | 2 | 13 | 2 | 1 | 2 | 16 | 1 | 1 | 3 | 10 | 0 | 16 | 2 | 7 | 1 | 7 | 1 | 16 | 2 | 14 | 0 | 17 | 2 | 5 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 11 | 3 | 13 | 3 | 1
+PIN | startknapp | 64 | 0 | N/A | 82 | 6 | 2 | 14 | 1 | 12 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 11
+PIN | BCD2<3> | 536871040 | 0 | N/A | 27
+PIN | LED | 536871040 | 0 | N/A | 71
+PIN | cs2 | 536871040 | 0 | N/A | 58
+PIN | BCD0<1> | 536870976 | 0 | N/A | 11 | 13 | 2 | 16 | 1 | 16 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 15 | 1 | 17 | 2 | 3 | 2 | 17 | 1 | 5 | 1 | 1 | 2 | 2
+PIN | BCD0<2> | 536870976 | 0 | N/A | 13 | 9 | 1 | 16 | 1 | 0 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 17 | 1 | 5 | 1 | 13 | 1 | 1
+PIN | addr<0> | 536870976 | 0 | N/A | 61 | 1 | 1 | 16
+PIN | addr<1> | 536870976 | 0 | N/A | 62 | 1 | 1 | 16
+PIN | addr<2> | 536870976 | 0 | N/A | 64 | 1 | 1 | 16
+PIN | BCD2<0> | 536870976 | 0 | N/A | 46 | 4 | 0 | 15 | 0 | 16 | 1 | 14 | 0 | 14
+PIN | BCD2<1> | 536870976 | 0 | N/A | 26 | 1 | 1 | 14
+PIN | BCD2<2> | 536870976 | 0 | N/A | 9 | 2 | 0 | 16 | 0 | 15
+PIN | BCD1<0> | 536870976 | 0 | N/A | 49 | 1 | 0 | 17
+PIN | BCD1<1> | 536870976 | 0 | N/A | 29 | 1 | 0 | 17
+PIN | BCD1<2> | 536870976 | 0 | N/A | 52 | 1 | 0 | 17
+PIN | BCD0<3> | 536870976 | 0 | N/A | 86 | 13 | 0 | 1 | 0 | 14 | 0 | 13 | 0 | 11 | 0 | 10 | 0 | 7 | 0 | 6 | 0 | 3 | 0 | 2 | 0 | 0 | 0 | 12 | 0 | 17 | 0 | 5
+PIN | addr<3> | 536870976 | 0 | N/A | 67 | 1 | 1 | 16
+PIN | BCD1<3> | 536870976 | 0 | N/A | 33 | 1 | 0 | 17
+PIN | BCD0<0> | 536870976 | 0 | N/A | 89 | 11 | 0 | 5 | 2 | 0 | 0 | 11 | 0 | 7 | 0 | 6 | 2 | 2 | 2 | 3 | 2 | 17 | 0 | 12 | 2 | 4 | 2 | 16
+PIN | cs1 | 536870976 | 0 | N/A | 10 | 1 | 3 | 1

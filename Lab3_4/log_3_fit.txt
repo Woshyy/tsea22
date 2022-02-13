@@ -1,0 +1,296 @@
+Release 14.7 - CPLD Optimizer/Partitioner P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'timer.ise'.
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_2\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_2\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_2\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_1\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_1\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_1\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_0\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_0\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_0\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/ce\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/ce\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/ce\/$1I55 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_3\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_3\/Q\/FDCP prop_name=FPGAINIT prop_terse=XDM_PROPERTY_INT32 "FPGAINIT" 1
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_3\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_3\/Q\/X_ONE prop_name=FPGAINIT prop_terse=XDM_PROPERTY_INT32 "FPGAINIT" 1
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_3\/$1I41 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_3\/$1I41 prop_name=FPGAINIT prop_terse=XDM_PROPERTY_INT32 "FPGAINIT" 1
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/Msub_q_int_addsub0000_Mxor_Result<3>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/Msub_q_int_addsub0000_Mxor_Result<2>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/Msub_q_int_addsub0000_Mxor_Result<1>\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/Msub_q_int_addsub0000_Mxor_Result<3>_not00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/Msub_q_int_addsub0000_Mxor_Result<2>_not00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/Msub_q_int_addsub0000_Mxor_Result<1>_not00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/Msub_q_int_addsub0000__or00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/Msub_q_int_addsub0000__or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<0>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<0>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<0>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<0>5 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<0>6 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<1>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<1>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<1>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<2>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<2>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<2>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<3>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<3>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<3>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_mux0003<3>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/alarm_cmp_eq00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/alarm_cmp_eq00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/alarm_cmp_eq00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/alarm_cmp_eq00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/alarm_cmp_eq00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND4"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_and00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_and00012 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_and00013 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_and00014 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND3"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_and00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_and00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_and00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/q_int_and00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND5"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/clk_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/clk_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/reset_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/reset_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/startknapp_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/startknapp_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/alarm_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/alarm_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/tidkvar_3_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/tidkvar_3_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/tidkvar_2_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/tidkvar_2_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/tidkvar_1_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/tidkvar_1_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/tidkvar_0_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer/tidkvar_0_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+CS: block property: block_name=/timer/EXPANDED_FlattenFull/timer prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "timer"
+
+Considering device XC9572-7-PC44.
+Flattening design..
+Timing optimization
+Timing driven global resource optimization
+General global resource optimization........
+Re-checking device resources ...
+Mapping a total of 6 equations into 4 function blocks..........
+Design timer has been optimized and fit into device XC9572-7-PC44.

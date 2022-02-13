@@ -1,0 +1,577 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xc9500 | 957244 | XC9572-7-PC44
+
+DEVICE | 9572 | 957244 | 
+
+NETWORK | trapplyse | 0 | 0 | 201342983
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_IBUF | trapplyse_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk | 940 | PI | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | reset_IBUF | trapplyse_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | reset | 941 | PI | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 6 | 5 | II_FSR
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+
+INPUT_INSTANCE | 0 | 0 | NULL | x0_IBUF | trapplyse_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | x0 | 942 | PI | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | x0_IBUF | 931 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | x0_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | x1_IBUF | trapplyse_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | x1 | 943 | PI | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | x1_IBUF | 933 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | x1_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv+OeInv | ce | trapplyse_COPY_0_COPY_0 | 2357203968 | 8 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x0_IBUF | 931 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | x0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x0_last | 932 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | x0_last.Q | x0_last | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x1_IBUF | 933 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | x1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x1_last | 934 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | x1_last.Q | x1_last | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rco | 930 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | rco.Q | rco | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ce.FBK | 980 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | ce.Q | ce | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | ce$Q | 919 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | ce.Q | ce | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | ce | 920 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | ce.Q | ce | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | ce.FBK | 980 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | ce.Q | ce | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | ce.SI | ce | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x0_IBUF | 931 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | x0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x0_last | 932 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | x0_last.Q | x0_last | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x1_IBUF | 933 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | x1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x1_last | 934 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | x1_last.Q | x1_last | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rco | 930 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | rco.Q | rco | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ce.FBK | 980 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | ce.Q | ce | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ce.D1 | 945 | ? | 0 | 4096 | ce | NULL | NULL | ce.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ce.D2 | 946 | ? | 0 | 4096 | ce | NULL | NULL | ce.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | rco | IV_TRUE | ce.FBK
+SPPTERM | 2 | IV_TRUE | x0_IBUF | IV_FALSE | x0_last
+SPPTERM | 2 | IV_FALSE | x0_IBUF | IV_TRUE | x0_last
+SPPTERM | 2 | IV_TRUE | x1_IBUF | IV_FALSE | x1_last
+SPPTERM | 2 | IV_FALSE | x1_IBUF | IV_TRUE | x1_last
+
+SRFF_INSTANCE | ce.REG | ce | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ce.D | 944 | ? | 0 | 0 | ce | NULL | NULL | ce.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ce.Q | 947 | ? | 0 | 0 | ce | NULL | NULL | ce.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow+OptxMapped+ClkInv+OeInv | counter<0> | trapplyse_COPY_0_COPY_0 | 2357200128 | 8 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<1>_PIN_BUF_ | 989 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<1> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clr.FBK | 982 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | clr.Q | clr | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<3>.FBK | 983 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<3>.Q | counter<3> | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<2>_PIN_BUF_ | 990 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | u_PIN_BUF_ | 987 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_u | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<0>.FBK | 981 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<0>.Q | counter<0> | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | counter<0>$Q | 921 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<0>.Q | counter<0> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter<0> | 922 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<0>.Q | counter<0> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | counter<0>.FBK | 981 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<0>.Q | counter<0> | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | counter<0>.SI | counter<0> | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<1>_PIN_BUF_ | 989 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<1> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clr.FBK | 982 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | clr.Q | clr | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<3>.FBK | 983 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<3>.Q | counter<3> | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<2>_PIN_BUF_ | 990 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | u_PIN_BUF_ | 987 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_u | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<0>.FBK | 981 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<0>.Q | counter<0> | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter<0>.D1 | 949 | ? | 0 | 4096 | counter<0> | NULL | NULL | counter<0>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter<0>.D2 | 950 | ? | 0 | 4096 | counter<0> | NULL | NULL | counter<0>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_FALSE | u_PIN_BUF_
+SPPTERM | 2 | IV_TRUE | counter<0>.FBK | IV_TRUE | clr.FBK
+SPPTERM | 4 | IV_TRUE | clr.FBK | IV_FALSE | counter<3>.FBK | IV_FALSE | tidkvar<1>_PIN_BUF_ | IV_FALSE | tidkvar<2>_PIN_BUF_
+
+SRFF_INSTANCE | counter<0>.REG | counter<0> | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter<0>.D | 948 | ? | 0 | 0 | counter<0> | NULL | NULL | counter<0>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter<0>.Q | 951 | ? | 0 | 0 | counter<0> | NULL | NULL | counter<0>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped+ClkInv+OeInv | counter<1> | trapplyse_COPY_0_COPY_0 | 2357199872 | 8 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<0>_PIN_BUF_ | 988 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<0> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clr | 929 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | clr.Q | clr | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<2>_PIN_BUF_ | 990 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | u_PIN_BUF_ | 987 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_u | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<3>_PIN_BUF_ | 991 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<3> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<1>.FBK | 984 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<1>.Q | counter<1> | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | counter<1>$Q | 923 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<1>.Q | counter<1> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter<1> | 924 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<1>.Q | counter<1> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | counter<1>.FBK | 984 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<1>.Q | counter<1> | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | counter<1>.SI | counter<1> | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<0>_PIN_BUF_ | 988 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<0> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clr | 929 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | clr.Q | clr | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<2>_PIN_BUF_ | 990 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | u_PIN_BUF_ | 987 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_u | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<3>_PIN_BUF_ | 991 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<3> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<1>.FBK | 984 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<1>.Q | counter<1> | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter<1>.D1 | 953 | ? | 0 | 4096 | counter<1> | NULL | NULL | counter<1>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter<1>.D2 | 954 | ? | 0 | 4096 | counter<1> | NULL | NULL | counter<1>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | clr | IV_TRUE | u_PIN_BUF_
+SPPTERM | 3 | IV_TRUE | counter<1>.FBK | IV_TRUE | u_PIN_BUF_ | IV_TRUE | tidkvar<0>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | counter<1>.FBK | IV_TRUE | u_PIN_BUF_ | IV_FALSE | tidkvar<0>_PIN_BUF_ | IV_TRUE | tidkvar<2>_PIN_BUF_
+SPPTERM | 4 | IV_FALSE | counter<1>.FBK | IV_TRUE | u_PIN_BUF_ | IV_FALSE | tidkvar<0>_PIN_BUF_ | IV_TRUE | tidkvar<3>_PIN_BUF_
+
+SRFF_INSTANCE | counter<1>.REG | counter<1> | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter<1>.D | 952 | ? | 0 | 0 | counter<1> | NULL | NULL | counter<1>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter<1>.Q | 955 | ? | 0 | 0 | counter<1> | NULL | NULL | counter<1>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped+ClkInv+OeInv | counter<2> | trapplyse_COPY_0_COPY_0 | 2357199872 | 8 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<0>_PIN_BUF_ | 988 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<0> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clr | 929 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | clr.Q | clr | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<1>_PIN_BUF_ | 989 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<1> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | u_PIN_BUF_ | 987 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_u | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<3>_PIN_BUF_ | 991 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<3> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<2>.FBK | 985 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<2>.Q | counter<2> | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | counter<2>$Q | 925 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<2>.Q | counter<2> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter<2> | 926 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<2>.Q | counter<2> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | counter<2>.FBK | 985 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<2>.Q | counter<2> | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | counter<2>.SI | counter<2> | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<0>_PIN_BUF_ | 988 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<0> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clr | 929 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | clr.Q | clr | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<1>_PIN_BUF_ | 989 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<1> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | u_PIN_BUF_ | 987 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_u | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<3>_PIN_BUF_ | 991 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<3> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<2>.FBK | 985 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<2>.Q | counter<2> | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter<2>.D1 | 957 | ? | 0 | 4096 | counter<2> | NULL | NULL | counter<2>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter<2>.D2 | 958 | ? | 0 | 4096 | counter<2> | NULL | NULL | counter<2>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | clr | IV_TRUE | u_PIN_BUF_
+SPPTERM | 3 | IV_TRUE | counter<2>.FBK | IV_TRUE | u_PIN_BUF_ | IV_TRUE | tidkvar<0>_PIN_BUF_
+SPPTERM | 3 | IV_TRUE | counter<2>.FBK | IV_TRUE | u_PIN_BUF_ | IV_TRUE | tidkvar<1>_PIN_BUF_
+SPPTERM | 5 | IV_FALSE | counter<2>.FBK | IV_TRUE | u_PIN_BUF_ | IV_FALSE | tidkvar<0>_PIN_BUF_ | IV_FALSE | tidkvar<1>_PIN_BUF_ | IV_TRUE | tidkvar<3>_PIN_BUF_
+
+SRFF_INSTANCE | counter<2>.REG | counter<2> | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter<2>.D | 956 | ? | 0 | 0 | counter<2> | NULL | NULL | counter<2>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter<2>.Q | 959 | ? | 0 | 0 | counter<2> | NULL | NULL | counter<2>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow+OptxMapped+ClkInv+OeInv | counter<3> | trapplyse_COPY_0_COPY_0 | 2357200128 | 8 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<1>_PIN_BUF_ | 989 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<1> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clr.FBK | 982 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | clr.Q | clr | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<0>.FBK | 981 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<0>.Q | counter<0> | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | u_PIN_BUF_ | 987 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_u | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<2>_PIN_BUF_ | 990 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<3>.FBK | 983 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<3>.Q | counter<3> | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | counter<3>$Q | 927 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<3>.Q | counter<3> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | counter<3> | 928 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<3>.Q | counter<3> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | counter<3>.FBK | 983 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<3>.Q | counter<3> | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | counter<3>.SI | counter<3> | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<1>_PIN_BUF_ | 989 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<1> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clr.FBK | 982 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | clr.Q | clr | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<0>.FBK | 981 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<0>.Q | counter<0> | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | u_PIN_BUF_ | 987 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_u | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<2>_PIN_BUF_ | 990 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<3>.FBK | 983 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<3>.Q | counter<3> | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | counter<3>.D1 | 961 | ? | 0 | 4096 | counter<3> | NULL | NULL | counter<3>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | counter<3>.D2 | 962 | ? | 0 | 4096 | counter<3> | NULL | NULL | counter<3>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_FALSE | u_PIN_BUF_
+SPPTERM | 2 | IV_TRUE | clr.FBK | IV_FALSE | counter<3>.FBK
+SPPTERM | 4 | IV_FALSE | counter<0>.FBK | IV_TRUE | clr.FBK | IV_FALSE | tidkvar<1>_PIN_BUF_ | IV_FALSE | tidkvar<2>_PIN_BUF_
+
+SRFF_INSTANCE | counter<3>.REG | counter<3> | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | counter<3>.D | 960 | ? | 0 | 0 | counter<3> | NULL | NULL | counter<3>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | counter<3>.Q | 963 | ? | 0 | 0 | counter<3> | NULL | NULL | counter<3>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped+ClkInv | clr | trapplyse_COPY_0_COPY_0 | 2222982144 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | u_PIN_BUF_ | 987 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_u | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | clr | 929 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | clr.Q | clr | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | clr.FBK | 982 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | clr.Q | clr | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | clr.SI | clr | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | u_PIN_BUF_ | 987 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_u | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | clr.D1 | 965 | ? | 0 | 4096 | clr | NULL | NULL | clr.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | clr.D2 | 966 | ? | 0 | 4096 | clr | NULL | NULL | clr.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | u_PIN_BUF_
+
+SRFF_INSTANCE | clr.REG | clr | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | clr.D | 964 | ? | 0 | 0 | clr | NULL | NULL | clr.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | clr.Q | 967 | ? | 0 | 0 | clr | NULL | NULL | clr.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow+OptxMapped+ClkInv | rco | trapplyse_COPY_0_COPY_0 | 2222982400 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<1>_PIN_BUF_ | 989 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<1> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rco.FBK | 986 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | rco.Q | rco | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<0>.FBK | 981 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<0>.Q | counter<0> | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<3>.FBK | 983 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<3>.Q | counter<3> | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<2>_PIN_BUF_ | 990 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | u_PIN_BUF_ | 987 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_u | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clr.FBK | 982 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | clr.Q | clr | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | rco | 930 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | rco.Q | rco | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | rco.FBK | 986 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | rco.Q | rco | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | rco.SI | rco | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<1>_PIN_BUF_ | 989 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<1> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rco.FBK | 986 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | rco.Q | rco | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<0>.FBK | 981 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<0>.Q | counter<0> | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | counter<3>.FBK | 983 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<3>.Q | counter<3> | 5 | 0 | MC_FBK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | tidkvar<2>_PIN_BUF_ | 990 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<2> | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | u_PIN_BUF_ | 987 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_u | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clr.FBK | 982 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | clr.Q | clr | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | rco.D1 | 969 | ? | 0 | 4096 | rco | NULL | NULL | rco.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | rco.D2 | 970 | ? | 0 | 4096 | rco | NULL | NULL | rco.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | clr.FBK | IV_FALSE | rco.FBK | IV_TRUE | u_PIN_BUF_
+SPPTERM | 6 | IV_FALSE | counter<0>.FBK | IV_TRUE | clr.FBK | IV_FALSE | counter<3>.FBK | IV_TRUE | u_PIN_BUF_ | IV_FALSE | tidkvar<1>_PIN_BUF_ | IV_FALSE | tidkvar<2>_PIN_BUF_
+
+SRFF_INSTANCE | rco.REG | rco | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | rco.D | 968 | ? | 0 | 0 | rco | NULL | NULL | rco.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | rco.Q | 971 | ? | 0 | 0 | rco | NULL | NULL | rco.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped | x0_last | trapplyse_COPY_0_COPY_0 | 2155873280 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x0_IBUF | 931 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | x0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | x0_last | 932 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | x0_last.Q | x0_last | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | x0_last.SI | x0_last | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x0_IBUF | 931 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | x0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | x0_last.D1 | 973 | ? | 0 | 4096 | x0_last | NULL | NULL | x0_last.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | x0_last.D2 | 974 | ? | 0 | 4096 | x0_last | NULL | NULL | x0_last.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | x0_IBUF
+
+SRFF_INSTANCE | x0_last.REG | x0_last | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | x0_last.D | 972 | ? | 0 | 0 | x0_last | NULL | NULL | x0_last.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | x0_last.Q | 975 | ? | 0 | 0 | x0_last | NULL | NULL | x0_last.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped | x1_last | trapplyse_COPY_0_COPY_0 | 2155873280 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x1_IBUF | 933 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | x1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | x1_last | 934 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | x1_last.Q | x1_last | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | x1_last.SI | x1_last | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | x1_IBUF | 933 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | x1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | x1_last.D1 | 977 | ? | 0 | 4096 | x1_last | NULL | NULL | x1_last.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | x1_last.D2 | 978 | ? | 0 | 4096 | x1_last | NULL | NULL | x1_last.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | x1_IBUF
+
+SRFF_INSTANCE | x1_last.REG | x1_last | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | x1_last.D | 976 | ? | 0 | 0 | x1_last | NULL | NULL | x1_last.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 917 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 918 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | x1_last.Q | 979 | ? | 0 | 0 | x1_last | NULL | NULL | x1_last.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | u | trapplyse_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | ce$Q | 919 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | ce.Q | ce | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | u | 935 | PO | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | u | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | tidkvar<0> | trapplyse_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | counter<0>$Q | 921 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<0>.Q | counter<0> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | tidkvar<0> | 936 | PO | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | tidkvar<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | tidkvar<1> | trapplyse_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | counter<1>$Q | 923 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<1>.Q | counter<1> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | tidkvar<1> | 937 | PO | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | tidkvar<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | tidkvar<2> | trapplyse_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | counter<2>$Q | 925 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<2>.Q | counter<2> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | tidkvar<2> | 938 | PO | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | tidkvar<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | tidkvar<3> | trapplyse_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | counter<3>$Q | 927 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | counter<3>.Q | counter<3> | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | tidkvar<3> | 939 | PO | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | tidkvar<3> | 0 | 6 | OI_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_u | trapplyse_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | u | 935 | PO | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | u | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | u_PIN_BUF_ | 987 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_u | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_tidkvar<0> | trapplyse_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | tidkvar<0> | 936 | PO | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | tidkvar<0> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | tidkvar<0>_PIN_BUF_ | 988 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<0> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_tidkvar<1> | trapplyse_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | tidkvar<1> | 937 | PO | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | tidkvar<1> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | tidkvar<1>_PIN_BUF_ | 989 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<1> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_tidkvar<2> | trapplyse_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | tidkvar<2> | 938 | PO | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | tidkvar<2> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | tidkvar<2>_PIN_BUF_ | 990 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<2> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_tidkvar<3> | trapplyse_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | tidkvar<3> | 939 | PO | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | tidkvar<3> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | tidkvar<3>_PIN_BUF_ | 991 | ? | 0 | 0 | trapplyse_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_tidkvar<3> | 0 | 5 | II_IMUX
+
+FB_INSTANCE | FOOBAR1_ | trapplyse_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | counter<0> | 1 | Pfbk_Created_tidkvar<0> | 1 | tidkvar<0> | 1 | 1 | 49152
+FBPIN | 8 | counter<3> | 1 | Pfbk_Created_tidkvar<3> | 1 | tidkvar<3> | 1 | 4 | 49152
+FBPIN | 9 | NULL | 0 | clk_IBUF | 1 | NULL | 0 | 5 | 57344
+FBPIN | 15 | x1_last | 1 | NULL | 0 | NULL | 0 | 8 | 49152
+FBPIN | 16 | x0_last | 1 | NULL | 0 | NULL | 0
+FBPIN | 17 | clr | 1 | NULL | 0 | NULL | 0 | 9 | 49152
+FBPIN | 18 | rco | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR2_ | trapplyse_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 5 | ce | 1 | Pfbk_Created_u | 1 | u | 1 | 36 | 49152
+FBPIN | 8 | NULL | 0 | x1_IBUF | 1 | NULL | 0 | 38 | 49152
+FBPIN | 9 | NULL | 0 | reset_IBUF | 1 | NULL | 0 | 39 | 51200
+FBPIN | 15 | NULL | 0 | x0_IBUF | 1 | NULL | 0 | 43 | 49152
+
+FB_INSTANCE | FOOBAR3_ | trapplyse_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | counter<1> | 1 | Pfbk_Created_tidkvar<1> | 1 | tidkvar<1> | 1 | 11 | 49152
+
+FB_INSTANCE | FOOBAR4_ | trapplyse_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | counter<2> | 1 | Pfbk_Created_tidkvar<2> | 1 | tidkvar<2> | 1 | 24 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | trapplyse_COPY_0_COPY_0 | 0 | 0 | 0
+
+BUSINFO | TIDKVAR<3:0> | 4 | 0 | 1 | tidkvar<0> | 3 | tidkvar<1> | 2 | tidkvar<2> | 1 | tidkvar<3> | 0
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 1 | counter<0>.FBK | NULL | 3 | u | 36 | 7 | counter<3>.FBK | NULL | 16 | clr.FBK | NULL | 17 | rco.FBK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 19 | x1 | 38 | 20 | tidkvar<2> | 24 | 21 | tidkvar<1> | 11 | 22 | x0 | 43
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | 1 | -1 | 79 | -1 | -1 | -1 | 7 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 16 | 17 | -1 | 73 | 74 | 75 | 76 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 0 | x0_last | NULL | 1 | x1_last | NULL | 2 | rco | NULL | 4 | ce.FBK | NULL | 30 | x1 | 38
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 35 | x0 | 43
+
+FB_IMUX_INDEX | FOOBAR2_ | 999 | 999 | 999 | -1 | 4 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 73 | -1 | -1 | -1 | -1 | 76
+
+
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 0 | clr | NULL | 2 | tidkvar<3> | 4 | 3 | counter<1>.FBK | NULL | 17 | tidkvar<0> | 1 | 26 | u | 36
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 32 | tidkvar<2> | 24
+
+FB_IMUX_INDEX | FOOBAR3_ | 999 | -1 | 78 | 1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 88 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 79 | -1 | -1 | -1 | -1 | -1 | 74 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 0 | clr | NULL | 1 | counter<2>.FBK | NULL | 3 | u | 36 | 25 | tidkvar<3> | 4 | 33 | tidkvar<1> | 11
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 35 | tidkvar<0> | 1
+
+FB_IMUX_INDEX | FOOBAR4_ | 999 | 1 | -1 | 79 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 78 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 75 | -1 | 88
+
+
+GLOBAL_FCLK | FCLKIO_0 | 0 | 0
+
+GLOBAL_FSR | FSRIO_1 | 0 | 0

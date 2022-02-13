@@ -1,0 +1,6 @@
+V3 3
+FL /home/chrwa634/TSEA22/Lab3/Lab4_2/CountOnes.vhd 2021/03/04.09:25:21 P.20131013
+EN work/CountOnes 1614851485 FL /home/chrwa634/TSEA22/Lab3/Lab4_2/CountOnes.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/CountOnes/behav 1614851486 \
+      FL /home/chrwa634/TSEA22/Lab3/Lab4_2/CountOnes.vhd EN work/CountOnes 1614851485

@@ -1,0 +1,7 @@
+run
+-ifn trapplyse.prj
+-top trapplyse
+-p xc9500
+-ofn trapplyse.ngc
+-opt_mode speed
+-opt_level 1
